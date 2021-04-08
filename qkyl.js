@@ -104,7 +104,7 @@ let url = {
 function qksx(timeout = 0) {
   return new Promise((resolve) => {
 let url = {
-        url : "https://log.xmadx.net/v1/api/media/analytics",
+        url : "https://choujiang-server.deering.cn/index/list",
         headers : JSON.parse($.getdata('qkhd')),
         body : body,
 }
