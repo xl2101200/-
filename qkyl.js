@@ -5,7 +5,7 @@
 微信小程序 → 趣客有礼 → 点击兑换 → 签到即可获取ck
 
 [task_local]
-0 0/5 * * * * https://raw.githubusercontent.com/xl2101200/-/main/qkyl.js, tag=趣客有礼, enabled=true
+0 0/10 * * * * https://raw.githubusercontent.com/xl2101200/-/main/qkyl.js, tag=趣客有礼, enabled=true
 
 [rewrite_local]
 https://choujiang-server.deering.cn url script-request-body https://raw.githubusercontent.com/xl2101200/-/main/qkyl.js
@@ -28,8 +28,6 @@ let qkspbody = $.getdata('qkspbody')
     await $.wait(1000)
     await qkzpcj()
     await $.wait(1000)
-    await qksx()
-    await $.wait(2000)
     await qkksp();
   }
 })()
@@ -92,30 +90,6 @@ let url = {
 }else{
         console.log(`\n❗❗❗转盘抽奖`+result.msg)
 }
-        } catch (e) {
-          //$.logErr(e, resp);
-        } finally {
-          resolve()
-        }
-    },timeout)
-  })
-}
-
-function qksx(timeout = 0) {
-  return new Promise((resolve) => {
-let url = {
-        url : "https://choujiang-server.deering.cn/index/list",
-        headers : JSON.parse($.getdata('qkhd')),
-        body : body,
-}
-      $.post(url, async (err, resp, data) => {
-        try {           
-    const result = JSON.parse(data)
-        if(result.code == 0){
-        console.log('\n刷新:'+result.user_info.errmsg)       
-} else {
-        console.log(`\n❗❗❗`+result.user_info.errmsg)}
-        await $.awit(2000)
         } catch (e) {
           //$.logErr(e, resp);
         } finally {
