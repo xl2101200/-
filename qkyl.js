@@ -28,7 +28,7 @@ let qkspbody = $.getdata('qkspbody')
     await $.wait(1000)
     await qkzpcj()
     await $.wait(1000)
-    await qksx（）
+    await qksx()
     await $.wait(2000)
     await qkksp();
   }
