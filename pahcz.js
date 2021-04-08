@@ -1,8 +1,12 @@
 /*
 
+20210408 tom
+
+脚本初成，app版ck失效短，小程序签到积分与app版共通
+
 微信小程序 ⇨ 平安好车主 ⇨ 我的 ⇨ 点击签到一次即可获取ck
 
-积分可在app版兑换礼品
+积分可在app版兑换礼品，还可以换油卡。
 
 [task_local]
 0 7 * * * https://raw.githubusercontent.com/xl2101200/-/main/pahcz.js, tag=平安好车主, enabled=true
