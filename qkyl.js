@@ -1,4 +1,5 @@
 /*
+
 20210407 tom
 
 微信小程序 → 趣客有礼 → 点击兑换 → 签到即可获取ck
@@ -76,8 +77,7 @@ let url = {
   })
 }
 
-//转盘默认关闭，如需打开把此段的“/* */”删掉  
-/*
+//转盘  如需关闭请将此段代码注释掉
 function qkzpcj(timeout = 0) {
   return new Promise((resolve) => {
 let url = {
@@ -100,7 +100,7 @@ let url = {
     },timeout)
   })
 }
-*/
+
 function qksx(timeout = 0) {
   return new Promise((resolve) => {
 let url = {
@@ -124,6 +124,7 @@ let url = {
     },timeout)
   })
 }
+
 //看视频
 function qkksp(timeout = 0) {
   return new Promise((resolve) => {
