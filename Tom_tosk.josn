@@ -1,6 +1,5 @@
 {
  "name": "Tom task",
- "description": "https://gitee.com/lxk0301/jd_scripts/tree/master",
  "task": [
     "0 0/10 * * * * https://raw.githubusercontent.com/xl2101200/-/main/qkyl.js, tag=趣客有礼, enabled=true",
     "0 7 * * * https://raw.githubusercontent.com/xl2101200/-/main/pahcz.js, tag=平安好车主, enabled=true "
