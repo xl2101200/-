@@ -4,10 +4,10 @@
 微信小程序 → 趣客有礼 → 点击兑换 → 签到即可获取ck
 
 [task_local]
-0 0/5 * * * * qkyl.js, tag=趣客有礼, enabled=true
+0 0/5 * * * * https://github.com/xl2101200/-/blob/main/qkyl.js, tag=趣客有礼, enabled=true
 
 [rewrite_local]
-https://choujiang-server.deering.cn url script-request-body qkyl.js
+https://choujiang-server.deering.cn url script-request-body https://github.com/xl2101200/-/blob/main/qkyl.js
 
 [MITM]
 hostname = choujiang-server.deering.cn
@@ -76,7 +76,8 @@ let url = {
   })
 }
 
-//转盘  
+//转盘默认关闭，如需打开把此段的“/* */”删掉  
+/*
 function qkzpcj(timeout = 0) {
   return new Promise((resolve) => {
 let url = {
@@ -99,7 +100,7 @@ let url = {
     },timeout)
   })
 }
-
+*/
 function qksx(timeout = 0) {
   return new Promise((resolve) => {
 let url = {
