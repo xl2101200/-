@@ -5,10 +5,10 @@
 积分可在app版兑换礼品
 
 [task_local]
-0 7 * * * pahcz.js, tag=平安好车主, enabled=true
+0 7 * * * https://raw.githubusercontent.com/xl2101200/-/main/pahcz.js, tag=平安好车主, enabled=true
 
 [rewrite_local]
-https://hcz-member.pingan.com.cn/micro-api/cps-activity/know/v1/completeTask url script-request-body pahcz.js
+https://hcz-member.pingan.com.cn/micro-api/cps-activity/know/v1/completeTask url script-request-body https://raw.githubusercontent.com/xl2101200/-/main/pahcz.js
 
 [MITM]
 hostname = hcz-member.pingan.com.cn
