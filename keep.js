@@ -5,6 +5,7 @@
 微信小程序：keep早起打卡
 能量可以兑换话费
 
+ck获取：打开小程序点击能量，点击浇水一次即可。
 [MITM]
 hostname = www.xiaeke.com
 
