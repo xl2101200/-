@@ -1,9 +1,20 @@
 /*
+
+20210409  tom
+
+微信小程序：keep早起打卡
+能量可以兑换话费
+
 [MITM]
 hostname = www.xiaeke.com
 
-[rewrite_local]
-https://www.xiaeke.com/benmao/index.php/Home/MorningTree/gainEnergy? url script-request-header 
+[task_local]
+0 0/30 * * * * https://raw.githubusercontent.com/xl2101200/-/main/keep.js, tag=keep打卡浇水, enabled=true
+
+[rewrite_local] 
+https://www.xiaeke.com/benmao/index.php/Home/MorningTree/gainEnergy? url script-request-header https://raw.githubusercontent.com/xl2101200/-/main/keep.js
+
+
 */
 
 const $ = new Env('keep早起打卡');
