@@ -2,6 +2,7 @@
  "name": "Tom task",
  "description": "随便玩玩",
  "task": [
+    "0 8 * * * https://raw.githubusercontent.com/xl2101200/-/main/pxx.js, tag=拼夕夕, enabled=true",
     "0 0/30 * * * * https://raw.githubusercontent.com/xl2101200/-/main/keep.js, tag=keep打卡浇水, enabled=true",
     "0 0/10 * * * * https://raw.githubusercontent.com/xl2101200/-/main/qkyl.js, tag=趣客有礼, enabled=true",
     "0 7 * * * https://raw.githubusercontent.com/xl2101200/-/main/pahcz.js, tag=平安好车主, enabled=true",
