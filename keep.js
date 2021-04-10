@@ -80,9 +80,9 @@ let url = {
     const result = JSON.parse(data)
         if(result.status == 13000){
 
-        console.log('\nkeep浇水成功:'+result.info)
+        
 } else {
-       console.log('\nkeep浇水失败: '+result.info)
+       console.log('\nkeep浇水: '+result.info)
 }
         } catch (e) {
           //$.logErr(e, resp);
@@ -106,7 +106,7 @@ let url = {
     const result = JSON.parse(data)
         if(result.status == 13000){
         
-       console.log(`\n早起打卡：`+result.info)
+
        
        
 } else {
