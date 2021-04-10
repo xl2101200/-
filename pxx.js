@@ -11,10 +11,10 @@
 http://apppx.jc8s.com:91/#/pages/reg?id=17283
 
 [task_local]
-0 8 * * * pxx.js, tag=拼夕夕, enabled=true
+0 8 * * * https://raw.githubusercontent.com/xl2101200/-/main/pxx.js, tag=拼夕夕, enabled=true
 
 [rewrite_local]
-http://apipx.jc8s.com:4022/Index/MianFeiPT url script-request-body pxx.js
+http://apipx.jc8s.com:4022/Index/MianFeiPT url script-request-body https://raw.githubusercontent.com/xl2101200/-/main/pxx.js
 
 [MITM]
 hostname = apipx.jc8s.com:4022
