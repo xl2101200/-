@@ -17,12 +17,19 @@
 下载地址
 http://apppx.jc8s.com:91/#/pages/reg?id=17283
 
-圈x
+圈x配置，其他软件自测
 [task_local]
 0 8 * * * https://raw.githubusercontent.com/xl2101200/-/main/pxx.js, tag=拼夕夕, enabled=true
 
 [rewrite_local]
 http://apipx.jc8s.com:4022/Index/MianFeiPT url script-request-body https://raw.githubusercontent.com/xl2101200/-/main/pxx.js
+
+
+#loon
+http://apipx.jc8s.com:4022/Index/MianFeiPT script-path=https://raw.githubusercontent.com/xl2101200/-/main/pxx.js, requires-body=true, timeout=10, tag=拼夕夕
+
+#surge
+拼夕夕 = type=http-request,pattern=http://apipx.jc8s.com:4022/Index/MianFeiPT,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/xl2101200/-/main/pxx.js,script-update-interval=0
 
 [MITM]
 hostname = apipx.jc8s.com:4022
