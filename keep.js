@@ -50,7 +50,7 @@ let keepkey = '',uid=''
           console.log(`\n开始【keep早起打卡${$.index}】`)
           await keepdk()
           await $.wait(3000)
-          await keepjs();
+          await keepjs()
      for (let x = 0; x < 30; x++) {
       $.index = x + 1
       console.log(`\n第${x+1}次执行任务！\n等待2秒开始执行偷取好友能量`)
