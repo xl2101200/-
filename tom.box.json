@@ -5,7 +5,6 @@
   "icon": "https://github.com/xl2101200/-/blob/main/tom/tom.jpg",
   "repo": "https://github.com/xl2101200/-",
   "apps": [{
-{
             "id": "keep早起打卡",
             "name": "keep早起打卡",
             "keys": ["keepurl", "keephd", "keepurl2", "keephd2","keepurl3", "keephd3","keepurl4", "keephd4","keepurl5", "keephd5","keepurl6", "keephd6","keepurl7", "keephd7","keepurl8", "keephd8","keepurl9", "keephd9","keepurl10", "keephd10"],
@@ -27,4 +26,6 @@
             "repo": "https://raw.githubusercontent.com/xl2101200/-/main/keep.js",
             "icons": [""],
             "script": "https://raw.githubusercontent.com/xl2101200/-/main/keep.js"
-    },
+    } 
+]
+}
