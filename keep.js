@@ -53,7 +53,7 @@ let keepkey = '',uid=''
           await keepjs();
      for (let x = 0; x < 30; x++) {
       $.index = x + 1
-      console.log(`\n第${x+1}次执行任务！\n等待2秒开始执行下一次视频`)
+      console.log(`\n第${x+1}次执行任务！\n等待2秒开始执行偷取好友能量`)
           await keepthl();
           await $.wait(2000);
 
