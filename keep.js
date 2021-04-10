@@ -56,9 +56,8 @@ let keepkey = '',uid=''
       console.log(`\n第${x+1}次执行任务！\n等待2秒开始执行偷取好友能量`)
           await keepthl();
           await $.wait(2000);
-
-  }
-}}
+}
+}
 
 })()
   .catch((e) => $.logErr(e))
