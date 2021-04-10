@@ -17,6 +17,7 @@
 下载地址
 http://apppx.jc8s.com:91/#/pages/reg?id=17283
 
+圈x
 [task_local]
 0 8 * * * https://raw.githubusercontent.com/xl2101200/-/main/pxx.js, tag=拼夕夕, enabled=true
 
