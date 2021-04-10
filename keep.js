@@ -51,8 +51,8 @@ let keepkey = '',uid=''
           await keepdk()
           await $.wait(3000)
           await keepjs();
-}
-
+  }
+}}
 })()
   .catch((e) => $.logErr(e))
   .finally(() => $.done())
