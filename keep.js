@@ -5,6 +5,7 @@
 微信小程序：keep早起打卡
 能量可以兑换话费，一天将近500能量，10天可兑换5元话费。
 
+
 ck获取：打开小程序点击能量，点击浇水一次即可。
 [MITM]
 hostname = www.xiaeke.com
@@ -15,6 +16,8 @@ hostname = www.xiaeke.com
 [rewrite_local] 
 https://www.xiaeke.com/benmao/index.php/Home/MorningTree/gainEnergy? url script-request-header https://raw.githubusercontent.com/xl2101200/-/main/keep.js
 
+多账号添加boxjs订阅，可通过微信切换账号的方式来获取，具体自测
+boxjs订阅：https://raw.githubusercontent.com/xl2101200/-/main/tom.box.json 
 
 */
 
