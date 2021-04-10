@@ -16,13 +16,15 @@ ck获取：打开小程序点击能量，点击浇水一次即可。
 hostname = www.xiaeke.com
 
 [task_local]
-0 0/30 * * * * https://raw.githubusercontent.com/xl2101200/-/main/keepdk.js, tag=keep打卡偷能量, enabled=true
+0 6 * * * https://raw.githubusercontent.com/xl2101200/-/main/keepdk.js, tag=keep打卡偷能量, enabled=true
 
 [rewrite_local] 
 https://www.xiaeke.com/benmao/index.php/Home/MorningTree/gainEnergy? url script-request-header https://raw.githubusercontent.com/xl2101200/-/main/keepdk.js
 
 多账号添加boxjs订阅，可通过微信切换账号的方式来获取，具体自测
-boxjs订阅：https://raw.githubusercontent.com/xl2101200/-/main/tom.box.json 
+boxjs订阅:https://raw.githubusercontent.com/xl2101200/-/main/tom.box.json 
+
+task订阅: https://raw.githubusercontent.com/xl2101200/-/main/Tom_tosk.josn
 
 */
 
