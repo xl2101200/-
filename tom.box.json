@@ -26,6 +26,29 @@
             "repo": "https://raw.githubusercontent.com/xl2101200/-/main/keep.js",
             "icons": ["https://github.com/xl2101200/-/blob/main/tom/tom.jpg"],
             "script": "https://raw.githubusercontent.com/xl2101200/-/main/keep.js"
-    } 
+    },
+               {
+            "id": "nmm",
+            "name": "牛蒙蒙",
+            "keys": ["nmmbody", "nmmhd", "nmmbody2","nmmhd2", "nmmbody3", "nmmhd3","nmmbody4", "nmmhd4","nmmbody5", "nmmhd5","nmmbody6", "nmmhd6","nmmbody7", "nmmhd7","nmmbody8", "nmmhd8"],
+            "author": "@tom",
+            "settings": [{
+            "id": "nmmstatus",
+            "name": "当前账号",
+            "val": "1",
+            "type": "number",
+            "desc": "需要抓第二个就改成2，然后保存在去抓第二个"
+    },
+    {
+            "id": "nmmcount",
+            "name": "账号个数",
+            "val": "1",
+            "type": "number",
+            "desc": "需要几个账号，数字为几"
+    }],
+            "repo": "https://github.com/xl2101200/-/edit/main/nmm.js",
+            "icons": ["https://github.com/xl2101200/-/blob/main/tom/tom.jpg"],
+            "script": "https://github.com/xl2101200/-/edit/main/nmm.js"
+    },
 ]
 }
