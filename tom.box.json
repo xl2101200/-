@@ -69,9 +69,9 @@
             "type": "number",
             "desc": "指定任务最多跑几个账号，根据抓取的账号数据个数来设值"
     }],
-            "repo": "https://github.com/xl2101200/-/edit/main/nmm.js",
+            "repo": "https://raw.githubusercontent.com/xl2101200/-/main/nmm.js",
             "icons": ["https://github.com/xl2101200/-/blob/main/tom/tom.jpg"],
-            "script": "https://github.com/xl2101200/-/edit/main/nmm.js"
+            "script": "https://raw.githubusercontent.com/xl2101200/-/main/nmm.js"
     },
 ]
 }
