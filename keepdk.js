@@ -96,7 +96,7 @@ let url = {
     const result = JSON.parse(data)
         if(result.status == 13000){  
 } else {
-       console.log('\nkeep偷能量: '+result.info)
+       console.log('\nkeep偷能量: '+result.info+'\n偷到能量：'+result.data+'个')
 }
         } catch (e) {
           //$.logErr(e, resp);
