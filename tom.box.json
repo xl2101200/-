@@ -38,7 +38,7 @@
             "val": "1",
             "type": "number",
             "desc": "当前抓取ck记录的账号序号，如：1、2、3、4"
-    }],
+    },
     {
             "id": "keepcount",
             "name": "账号个数",
