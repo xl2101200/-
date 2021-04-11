@@ -6,28 +6,29 @@
 
 牛蒙蒙自动签到 点击签到获取ck
 
-boxjs地址 :  
+积分可兑换牛奶等实物
+
+boxjs地址 : https://raw.githubusercontent.com/xl2101200/-/main/tom.box.json
+
+task地址 ：https://raw.githubusercontent.com/xl2101200/-/main/Tom_tosk.josn
 
 圈X配置如下，其他软件自行测试
+[MITM]
+hostname = nmmapis.mengniu.com.cn
+
 [task_local]
 #牛蒙蒙
-0 8 * * * h s, tag=牛蒙蒙, enabled=true
-
+0 8 * * * https://raw.githubusercontent.com/xl2101200/-/main/nmm.js, tag=牛蒙蒙, enabled=true
 
 [rewrite_local]
 #牛蒙蒙
-https://nmmapis.mengniu.com.cn/api/sign url script-request-body 548024379C28.js
-
+https://nmmapis.mengniu.com.cn/api/sign url script-request-body https://raw.githubusercontent.com/xl2101200/-/main/nmm.js
 
 #loon
-^https://.+?[^/]/index/guoyuan script-path=https://raw.githubusercontent.com/age174/-/main/yggy.js, requires-body=true, timeout=10, tag=牛蒙蒙
+https://nmmapis.mengniu.com.cn/api/sign script-path=https://raw.githubusercontent.com/xl2101200/-/main/nmm.js, requires-body=true, timeout=10, tag=牛蒙蒙
 
 #surge
-
-牛蒙蒙 = type=http-request,pattern=^https://.+?[^/]/index/guoyuan,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/age174/-/main/yggy.js,script-update-interval=0
-
-[MITM]
-hostname = nmmapis.mengniu.com.cn
+牛蒙蒙 = type=http-request,pattern=https://nmmapis.mengniu.com.cn/api/sign,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/xl2101200/-/main/nmm.js,script-update-interval=0
 
 */
 
