@@ -15,7 +15,7 @@ boxjs地址 :  https://raw.githubusercontent.com/xl2101200/-/main/tom.box.json
 圈X配置如下，其他软件自行测试
 [task_local]
 #积分赚挖矿
-0 0 0/2 * * https://raw.githubusercontent.com/xl2101200/-/main/jfz.js, tag=积分赚挖矿, img-url=https://api.dwhub.com.cn/point_go/v2/mining/start
+0 0 0/2 * * * https://raw.githubusercontent.com/xl2101200/-/main/jfz.js, tag=积分赚挖矿, img-url=https://api.dwhub.com.cn/point_go/v2/mining/start
 
 
 [rewrite_local]
