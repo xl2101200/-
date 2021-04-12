@@ -25,7 +25,7 @@
             "desc": "指定任务最多跑几个账号，根据抓取的账号数据个数来设值"
     }],
             "repo": "https://raw.githubusercontent.com/xl2101200/-/main/jfz.js",
-            "icons": ["https://github.com/xl2101200/-/blob/main/tom/tom.jpg"],
+            "icons": ["https://raw.githubusercontent.com/xl2101200/-/main/tom/tom.png"],
             "script": "https://raw.githubusercontent.com/xl2101200/-/main/jfz.js"
     },
     {
@@ -48,7 +48,7 @@
             "desc": "指定任务最多跑几个账号，根据抓取的账号数据个数来设值"
     }],
             "repo": "https://raw.githubusercontent.com/xl2101200/-/main/keepdk.js",
-            "icons": ["https://github.com/xl2101200/-/blob/main/tom/tom.jpg"],
+            "icons": ["https://raw.githubusercontent.com/xl2101200/-/main/tom/tom.png"],
             "script": "https://raw.githubusercontent.com/xl2101200/-/main/keepdk.js"
     },
     {
@@ -71,7 +71,7 @@
             "desc": "指定任务最多跑几个账号，根据抓取的账号数据个数来设值"
     }],
             "repo": "https://raw.githubusercontent.com/xl2101200/-/main/nmm.js",
-            "icons": ["https://github.com/xl2101200/-/blob/main/tom/tom.jpg"],
+            "icons": ["https://raw.githubusercontent.com/xl2101200/-/main/tom/tom.png"],
             "script": "https://raw.githubusercontent.com/xl2101200/-/main/nmm.js"
     } 
 ]
