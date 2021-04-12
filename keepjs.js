@@ -20,7 +20,7 @@ https://www.xiaeke.com/benmao/index.php/Home/MorningTree/gainEnergy? url script-
 多账号添加boxjs订阅，可通过微信切换账号的方式来获取，具体自测
 boxjs订阅：https://raw.githubusercontent.com/xl2101200/-/main/tom.box.json 
 
-task订阅: https://raw.githubusercontent.com/xl2101200/-/main/Tom_tosk.josn
+task订阅: https://raw.githubusercontent.com/xl2101200/-/main/Tom_task.josn
 
 */
 
