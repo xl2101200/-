@@ -69,7 +69,7 @@ const xhpjurl = $request.url
   const xhpjhd = JSON.stringify($request.headers)
         if(xhpjhd)    $.setdata(xhpjhd,`xhpjhd${status}`)
 $.log(xhpjhd)
-   $.msg($.name,"",'雪花啤酒'+`${status}` +'headrs获取成功！')
+   $.msg($.name,"",'雪花啤酒'+`${status}` +'token获取成功！')
   }
 }
 function xhpjqd(timeout = 0) {
