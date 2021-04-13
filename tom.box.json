@@ -6,6 +6,29 @@
   "repo": "https://github.com/xl2101200/-",
   "apps": [
     {
+            "id": "xhpj",
+            "name": "雪花啤酒",
+            "keys": ["xhpjurl", "xhpjhd","xhpjurl2", "xhpjhd2","xhpjurl3", "xhpjhd3","xhpjurl4", "xhpjhd4","xhpjurl5", "xhpjhd5"],
+            "author": "@tom",
+            "settings": [{
+            "id": "xhpjstatus",
+            "name": "当前账号",
+            "val": "1",
+            "type": "number",
+            "desc": "当前抓取ck记录的账号序号，如：1、2、3、4"
+    },
+    {
+            "id": "xhpjcount",
+            "name": "账号个数",
+            "val": "1",
+            "type": "number",
+            "desc": "指定任务最多跑几个账号，根据抓取的账号数据个数来设值"
+    }],
+            "repo": "https://raw.githubusercontent.com/xl2101200/-/main/xhpj.js",
+            "icons": ["https://raw.githubusercontent.com/xl2101200/-/main/tom/tom.png"],
+            "script": "https://raw.githubusercontent.com/xl2101200/-/main/xhpj.js"
+    },
+    {
             "id": "jfz",
             "name": "积分赚",
             "keys": ["jfzurl", "jfzhd","jfzurl2", "jfzhd2","jfzurl3", "jfzhd3","jfzurl4", "jfzhd4","jfzurl5", "jfzhd5"],
