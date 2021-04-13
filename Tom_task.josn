@@ -2,6 +2,7 @@
  "name": "Tom task",
  "description": "随便玩玩",
  "task": [
+    "0 8 * * * https://raw.githubusercontent.com/xl2101200/-/main/xhpj.js, tag=雪花啤酒, enabled=true",
     "0 0 0/2 * * * https://raw.githubusercontent.com/xl2101200/-/main/jfz.js, tag=积分赚挖矿, enabled=true",
     "0 8 * * * https://raw.githubusercontent.com/xl2101200/-/main/nmm.js, tag=牛蒙蒙, enabled=true",
     "0 6 * * * https://raw.githubusercontent.com/xl2101200/-/main/keepdk.js,tag=keep打卡偷能量, enabled=true",
