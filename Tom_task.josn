@@ -3,10 +3,10 @@
  "description": "随便玩玩",
  "task": [
     "0 8 * * * https://raw.githubusercontent.com/xl2101200/-/main/smyj.js, tag=圣牧有机, enabled=true",
-    "0 0 0/2 * * * https://raw.githubusercontent.com/xl2101200/-/main/jfz.js, tag=积分赚挖矿, img-url=https://qxzy.top/rules/QuantumultX/img/jfz.png, enabled=true",
-    "0 8 * * * https://raw.githubusercontent.com/xl2101200/-/main/nmm.js, tag=牛蒙蒙, img-url=https://nmmimage.mengniu.com.cn/Applets/static/images/niumengmeng@2x.png, enabled=true",
-    "0 6 * * * https://raw.githubusercontent.com/xl2101200/-/main/keepdk.js,tag=keep打卡偷能量, img-url=https://qxzy.top/rules/QuantumultX/img/keep.png, enabled=true",
-    "0 0/30 * * * * https://raw.githubusercontent.com/xl2101200/-/main/keepjs.js, tag=keep浇水, img-url=https://qxzy.top/rules/QuantumultX/img/keep.png, enabled=true",
+    "0 0 0/2 * * * https://raw.githubusercontent.com/xl2101200/-/main/jfz.js, tag=积分赚挖矿, enabled=true",
+    "0 8 * * * https://raw.githubusercontent.com/xl2101200/-/main/nmm.js, tag=牛蒙蒙, enabled=true",
+    "0 6 * * * https://raw.githubusercontent.com/xl2101200/-/main/keepdk.js,tag=keep打卡偷能量, enabled=true",
+    "0 0/30 * * * * https://raw.githubusercontent.com/xl2101200/-/main/keepjs.js, tag=keep浇水, enabled=true",
 
 
     ]
