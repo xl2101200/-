@@ -71,7 +71,8 @@ let sdk = '';
           await jfzsk();
           await $.wait(2000);
           await jfzhk();
-            
+          await $.wait(2000);
+          await jfzwk();
   }
 }}
 
