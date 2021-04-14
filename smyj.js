@@ -14,7 +14,7 @@ hostname = h5.youzan.com
 0 6 * * * https://raw.githubusercontent.com/xl2101200/-/main/smyj.js, tag=圣牧有机, enabled=true
 
 [rewrite_local] 
-https://h5.youzan.com/wscump/checkin/checkin.json? url script-request-header smyj.js
+https://h5.youzan.com/wscump/checkin/checkin.json? url script-request-header https://raw.githubusercontent.com/xl2101200/-/main/smyj.js
 
 多账号添加boxjs订阅，可通过微信切换账号的方式来获取，具体自测
 boxjs订阅:https://raw.githubusercontent.com/xl2101200/-/main/tom.box.json
