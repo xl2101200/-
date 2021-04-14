@@ -6,27 +6,27 @@
   "repo": "https://github.com/xl2101200/-",
   "apps": [
     {
-            "id": "xhpj",
-            "name": "雪花啤酒",
-            "keys": ["xhpjurl", "xhpjhd","xhpjurl2", "xhpjhd2","xhpjurl3", "xhpjhd3","xhpjurl4", "xhpjhd4","xhpjurl5", "xhpjhd5"],
+            "id": "smyj",
+            "name": "圣牧有机",
+            "keys": ["smyjurl", "smyjhd","smyjurl2", "smyjhd2","smyjurl3", "smyjhd3","smyjurl4", "smyjhd4","smyjurl5", "smyjhd5"],
             "author": "@tom",
             "settings": [{
-            "id": "xhpjstatus",
+            "id": "smyjstatus",
             "name": "当前账号",
             "val": "1",
             "type": "number",
             "desc": "当前抓取ck记录的账号序号，如：1、2、3、4"
     },
     {
-            "id": "xhpjcount",
+            "id": "smyjcount",
             "name": "账号个数",
             "val": "1",
             "type": "number",
             "desc": "指定任务最多跑几个账号，根据抓取的账号数据个数来设值"
     }],
-            "repo": "https://raw.githubusercontent.com/xl2101200/-/main/xhpj.js",
+            "repo": "https://raw.githubusercontent.com/xl2101200/-/main/smyj.js",
             "icons": ["https://raw.githubusercontent.com/xl2101200/-/main/tom/tom.png"],
-            "script": "https://raw.githubusercontent.com/xl2101200/-/main/xhpj.js"
+            "script": "https://raw.githubusercontent.com/xl2101200/-/main/smyj.js"
     },
     {
             "id": "jfz",
