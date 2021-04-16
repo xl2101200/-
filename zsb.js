@@ -17,7 +17,7 @@ boxjs地址 :  https://raw.githubusercontent.com/xl2101200/-/main/tom.box.json
 圈X配置如下，其他软件自行测试
 [task_local]
 #再生贝
-0 8 * * * https://raw.githubusercontent.com/age174/-/main/zsb.js, tag=再生贝, enabled=true
+0 8 * * * https://raw.githubusercontent.com/xl2101200/-/main/zsb.js, tag=再生贝, enabled=true
 
 
 [rewrite_local]
