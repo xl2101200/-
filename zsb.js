@@ -27,6 +27,12 @@ boxjs地址 :  https://raw.githubusercontent.com/xl2101200/-/main/tom.box.json
 #再生贝
 http://api.zsbrcc.com/api/extra/finishTask url script-request-body https://raw.githubusercontent.com/xl2101200/-/main/zsb.js
 
+#loon
+http://api.zsbrcc.com/api/extra/finishTask script-path= https://raw.githubusercontent.com/xl2101200/-/main/zsb.js, requires-body=true, timeout=10, tag=再生贝
+
+#surge
+再生贝 = type=http-request,pattern=http://api.zsbrcc.com/api/extra/finishTask,requires-body=1,max-size=0,script-path= https://raw.githubusercontent.com/xl2101200/-/main/zsb.js,script-update-interval=0
+
 [MITM]
 hostname = api.zsbrcc.com
 
