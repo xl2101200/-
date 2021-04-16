@@ -13,6 +13,8 @@
  
 RCC币目前交易所的单价是0.49美元，转换人民币是3.26元
  
+TG频道：https://t.me/Ariszy_Scripts
+TG群：@hahaha8028
  
 boxjs地址 :  https://raw.githubusercontent.com/xl2101200/-/main/tom.box.json
 
