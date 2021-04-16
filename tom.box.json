@@ -77,7 +77,7 @@
     {
             "id": "nmm",
             "name": "牛蒙蒙",
-            "keys": ["nmmbody", "nmmyhd", "nmmbody2","nmmhd2", "nmmbody3", "nmmhd3","nmmbody4", "nmmhd4","nmmbody5", "nmmhd5"],
+            "keys": ["nmmbody", "nmmhd", "nmmbody2","nmmhd2", "nmmbody3", "nmmhd3","nmmbody4", "nmmhd4","nmmbody5", "nmmhd5"],
             "author": "@tom",
             "settings": [{
             "id": "nmmstatus",
