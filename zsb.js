@@ -105,7 +105,7 @@ const zsburl = $request.url
   const zsbhd = JSON.stringify($request.headers)
         if(zsbhd)    $.setdata(zsbhd,`zsbhd${status}`)
 $.log(zsbhd)
-   $.msg($.name,"",'再生贝'+`${status}` +'headrs获取成功！')
+   $.msg($.name,"",'再生贝'+`${status}` +'视频body获取成功！')
   }
 }
 
