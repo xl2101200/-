@@ -21,7 +21,7 @@ TG群：@hahaha8028
 圈X配置如下，其他软件自行测试
 [task_local]
 #左边
-0 0 0/4 * * ? https://raw.githubusercontent.com/xl2101200/-/main/zb.js, tag=左边, enabled=true
+0 0 0/4 * * * https://raw.githubusercontent.com/xl2101200/-/main/zb.js, tag=左边, enabled=true
 
 
 [rewrite_local]
