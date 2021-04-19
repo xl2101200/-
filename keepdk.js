@@ -16,7 +16,7 @@ ck获取：打开小程序点击能量，点击浇水一次即可。
 hostname = www.xiaeke.com
 
 [task_local]
-0 6 * * * https://raw.githubusercontent.com/xl2101200/-/main/keepdk.js, tag=keep打卡偷能量, enabled=true
+0 0 0/1 * * * https://raw.githubusercontent.com/xl2101200/-/main/keepdk.js, tag=keep打卡偷能量, enabled=true
 
 [rewrite_local] 
 https://www.xiaeke.com/benmao/index.php/Home/MorningTree/gainEnergy? url script-request-header https://raw.githubusercontent.com/xl2101200/-/main/keepdk.js
