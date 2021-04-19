@@ -6,6 +6,29 @@
   "repo": "https://github.com/xl2101200/-",
   "apps": [
    {
+            "id": "jd",
+            "name": "加电",
+            "keys": ["jdurl", "jdhd","jdurl2", "jdhd2","jdurl3", "jdhd3","jdurl4", "jdhd4","jdurl5", "jdhd5"],
+            "author": "@tom",
+            "settings": [{
+            "id": "jdstatus",
+            "name": "当前账号",
+            "val": "1",
+            "type": "number",
+            "desc": "当前抓取ck记录的账号序号，如：1、2、3、4"
+    },
+    {
+            "id": "jdcount",
+            "name": "账号个数",
+            "val": "1",
+            "type": "number",
+            "desc": "指定任务最多跑几个账号，根据抓取的账号数据个数来设值"
+    }],
+            "repo": "https://raw.githubusercontent.com/xl2101200/-/main/jd.js",
+            "icons": ["https://raw.githubusercontent.com/xl2101200/-/main/tom/tom.png"],
+            "script": "https://raw.githubusercontent.com/xl2101200/-/main/jd.js"
+    },
+    {
             "id": "zb",
             "name": "ZEALER",
             "keys": ["zburl", "zbhd","zburl2", "zbhd2","zburl3", "zbhd3","zburl4", "zbhd4","zburl5", "zbhd5"],
