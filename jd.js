@@ -7,6 +7,9 @@
 
 首页，每日签到获取ck
 
+一个币3.2元，黑市交易！也可以留着复投
+多账号自测，卸载还是退出两个方案，成功了麻烦艾特我
+
 boxjs地址 :  https://raw.githubusercontent.com/xl2101200/-/main/tom.box.json
 
 TG频道：https://t.me/Ariszy_Scripts
