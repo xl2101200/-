@@ -3,7 +3,7 @@
 20210409  tom
 
 微信小程序：keep早起打卡
-能量可以兑换话费，一天将近500能量，10天可兑换5元话费。
+能量可以兑换话费，一天将近500能量，10天可兑换5元红包，能量够了需要联系客服添加客服微信，客服会给你发5元红包。亲测到账！！！
 
 比脚本为早起打卡与偷取好友能量。
 浇水需要添加浇水js
@@ -11,6 +11,13 @@
 ck获取：打开小程序点击能量，点击浇水一次即可。
 
 随便邀请一个好友，然后就可以偷能量了。
+
+TG频道：https://t.me/Ariszy_Scripts
+TG群：@hahaha8028
+
+多账号添加boxjs订阅，可通过微信切换账号的方式来获取，具体自测
+boxjs订阅:https://raw.githubusercontent.com/xl2101200/-/main/tom.box.json 
+task订阅: https://raw.githubusercontent.com/xl2101200/-/main/Tom_task.josn
 
 [MITM]
 hostname = www.xiaeke.com
@@ -20,11 +27,6 @@ hostname = www.xiaeke.com
 
 [rewrite_local] 
 https://www.xiaeke.com/benmao/index.php/Home/MorningTree/gainEnergy? url script-request-header https://raw.githubusercontent.com/xl2101200/-/main/keepdk.js
-
-多账号添加boxjs订阅，可通过微信切换账号的方式来获取，具体自测
-boxjs订阅:https://raw.githubusercontent.com/xl2101200/-/main/tom.box.json 
-
-task订阅: https://raw.githubusercontent.com/xl2101200/-/main/Tom_task.josn
 
 */
 
