@@ -7,6 +7,8 @@
 此版本为半小时浇水一次
 ck获取：打开小程序点击能量，点击浇水一次即可。
 
+TG频道：https://t.me/Ariszy_Scripts
+TG群：@hahaha8028
 多账号添加boxjs订阅，可通过微信切换账号的方式来获取
 boxjs订阅:https://raw.githubusercontent.com/xl2101200/-/main/tom.box.json 
 task订阅: https://raw.githubusercontent.com/xl2101200/-/main/Tom_task.josn
