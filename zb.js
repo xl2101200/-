@@ -17,10 +17,6 @@
 
 能量币可兑换：苹果耳机，充电宝，手机支架等
 
-TG频道：https://t.me/Ariszy_Scripts
-TG群：@hahaha8028
- 
-
 圈X配置如下，其他软件自行测试
 [task_local]
 #左边
