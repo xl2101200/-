@@ -7,6 +7,8 @@
 别充钱！！！！！！！！！！！！0撸为主！！！！
 
 
+20210422 官方改了提现规则，要充钱才能提现。ck两天掉，弃坑吧
+
 下载地址：https://raw.githubusercontent.com/xl2101200/-/main/tom/xyl.png
 
 圈x
