@@ -1,31 +1,25 @@
 /*
-
 20210427 tom
 
 软件名称：火狐看看
 下载地址：https://app.mozillacoin.com/user/signup?invite_code=HG451R
 
-看两视频，点一下红包获取ck
-
-每天0.3金币，价值2元。目前尚未可以提现。
-
+看视频，点一下红包获取ck，
+每天0.3金币，价值2元。10个金币可卖出。10金币价值60元左右，可以卖给我
 还是那句话，玩了可能没有！不玩一定没有！
 
-Task地址 :  https://raw.githubusercontent.com/xl2101200/-/main/Tom_task.josn
-
+Task地址  :  https://raw.githubusercontent.com/xl2101200/-/main/Tom_task.josn
+boxjs地址 ： https://raw.githubusercontent.com/xl2101200/-/main/tom.box.json
 
 圈X配置如下，其他软件自行测试
 [task_local]
 #火狐看看
 0 8 * * * https://raw.githubusercontent.com/xl2101200/-/main/hhkk.js, tag=火狐看看, enabled=true
-
 [rewrite_local]
 #火狐看看
 https://api.mozillacoin.com/main/read-bag? url script-request-body https://raw.githubusercontent.com/xl2101200/-/main/hhkk.js
-
 [MITM]
 hostname = api.mozillacoin.com
-
 */
 const $ = new Env('火狐看看');
 let status;
