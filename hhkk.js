@@ -5,8 +5,9 @@
 下载地址：https://app.mozillacoin.com/user/signup?invite_code=HG451R
 
 看视频，点一下红包获取ck，
-每天0.3金币，价值2元。10个金币可卖出。10金币价值60元左右，可以卖给我
+每天0.3金币，价值2元。50金币价值300元左右，也可以卖给我
 还是那句话，玩了可能没有！不玩一定没有！
+点击我的，有个新人福利。记得把新人福利1金币领了
 
 Task地址  :  https://raw.githubusercontent.com/xl2101200/-/main/Tom_task.josn
 boxjs地址 ： https://raw.githubusercontent.com/xl2101200/-/main/tom.box.json
