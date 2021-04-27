@@ -8,7 +8,7 @@
    {
             "id": "hhkk",
             "name": "火狐看看",
-            "keys": ["hhkkurl", "hhkkhd","hhkkbody","hhkkurl2", "hhkkhd2","hhkkbody2", "hhkkurl3", "hhkkhd3","hhkkbody3"],
+            "keys": ["hhkkurl", "hhkkhd","hhkkbody", "hhkkurl2", "hhkkhd2","hhkkbody2","hhkkurl3", "hhkkhd3","hhkkbody3"],
             "author": "@tom",
             "settings": [{
             "id": "hhkkstatus",
