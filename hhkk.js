@@ -11,7 +11,7 @@
 
 还是那句话，玩了可能没有！不玩一定没有！
 
-Task地址 :  https://raw.githubusercontent.com/xl2101200/-/main/Tom.task.json
+Task地址 :  https://raw.githubusercontent.com/xl2101200/-/main/Tom_task.josn
 
 
 圈X配置如下，其他软件自行测试
