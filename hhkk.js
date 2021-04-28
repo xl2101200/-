@@ -19,8 +19,8 @@ boxjs地址 ： https://raw.githubusercontent.com/xl2101200/-/main/tom.box.json
 [task_local]
 #火狐看看
 0 8 * * * https://raw.githubusercontent.com/xl2101200/-/main/hhkk.js, tag=火狐看看, enabled=true
-[rewrite_local]
 
+[rewrite_local]
 #火狐看看
 https://api.mozillacoin.com/main/main? url script-request-body https://raw.githubusercontent.com/xl2101200/-/main/hhkk.js
 
