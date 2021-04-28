@@ -3,6 +3,7 @@
 
 软件名称：火狐看看
 下载地址：https://app.mozillacoin.com/user/signup?invite_code=HG451R
+邀请码：HG451R
 
 打开软件登入即可获取ck。
 
