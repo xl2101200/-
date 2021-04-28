@@ -22,6 +22,7 @@ https://api.mozillacoin.com/main/read-bag? url script-request-body https://raw.g
 [MITM]
 hostname = api.mozillacoin.com
 */
+
 const $ = new Env('火狐看看');
 let status;
 status = (status = ($.getval("hhkkstatus") || "1") ) > 1 ? `${status}` : ""; 
@@ -29,7 +30,7 @@ const hhkkbodyArr = [], hhkkhdArr = [],hhkkurlArr = [],hhkkcount = ''
 let hhkkbody = $.getdata('hhkkbody')
 let hhkkhd = $.getdata('hhkkhd')
 let hhkkurl = $.getdata('hhkkurl')
-let id = '',id2 = '';
+let id = '',uid = '';
 !(async () => {
     if (typeof $request !== "undefined") {
     await hhkkck()
@@ -49,14 +50,20 @@ let id = '',id2 = '';
       hhkkhd = hhkkhdArr[i];
       $.index = i + 1;
       console.log(`\n开始【火狐看看${$.index}】`)}
+      await hhkklb();
+      await $.wait(3000);
       await hhkkksp();
       await $.wait(3000);
-      await hhkkksp2();
-      await $.wait(3000);}}})()
+      await hhkkksp1();
+      await hhkklb();
+      await $.wait(3000);
+      await hhkkksp();
+      await $.wait(3000);
+      await hhkkksp1();}}})()
   .catch((e) => $.logErr(e))
   .finally(() => $.done())
 function hhkkck() {
-  if ($request.url.indexOf("read-bag?") > -1 ||    $request.url.indexOf("id=") > -1) {
+  if ($request.url.indexOf("hot") > -1 ||    $request.url.indexOf("hot") > -1) {
   const hhkkbody = $request.body
   if(hhkkbody)   $.setdata(hhkkbody,`hhkkbody${status}`)
   $.log(hhkkbody)
@@ -67,9 +74,28 @@ function hhkkck() {
   if(hhkkhd)    $.setdata(hhkkhd,`hhkkhd${status}`)
   $.log(hhkkhd)
   $.msg($.name,"",'火狐看看'+`${status}` +'获取成功！')}}
+function hhkklb(timeout = 0) {
+        return new Promise((resolve) => {
+        let url = {
+        url : `https://api.mozillacoin.com/main/main?type=hot`,
+        headers : JSON.parse(hhkkhd),
+        body : hhkkbody,
+}
+        $.post(url, async (err, resp, data) => {
+        try {
+        const result = JSON.parse(data)
+        if(result.seetime == 3){
+        $.log(`\n火狐看看视频列表:成功`)
+        id = result.videoList[0].id
+        uid = result.vidoList[1].id
+        }else{
+        console.log('\n火狐看看视频列表❌'+result.message)}
+        } catch (e) {
+        } finally {
+        resolve()
+        }},timeout)})}
 function hhkkksp(timeout = 0) {
         return new Promise((resolve) => {
-id=hhkkurl.match(/id=(\d+)/)[1]
         let url = {
         url : `https://api.mozillacoin.com/main/read-bag?id=${id}`,
         headers : JSON.parse(hhkkhd),
@@ -85,9 +111,8 @@ id=hhkkurl.match(/id=(\d+)/)[1]
         } finally {
         resolve()
         }},timeout)})}
-function hhkkksp2(timeout = 0) {
+function hhkkksp1(timeout = 0) {
         return new Promise((resolve) => {
-uid=hhkkurl.match(/id=(\d+)/)[1]
         let url = {
         url : `https://api.mozillacoin.com/main/read-bag?id=${uid}`,
         headers : JSON.parse(hhkkhd),
