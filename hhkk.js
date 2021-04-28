@@ -87,10 +87,10 @@ function hhkklb(timeout = 0) {
         try {
         const result = JSON.parse(data)
         if(result.seetime == 3){
-        $.log(`\n火狐看看视频列表:成功`)
+        $.log(`\n火狐看看视频刷新`)
         id = result.videoList[0].id
         }else{
-        console.log('\n火狐看看视频列表❌'+result.message)}
+        console.log('\n火狐看看视频刷新❌'+result.message)}
         } catch (e) {
         } finally {
         resolve()
