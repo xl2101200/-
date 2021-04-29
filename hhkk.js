@@ -2,7 +2,6 @@
 20210427 tom
 
 软件名称：火狐看看
-额，账号无缘无故被冻结了，邀请码没用了，自己在群里问一下谁下载了拿个邀请码吧！
 下载地址：https://app.mozillacoin.com/user/signup?invite_code=HG451R
 邀请码：HG451R
 
