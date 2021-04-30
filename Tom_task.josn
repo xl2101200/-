@@ -7,6 +7,7 @@
     "0 8 * * * https://raw.githubusercontent.com/xl2101200/-/main/ttcj.js,tag=天天抽奖365, enabled=true",
     "0 0 0/4 * * * https://raw.githubusercontent.com/xl2101200/-/main/zb.js, tag=左边, enabled=true",
     "0 8 * * * https://raw.githubusercontent.com/xl2101200/-/main/smyj.js, tag=圣牧有机, enabled=true",
+    "0 0 1 1 * https://raw.githubusercontent.com/xl2101200/-/main/zsb.js, tag=再生贝, enabled=true",
     "0 0/40 * * * * https://raw.githubusercontent.com/xl2101200/-/main/keepjs.js, tag=keep浇水, enabled=true",
     "0 0 0/3 * * * https://raw.githubusercontent.com/xl2101200/-/main/keepdk.js, tag=keep打卡偷能量, enabled=true",
     "0 8 * * * https://raw.githubusercontent.com/xl2101200/-/main/xyl.js, tag=新亚链, enabled=true",
