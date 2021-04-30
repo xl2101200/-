@@ -13,7 +13,7 @@
 
 玩了可能没有！不玩一定没有！
 
-20210430 有个叼毛充了22万，把官方的支付宝弄封了，今天提现提不了等明天再提！
+20210430 有个叼毛充了22万，把官方的支付宝弄封了，今天提现提不了等明天再提！    狗几把改了提现规则  卸载吧！！！！！！！！！！！！！！！！！！！！！！！！！！！！！
 
 Task地址  :  https://raw.githubusercontent.com/xl2101200/-/main/Tom_task.josn
 boxjs地址 ： https://raw.githubusercontent.com/xl2101200/-/main/tom.box.json
