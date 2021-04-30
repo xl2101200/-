@@ -13,7 +13,7 @@ ck获取：打开小程序点击能量，点击浇水一次即可。
 hostname = www.xiaeke.com
 
 [task_local]
-0 0/30 * * * * https://raw.githubusercontent.com/xl2101200/-/main/keepjs.js, tag=keep浇水, enabled=true
+0 0/40 * * * * https://raw.githubusercontent.com/xl2101200/-/main/keepjs.js, tag=keep浇水, enabled=true
 
 [rewrite_local] 
 https://www.xiaeke.com/benmao/index.php/Home/MorningTree/gainEnergy? url script-request-header https://raw.githubusercontent.com/xl2101200/-/main/keepjs.js
@@ -47,8 +47,9 @@ let keepkey = '',uid=''
           keephd = keephdArr[i];
           $.index = i + 1;
           console.log(`\n开始【keep浇水${$.index}】`)
-          
+          await $.wait(10000);
           await keepjs();
+
   }
 }}
 })()
