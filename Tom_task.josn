@@ -2,13 +2,13 @@
  "name": "Tom task",
  "description": "随便玩玩",
  "task": [
-    "0 16 * * * https://raw.githubusercontent.com/xl2101200/-/main/dogeda.js,tag=DOGEDA, enabled=true",
-    "2 0 * * * https://raw.githubusercontent.com/xl2101200/-/main/hhkk.js,tag=火狐看看, enabled=true",
-    "0 8 * * * https://raw.githubusercontent.com/xl2101200/-/main/ttcj.js,tag=天天抽奖365, enabled=true",
-    "0 0 0/4 * * * https://raw.githubusercontent.com/xl2101200/-/main/zb.js, tag=左边, enabled=true",
-    "0 8 * * * https://raw.githubusercontent.com/xl2101200/-/main/smyj.js, tag=圣牧有机, enabled=true",
-    "0 0/40 * * * * https://raw.githubusercontent.com/xl2101200/-/main/keepjs.js, tag=keep浇水, enabled=true",
-    "0 0 0/3 * * * https://raw.githubusercontent.com/xl2101200/-/main/keepdk.js, tag=keep打卡偷能量, enabled=true",
-    "0 8 * * * https://raw.githubusercontent.com/xl2101200/-/main/xyl.js, tag=新亚链, enabled=true",
+    "0 16 * * * https://raw.githubusercontent.com/xl2101200/-/main/dogeda.js,tag=DOGEDA, img-url=https://github.com/xl2101200/-/blob/main/tom/tom.png, enabled=true",
+    "2 0 * * * https://raw.githubusercontent.com/xl2101200/-/main/hhkk.js,tag=火狐看看, img-url=https://github.com/xl2101200/-/blob/main/tom/tom.png, enabled=true",
+    "0 8 * * * https://raw.githubusercontent.com/xl2101200/-/main/ttcj.js,tag=天天抽奖365, img-url=https://github.com/xl2101200/-/blob/main/tom/tom.png, enabled=true",
+    "0 0 0/4 * * * https://raw.githubusercontent.com/xl2101200/-/main/zb.js, tag=左边, img-url=https://github.com/xl2101200/-/blob/main/tom/tom.png, enabled=true",
+    "0 8 * * * https://raw.githubusercontent.com/xl2101200/-/main/smyj.js, tag=圣牧有机, img-url=https://github.com/xl2101200/-/blob/main/tom/tom.png, enabled=true",
+    "0 0/40 * * * * https://raw.githubusercontent.com/xl2101200/-/main/keepjs.js, tag=keep浇水, img-url=https://github.com/xl2101200/-/blob/main/tom/tom.png, enabled=true",
+    "0 0 0/3 * * * https://raw.githubusercontent.com/xl2101200/-/main/keepdk.js, tag=keep打卡偷能量, img-url=https://github.com/xl2101200/-/blob/main/tom/tom.png, enabled=true",
+    "0 8 * * * https://raw.githubusercontent.com/xl2101200/-/main/xyl.js, tag=新亚链, img-url=https://github.com/xl2101200/-/blob/main/tom/tom.png, enabled=true",
     ]
 }
