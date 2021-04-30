@@ -9,7 +9,11 @@
 
 一个设备只能登入一个账号！多账号需要手动复制box内容才可以实现！
 
+登入的微信号、提现的支付宝算一个账号，多账号的同志们，一个账号可以提7元！看你们号多钱就多了  哈哈
+
 玩了可能没有！不玩一定没有！
+
+20210430 有个叼毛充了22万，把官方的支付宝弄封了，今天提现提不了等明天再提！
 
 Task地址  :  https://raw.githubusercontent.com/xl2101200/-/main/Tom_task.josn
 boxjs地址 ： https://raw.githubusercontent.com/xl2101200/-/main/tom.box.json
