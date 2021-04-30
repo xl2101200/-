@@ -12,7 +12,7 @@ ck获取：打开小程序点击能量，点击浇水一次即可。
 hostname = www.xiaeke.com
 
 [task_local]
-0 0 0/2 * * * https://raw.githubusercontent.com/xl2101200/-/main/keepdk.js, tag=keep打卡偷能量, enabled=true
+0 0 0/3 * * * https://raw.githubusercontent.com/xl2101200/-/main/keepdk.js, tag=keep打卡偷能量, enabled=true
 
 [rewrite_local] 
 https://www.xiaeke.com/benmao/index.php/Home/MorningTree/gainEnergy? url script-request-header https://raw.githubusercontent.com/xl2101200/-/main/keepdk.js
@@ -52,9 +52,9 @@ let keepkey = '',uid=''
 }
      for (let x = 0; x < 30; x++) {
       $.index = x + 1
-      console.log(`\n第${x+1}次执行任务！\n等待3秒开始偷能量`)
+      console.log(`\n第${x+1}次执行任务！\n等待10秒开始偷能量`)
     await keeptnl();
-    await $.wait(3000);
+    await $.wait(10000);
 
 
   }
