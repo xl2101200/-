@@ -3,7 +3,7 @@
 20210429 tom
 
 软件名称：DOGEDA
-下载地址：https://raw.githubusercontent.com/xl2101200/-/main/tom/dogeda.png
+下载地址：
 
 登入即可获取ck    先绑定支付宝，在运行脚本，自动提现的！   每天1元，提现秒到。
 
