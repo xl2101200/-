@@ -3,7 +3,7 @@
 20210502 tom
 
 软件名称：比特大亨
-下载地址：https://raw.githubusercontent.com/xl2101200/-/main/tom/btdh.jpg
+下载地址：https://raw.githubusercontent.com/xl2101200/-/main/tom/BEE1AC1D-9C40-4347-A895-CD509E5DD01A.png
 
 登入软件，补充电量即可获取ck 
 
