@@ -117,7 +117,7 @@ function btdhlq(timeout = 0) {
 let url = {
         url : 'http://api.miningbtc.yingshe.com/api/play/all',
         headers : JSON.parse(btdhhd),
-        body : `timestamp=${t}&uid=${uid}&sign=${sign}`,
+        body : btdhbody,
 }
       $.post(url, async (err, resp, data) => {
 
