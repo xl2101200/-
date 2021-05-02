@@ -2,6 +2,7 @@
  "name": "Tom task",
  "description": "随便玩玩",
  "task": [
+    "0 8 * * * https://raw.githubusercontent.com/xl2101200/-/main/yt.js, tag=炎兔, enabled=true",
     "0 0 0/1 * * ? https://raw.githubusercontent.com/xl2101200/-/main/btdh.js, tag=比特大亨, enabled=true",
     "0 0 0/4 * * ? https://raw.githubusercontent.com/xl2101200/-/main/ggdh.js, tag=狗狗大亨, enabled=true",
     "0 16 * * * https://raw.githubusercontent.com/xl2101200/-/main/dogeda.js,tag=DOGEDA, enabled=true",
