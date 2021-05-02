@@ -9,6 +9,8 @@
 
 比特大亨获得 比特币 的兑换券！
 
+操蛋，这逼玩意需要手持身份证，别玩了
+
 还是那句话，玩了可能没有！不玩一定没有！
 
 Task地址  :  https://raw.githubusercontent.com/xl2101200/-/main/Tom_task.josn
