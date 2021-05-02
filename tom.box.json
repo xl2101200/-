@@ -6,6 +6,29 @@
   "repo": "https://github.com/xl2101200/-",
   "apps": [
   {
+            "id": "yt",
+            "name": "炎兔",
+            "keys": ["ythd","ytbody","ythd2","ytbody2","ythd3","ytbody3","ythd4","ytbody4","ythd5","ytbody5","ythd6","ytbody6"],
+            "author": "@tom",
+            "settings": [{
+            "id": "ytstatus",
+            "name": "当前账号",
+            "val": "1",
+            "type": "number",
+            "desc": "当前抓取ck记录的账号序号，如：1、2、3、4"
+    },
+    {
+            "id": "ytcount",
+            "name": "账号个数",
+            "val": "1",
+            "type": "number",
+            "desc": "指定任务最多跑几个账号，根据抓取的账号数据个数来设值"
+    }],
+            "repo": "https://raw.githubusercontent.com/xl2101200/-/main/yt.js",
+            "icons": ["https://raw.githubusercontent.com/xl2101200/-/main/tom/tom.png"],
+            "script": "https://raw.githubusercontent.com/xl2101200/-/main/yt.js"
+    },
+    {
             "id": "ggdh",
             "name": "狗狗大亨",
             "keys": ["gbhd","gbbody","gbhd2","gbbody2","gbhd3","gbbody3","gbhd4","gbbody4","gbhd5","gbbody5","gbhd6","gbbody6"],
