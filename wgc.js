@@ -3,7 +3,9 @@
 
 20210503 tom
 
-20210504 增加自动兑换话费，每天不定时兑换cron自行更改1小时运行一次。
+20210504 
+增加自动兑换话费，每天不定时兑换cron自行更改1小时运行一次。
+
 软件名称：WGC
 下载地址：https://raw.githubusercontent.com/xl2101200/-/main/tom/wgc.jpg
 
