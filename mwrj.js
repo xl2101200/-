@@ -16,7 +16,7 @@ Task地址：https://raw.githubusercontent.com/xl2101200/-/main/Tom_task.josn
 圈X配置如下，其他软件自行测试
 [task_local]
 #猫屋日记
-0 0/15 * * * https://raw.githubusercontent.com/xl2101200/-/main/mwrj.js, tag=猫屋日记, enabled=true
+0 0/15 * * * * https://raw.githubusercontent.com/xl2101200/-/main/mwrj.js, tag=猫屋日记, enabled=true
 
 [rewrite_local]
 #猫屋日记
