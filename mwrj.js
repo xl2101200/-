@@ -20,7 +20,7 @@ Task地址：https://raw.githubusercontent.com/xl2101200/-/main/Tom_task.josn
 
 [rewrite_local]
 #猫屋日记
-https://appapi.mwrji.com/v1/cat/autobuycat url script-request-body https://raw.githubusercontent.com/xl2101200/-/main/mwrj.js
+https://appapi.mwrji.com/v1/cat url script-request-body https://raw.githubusercontent.com/xl2101200/-/main/mwrj.js
 
 [MITM]
 hostname = appapi.mwrji.com
