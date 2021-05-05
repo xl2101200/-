@@ -3,9 +3,9 @@
 
 软件名：猫屋日记   应用商店下载
 
-半成品状态，
+半成品状态，看视频合成好像加密了，
 
-进入游戏后先点开左下角：看视频合成  需要每隔15分钟手动点一次事情合成
+进入游戏后先点开左下角：看视频合成  需要每隔15分钟手动点一次视频合成
 
 点击：一键养猫 获取ck
 
@@ -36,6 +36,7 @@ let mwrjurl = $.getdata('mwrjurl')
 let mwrjhd = $.getdata('mwrjhd')
 let mwrjbody = $.getdata('mwrjbody')
 let imwrjbody = $.getdata('imwrjbody')
+let imwrjhd = $.getdata('imwrjhd')
 !(async () => {
   if (typeof $request !== "undefined") {
     await mwrjck()
@@ -104,8 +105,6 @@ let imwrjbody = $.getdata('imwrjbody')
 })()
   .catch((e) => $.logErr(e))
   .finally(() => $.done())
-//部落农场数据获取
-
 function mwrjck() {
    if ($request.url.indexOf("autoStart") > -1 &&$request.body.indexOf("") > -1) {
  const mwrjurl = $request.url
@@ -129,6 +128,7 @@ $.log(imwrjhd)
     $.msg('猫屋日记','',`获取一键养猫数据成功`)
 }
 }
+/*
 //自动合成
 function mwrjzd(timeout = 0) {
   return new Promise((resolve) => {
@@ -157,7 +157,7 @@ let url = {
         }
     },timeout)
   })
-}
+}*/
 //养猫
 function mwrjhc(timeout = 0) {
   return new Promise((resolve) => {
