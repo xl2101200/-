@@ -6,12 +6,16 @@
 
 邀请码：149680740   感谢大佬填写
 
-说明：进入游戏需要点一下指导，确保提现余额有5元以上。
+说明：进入游戏需要手动玩一分钟，确保提现余额有5元以上。
 
 ck获取：点提现按钮即可获取。
 
-脚本为每天自动提现0.3元，微信登入多账号
+脚本为每天自动提现0.3元，不需要去升级！微信登入多账号
 
+Task地址  :  https://raw.githubusercontent.com/xl2101200/-/main/Tom_task.josn
+boxjs地址 ： https://raw.githubusercontent.com/xl2101200/-/main/tom.box.json
+
+注：cron更改为你首次提现后的时间，24小时提现一次。
 [task_local]
 0 6 * * * https://raw.githubusercontent.com/xl2101200/-/main/xffd.js, tag=幸福饭店, enabled=true
 
