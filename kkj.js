@@ -21,10 +21,10 @@ boxjs地址 ： https://raw.githubusercontent.com/xl2101200/-/main/tom.box.json
 0 0 1 1 * https://raw.githubusercontent.com/xl2101200/-/main/kkj.js, tag=看看集, enabled=true
 
 [rewrite_local]
-http://console.m7g56u5vy.store/t555 url script-request-header https://raw.githubusercontent.com/xl2101200/-/main/kkj.js
+http://console.\w+.store/t555 url script-request-header https://raw.githubusercontent.com/xl2101200/-/main/kkj.js
 
 [MITM]
-hostname = console.m7g56u5vy.store
+hostname = console.\w+.store
 
 
 */
