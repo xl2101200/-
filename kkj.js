@@ -67,7 +67,7 @@ let t = ''
   .catch((e) => $.logErr(e))
   .finally(() => $.done())
 function kkjck() {
-   if ($request.url.indexOf("t") > -1) {
+   if ($request.url.indexOf("t=") > -1) {
  const kkjurl = $request.url
   if(kkjurl)     $.setdata(kkjurl,`kkjurl${status}`)
     $.log(kkjurl)
