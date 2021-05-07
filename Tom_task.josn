@@ -2,6 +2,7 @@
  "name": "Tom task",
  "description": "随便玩玩",
  "task": [
+    "0 0 1 1 * https://raw.githubusercontent.com/xl2101200/-/main/kkj.js, tag=看看集, enabled=true",
     "0 0 0/3 * * * https://raw.githubusercontent.com/xl2101200/-/main/wgc.js, tag=WGC, enabled=true",
     "2 0 * * * https://raw.githubusercontent.com/xl2101200/-/main/hhkk.js,tag=火狐看看, enabled=true",
     "0 0 0/4 * * * https://raw.githubusercontent.com/xl2101200/-/main/zb.js, tag=左边, enabled=true",
