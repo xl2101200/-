@@ -58,7 +58,7 @@ let t = ''
       $.index = c + 1
       console.log(`\n第${c+1}次执行任务！`)
           await kkjyd();
-          await $.wait(5000);
+          await $.wait(10000);
   }
   }
 }}
@@ -88,7 +88,7 @@ let url = {
         try {
     const result = JSON.parse(data)
         if(result.code == 0){
-  console.log(`\n阅读:`+result.msg+`\n已阅读文章`+result.data.funm+`次`+`\n等待3秒继续下一次阅读任务`)
+  console.log(`\n阅读:`+result.msg+`\n已阅读文章`+result.data.funm+`次`+`\n等待10秒继续下一次阅读任务`)
 } else {
   console.log(`\n阅读:`+result.msg)
 }
