@@ -6,27 +6,27 @@
   "repo": "https://github.com/xl2101200/-",
   "apps": [
   {
-            "id": "xffd",
-            "name": "幸福饭店",
-            "keys": ["xffdurl","xffdhd","xffdurl2","xffdhd2","xffdurl3", "xffdhd3","xffdurl4","xffdhd4","xffdurl5","xffdhd5","xffdurl6", "xffdhd6","xffdurl7","xffdhd7","xffdurl8","xffdhd8","xffdurl9","xffdhd9","xffdurl10","xffdhd10"],
+            "id": "kkj",
+            "name": "看看集",
+            "keys": ["kkjurl","kkjhd","kkjurl2","kkjhd2","kkjurl3","kkjhd3","kkjurl4","kkjhd4","kkjurl5","kkjhd5","kkjurl6","kkjhd6"],
             "author": "@tom",
             "settings": [{
-            "id": "xffdstatus",
+            "id": "kkjstatus",
             "name": "当前账号",
             "val": "1",
             "type": "number",
             "desc": "当前抓取ck记录的账号序号，如：1、2、3、4"
     },
     {
-            "id": "xffdcount",
+            "id": "kkjcount",
             "name": "账号个数",
             "val": "1",
             "type": "number",
             "desc": "指定任务最多跑几个账号，根据抓取的账号数据个数来设值"
     }],
-            "repo": "https://raw.githubusercontent.com/xl2101200/-/main/xffd.js",
+            "repo": "https://raw.githubusercontent.com/xl2101200/-/main/kkj.js",
             "icons": ["https://raw.githubusercontent.com/xl2101200/-/main/tom/tom.png"],
-            "script": "https://raw.githubusercontent.com/xl2101200/-/main/xffd.js"
+            "script": "https://raw.githubusercontent.com/xl2101200/-/main/kkj.js"
     },
    {
             "id": "yt",
