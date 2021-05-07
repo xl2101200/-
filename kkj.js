@@ -10,8 +10,6 @@
 
 ck时效多长未知，自己测，我懒。
 cron自行更改，不要太统一！
-例：我是12:30第一次运行 
-那我的cron就改为：0 30 0/1 * * * 意思就是每小时的第30分运行一次
 
 Task地址：https://raw.githubusercontent.com/xl2101200/-/main/Tom_task.josn
 boxjs地址 ： https://raw.githubusercontent.com/xl2101200/-/main/tom.box.json
