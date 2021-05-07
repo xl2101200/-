@@ -3,7 +3,7 @@
 感谢@少年歌行PRO 大佬提供特斯拉图标
 
 软件名：看看集    微信扫码
-二维码地址：https://raw.githubusercontent.com/xl2101200/-/main/tom/kkj.png
+二维码地址：http://h54.khblack.cn/t555/ydt/fork?uu=176127&ohost=h54.khblack.cn&ct=1620370525 
 转发脚本留个名，邀请码/链接可任意更改，问题不大
 
 每小时6篇文章，0.12元,一天好像是可以运行两次，1元提现，秒到。
