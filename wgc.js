@@ -40,6 +40,7 @@ const $ = new Env('WGC');
 let wgcurl = $.getdata('wgcurl')
 let wgchd = $.getdata('wgchd')
 let wgcbody = $.getdata('wgcbody')
+let id = ''
 let hf = 0
 let lq = 0
 !(async () => {
