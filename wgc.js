@@ -29,6 +29,7 @@ boxjs地址 ： https://raw.githubusercontent.com/xl2101200/-/main/tom.box.json
 [rewrite_local]
 #WGC
 http://stc.enjoyha.com/api/miner/mining url script-request-header https://raw.githubusercontent.com/xl2101200/-/main/wgc.js
+http://stc.enjoyha.com/api/user/public url script-request-header https://raw.githubusercontent.com/xl2101200/-/main/wgc.js
 
 [MITM]
 hostname = stc.enjoyha.com
@@ -61,7 +62,7 @@ if(qp == 1){
   .finally(() => $.done())
 //ck
 function wgcck() {
-   if ($request.url.indexOf("receive_award?") > -1) {
+   if ($request.url.indexOf("assets?") > -1 || $request.url.indexOf("receive_award?") > -1) {
     $.setdata($request.url,'wgcurl')
     $.log(wgcurl)
 $.setdata(JSON.stringify($request.headers),'wgchd')
