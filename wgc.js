@@ -10,7 +10,7 @@
 不知道怎么邀请的，可以去放单平台（趣赚点之类的平台）发个任务，一个任务给个1.8元，邀请5个人就行了。
 
 软件名称：WGC
-下载地址：https://raw.githubusercontent.com/xl2101200/-/main/tom/wgc.jpg
+下载地址：http://stc.enjoyha.com/#/?inviteUserId=681044709408768
 
 2币可兑换10元话费、以及大米、花生油、手机、手表等实物。
 
