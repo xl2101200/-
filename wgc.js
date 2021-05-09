@@ -48,7 +48,11 @@ let id = ''
   } else {
     await wgclq();
 if(hf == 1){
-    await wgchf();}
+  for(let a = 0; a < 3; a++){
+  $.index = a + 1
+    console.log(`\n第${a+1}次兑换话费`)
+    await wgchf();
+    await $.wait(3000);}}
 if(qp == 1){
   for(let x = 0; x < 30; x++){
   $.index = x + 1
