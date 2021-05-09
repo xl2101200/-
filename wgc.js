@@ -48,10 +48,9 @@ let lq = 0  //收取邀请气泡开关
   if (typeof $request !== "undefined") {
     await wgcck()
   } else {
-    await wgclq();
+    await wgcqd();
 if(hf == 1){
     await wgchf();}
-
 if(lq == 1){
   for(let x = 0; x < 30; x++){
   $.index = x + 1
@@ -76,7 +75,7 @@ $.log(wgcbody)
   }
 
 //签到     
-function wgclq(timeout = 0) {
+function wgcqd(timeout = 0) {
   return new Promise((resolve) => {
 let url = {
         url : 'http://stc.enjoyha.com/api/miner/mining/receive_award?',
