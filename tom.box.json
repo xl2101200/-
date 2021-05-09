@@ -7,7 +7,7 @@
   "apps": [{
             "id": "WGC",
             "name": "WGC",
-            "keys": ["wgcurl","wgchd","wgcurl2","wgchd2","wgcurl3","wgchd3"],
+            "keys": ["wgcurl","wgchd"],
             "author": "@tom",
             "settings": [{
             "id": "wgcstatus",
@@ -26,7 +26,13 @@
             "name": "兑换话费",
             "val": "0",
             "type": "number",
-            "desc": "0关闭，1打开兑换话费，默认关闭"
+            "desc": "0关闭，1打开，默认关闭"
+    },{
+            "id": "qp",
+            "name": "收取邀请气泡",
+            "val": "0",
+            "type": "number",
+            "desc": "0关闭，1打开，默认关闭"
     }],
             "repo": "https://raw.githubusercontent.com/xl2101200/-/main/kkj.js",
             "icons": ["https://raw.githubusercontent.com/xl2101200/-/main/tom/tom.jpg","https://raw.githubusercontent.com/xl2101200/-/main/tom/tom.jpg"],
