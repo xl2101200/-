@@ -43,21 +43,21 @@ let wgchd = $.getdata('wgchd')
 let wgcbody = $.getdata('wgcbody')
 let id = ''
 let hf = 0  //话费兑换开关
-let lq = 0  //收取邀请气泡开关
+let qp = 0  //收取邀请气泡开关
 !(async () => {
   if (typeof $request !== "undefined") {
     await wgcck()
   } else {
-    await wgcqd();
+    await wgclq();
 if(hf == 1){
     await wgchf();}
-if(lq == 1){
+if(qp == 1){
   for(let x = 0; x < 30; x++){
   $.index = x + 1
     console.log('\n第${x+1}次领取邀请能量')
     await wgcsx();
     await $.wait(3000);
-    await wgclq();}}
+    await wgcqp();}}
 }})()
   .catch((e) => $.logErr(e))
   .finally(() => $.done())
@@ -75,7 +75,7 @@ $.log(wgcbody)
   }
 
 //签到     
-function wgcqd(timeout = 0) {
+function wgclq(timeout = 0) {
   return new Promise((resolve) => {
 let url = {
         url : 'http://stc.enjoyha.com/api/miner/mining/receive_award?',
@@ -147,7 +147,7 @@ let url = {
 }
 
 //领取  
-function wgclq(timeout = 0) {
+function wgcqp(timeout = 0) {
   return new Promise((resolve) => {
 let url = {
         url : 'http://stc.enjoyha.com/api/user/public/prize_pool',
@@ -159,9 +159,9 @@ let url = {
     const result = JSON.parse(data)
         if(result.code == 200){
 
-        console.log('\n收取WGC：成功🎉🎉🎉🎉'+result.data.stcAmount)
+        console.log('\n收取气泡：成功🎉🎉🎉🎉'+result.data.stcAmount)
 }else{
-        console.log('\n收取WGC：'+result.msg)
+        console.log('\n收取气泡：'+result.msg)
 }
         } catch (e) {
         } finally {
