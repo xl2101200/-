@@ -87,6 +87,7 @@ let url = {
     },timeout)
   })
 }
+//换话费
 function wgchf(timeout = 0) {
   return new Promise((resolve) => {
 let url = {
@@ -102,6 +103,55 @@ let url = {
         console.log('\n兑换话费：'+result.data.stcAmount)
 }else{
         console.log('\n兑换话费：'+result.msg)
+}
+        } catch (e) {
+        } finally {
+          resolve()
+        }
+    },timeout)
+  })
+}
+//刷新   
+function wgcsx(timeout = 0) {
+  return new Promise((resolve) => {
+let url = {
+        url : 'http://stc.enjoyha.com/api/user/public/assets?',
+        headers : JSON.parse($.getdata('wgchd')),
+        body : wgcbody,}
+      $.get(url, async (err, resp, data) => {
+        try {
+           
+    const result = JSON.parse(data)
+        if(result.code == 200){
+        id = result.data.inviteLogId[0]
+        console.log('\n现有WGC：'+result.data.stcAmount)
+}else{
+        //console.log('\n收取WGC：'+result.msg)
+}
+        } catch (e) {
+        } finally {
+          resolve()
+        }
+    },timeout)
+  })
+}
+
+//领取  
+function wgclq(timeout = 0) {
+  return new Promise((resolve) => {
+let url = {
+        url : 'http://stc.enjoyha.com/api/user/public/prize_pool',
+        headers : JSON.parse($.getdata('wgchd')),
+        body : `inviteLogId=${id}`,}
+      $.post(url, async (err, resp, data) => {
+        try {
+           
+    const result = JSON.parse(data)
+        if(result.code == 200){
+
+        console.log('\n收取WGC：成功🎉🎉🎉🎉'+result.data.stcAmount)
+}else{
+        console.log('\n收取WGC：'+result.msg)
 }
         } catch (e) {
         } finally {
