@@ -41,6 +41,7 @@ let wgcurl = $.getdata('wgcurl')
 let wgchd = $.getdata('wgchd')
 let wgcbody = $.getdata('wgcbody')
 let hf = 0
+let lq = 0
 !(async () => {
   if (typeof $request !== "undefined") {
     await wgcck()
@@ -48,6 +49,14 @@ let hf = 0
     await wgclq();
 if(hf == 1){
     await wgchf();}
+
+if(ql == 1){
+  for(let x = 0; x < 30; x++){
+  $.index = x + 1
+    console.log('\n第${x+1}次领取邀请能量')
+    await wgcsx();
+    await $.wait(3000);
+    await wgclq();}}
 }})()
   .catch((e) => $.logErr(e))
   .finally(() => $.done())
