@@ -25,13 +25,13 @@
             "id": "hf",
             "name": "兑换话费",
             "val": "0",
-            "type": "number",
+            "type": "wgchf",
             "desc": "0关闭，1打开，默认关闭"
     },{
             "id": "qp",
             "name": "收取邀请气泡",
             "val": "0",
-            "type": "number",
+            "type": "wgcqp",
             "desc": "0关闭，1打开，默认关闭"
     }],
             "repo": "https://raw.githubusercontent.com/xl2101200/-/main/wgc.js",
