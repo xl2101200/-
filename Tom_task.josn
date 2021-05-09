@@ -2,6 +2,7 @@
  "name": "Tom task",
  "description": "随便玩玩",
  "task": [
+    "40 * * * * * https://raw.githubusercontent.com/xl2101200/-/main/hhf.js, tag=WGC换话费, img-url=https://raw.githubusercontent.com/sngxpro/QuanX/master/icons/tom.png, enabled=true",
     "5 0 * * * https://raw.githubusercontent.com/xl2101200/-/main/ecwk.js, tag=EC挖矿, img-url=https://raw.githubusercontent.com/sngxpro/QuanX/master/icons/tom.png, enabled=true",
     "0 1 0/5 * * * https://raw.githubusercontent.com/xl2101200/-/main/fcs.js, tag=发财树, img-url=https://raw.githubusercontent.com/sngxpro/QuanX/master/icons/tom.png, enabled=true",
     "0 0 1 1 * https://raw.githubusercontent.com/xl2101200/-/main/kkj.js, tag=看看集, img-url=https://raw.githubusercontent.com/sngxpro/QuanX/master/icons/tom.png, enabled=true",
