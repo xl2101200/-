@@ -42,8 +42,8 @@ let wgcurl = $.getdata('wgcurl')
 let wgchd = $.getdata('wgchd')
 let wgcbody = $.getdata('wgcbody')
 let id = ''
-let hf = 0  //话费兑换开关
-let qp = 0  //收取邀请气泡开关
+let hf = 0;  //话费兑换开关
+let qp = 0;  //收取邀请气泡开关
 !(async () => {
   if (typeof $request !== "undefined") {
     await wgcck()
