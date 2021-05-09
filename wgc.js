@@ -9,12 +9,13 @@
 软件名称：WGC
 下载地址：https://raw.githubusercontent.com/xl2101200/-/main/tom/wgc.jpg
 
-暂无提现入口，只可以撸实物，(话费,纸巾,面条,大米)
+2币可兑换10元话费、以及大米、花生油、手机、手表等实物。
 
-建议兑换话费。本人话费已到账。联通不能换！！！！不能用联通卡注册
+建议兑换话费。本人话费已到账。
+
+联通不能换！！！！携号转网也不行！！！    建议用电信、移动手机号注册！！！
 
 登入点击挖矿，然后点一键领取获取ck
-
 
 还是那句话，玩了可能没有！不玩一定没有！
 
@@ -39,15 +40,15 @@ const $ = new Env('WGC');
 let wgcurl = $.getdata('wgcurl')
 let wgchd = $.getdata('wgchd')
 let wgcbody = $.getdata('wgcbody')
+let hf = 0
 !(async () => {
   if (typeof $request !== "undefined") {
     await wgcck()
   } else {
     await wgclq();
-    await $.wait(1000);
-    await wgchf();
-  }
-})()
+if(hf == 1){
+    await wgchf();}
+}})()
   .catch((e) => $.logErr(e))
   .finally(() => $.done())
 //ck
