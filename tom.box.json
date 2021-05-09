@@ -34,9 +34,9 @@
             "type": "number",
             "desc": "0关闭，1打开，默认关闭"
     }],
-            "repo": "https://raw.githubusercontent.com/xl2101200/-/main/kkj.js",
+            "repo": "https://raw.githubusercontent.com/xl2101200/-/main/wgc.js",
             "icons": ["https://raw.githubusercontent.com/xl2101200/-/main/tom/tom.jpg","https://raw.githubusercontent.com/xl2101200/-/main/tom/tom.jpg"],
-            "script": "https://raw.githubusercontent.com/xl2101200/-/main/kkj.js"
+            "script": "https://raw.githubusercontent.com/xl2101200/-/main/wgc.js"
     },{
             "id": "yt",
             "name": "炎兔",
