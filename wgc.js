@@ -4,16 +4,17 @@
 20210503 tom
 
 20210504 
-增加自动兑换话费，每天不定时兑换cron自行更改1小时运行一次。
+增加自动兑换话费，默认关闭以防没关注错过兑换时间。
+
+20210509
+增加收取邀请好友能量气泡，默认关闭，需在boxjs打开。
 
 软件名称：WGC
 下载地址：https://raw.githubusercontent.com/xl2101200/-/main/tom/wgc.jpg
 
 2币可兑换10元话费、以及大米、花生油、手机、手表等实物。
 
-建议兑换话费。本人话费已到账。
-
-联通不能换！！！！携号转网也不行！！！    建议用电信、移动手机号注册！！！
+建议兑换话费    联通不能换！！！！携号转网也不行！！！    建议用电信、移动手机号注册！！！
 
 登入点击挖矿，然后点一键领取获取ck
 
@@ -41,8 +42,8 @@ let wgcurl = $.getdata('wgcurl')
 let wgchd = $.getdata('wgchd')
 let wgcbody = $.getdata('wgcbody')
 let id = ''
-let hf = 0
-let lq = 0
+let hf = 0  //话费兑换开关
+let lq = 0  //收取邀请气泡开关
 !(async () => {
   if (typeof $request !== "undefined") {
     await wgcck()
