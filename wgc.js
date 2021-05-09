@@ -52,7 +52,7 @@ let lq = 0  //收取邀请气泡开关
 if(hf == 1){
     await wgchf();}
 
-if(ql == 1){
+if(lq == 1){
   for(let x = 0; x < 30; x++){
   $.index = x + 1
     console.log('\n第${x+1}次领取邀请能量')
