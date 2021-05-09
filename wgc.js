@@ -41,9 +41,9 @@ const $ = new Env('WGC');
 let wgcurl = $.getdata('wgcurl')
 let wgchd = $.getdata('wgchd')
 let wgcbody = $.getdata('wgcbody')
+let hf = ($.getval('hf') || '0');  //话费兑换开关,默认关闭
+let qp = ($.getval('qp') || '0'); //收取邀请气泡开关，默认关闭
 let id = ''
-let hf = 0;  //话费兑换开关
-let qp = 0;  //收取邀请气泡开关
 !(async () => {
   if (typeof $request !== "undefined") {
     await wgcck()
@@ -54,7 +54,7 @@ if(hf == 1){
 if(qp == 1){
   for(let x = 0; x < 30; x++){
   $.index = x + 1
-    console.log('\n第${x+1}次领取邀请能量')
+    console.log(`\n第${x+1}次领取邀请能量`)
     await wgcsx();
     await $.wait(3000);
     await wgcqp();}}
