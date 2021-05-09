@@ -1,11 +1,8 @@
 /*
-
-
 20210503 tom
-
+完成
 20210504 
 增加自动兑换话费，默认关闭以防没关注错过兑换时间。
-
 20210509
 增加收取邀请好友能量气泡，默认关闭，需在boxjs打开。
 
@@ -21,6 +18,7 @@
 还是那句话，玩了可能没有！不玩一定没有！
 
 Task地址  :  https://raw.githubusercontent.com/xl2101200/-/main/Tom_task.josn
+boxjs地址 ： https://raw.githubusercontent.com/xl2101200/-/main/tom.box.json
 
 每3个小时收取一次，可自行修改cron
 圈X配置如下，其他软件自行测试
