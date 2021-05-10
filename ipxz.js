@@ -44,6 +44,7 @@ let id = ''
           ipxzurl = ipxzurlArr[i];
           ipxzhd = ipxzhdArr[i];
           $.index = i + 1;
+console.log(`\n开始【ip小站${$.index}】`)
 await ipxzqd()
 await $.wait(1000)
 await ipxzxx()
