@@ -32,32 +32,38 @@
             "name": "收取邀请气泡",
             "val": "0",
             "type": "number",
-            "desc": "0关闭，1打开，默认关闭"
+            "desc": "默认关闭，0关闭，1打开"
     }],
             "repo": "https://raw.githubusercontent.com/xl2101200/-/main/wgc.js",
             "icons": ["https://raw.githubusercontent.com/xl2101200/-/main/tom/tom.jpg","https://raw.githubusercontent.com/xl2101200/-/main/tom/tom.jpg"],
             "script": "https://raw.githubusercontent.com/xl2101200/-/main/wgc.js"
     },{
-            "id": "yt",
-            "name": "炎兔",
-            "keys": ["ythd","ytbody","ythd2","ytbody2","ythd3","ytbody3","ythd4","ytbody4","ythd5","ytbody5","ythd6","ytbody6"],
+            "id": "ipxz",
+            "name": "ip小站",
+            "keys": ["ipxzhd","ipxzurl","ipxzhd2","ipxzurl2","ipxzhd3","ipxzurl3","ipxzhd4","ipxzurl4","ipxzhd5","ipxzurl5"],
             "author": "@tom",
             "settings": [{
-            "id": "ytstatus",
+            "id": "ipxzstatus",
             "name": "当前账号",
             "val": "1",
             "type": "number",
             "desc": "当前抓取ck记录的账号序号，如：1、2、3、4"
     },{
-            "id": "ytcount",
+            "id": "ipxzcount",
             "name": "账号个数",
             "val": "1",
             "type": "number",
             "desc": "指定任务最多跑几个账号，根据抓取的账号数据个数来设值"
+    },{
+            "id": "tz",
+            "name": "签到时间通知",
+            "val": "0",
+            "type": "number",
+            "desc": "默认关闭，0关闭，1打开"
     }],
-            "repo": "https://raw.githubusercontent.com/xl2101200/-/main/yt.js",
+            "repo": "https://raw.githubusercontent.com/xl2101200/-/main/ipxz.js",
             "icons": ["https://raw.githubusercontent.com/xl2101200/-/main/tom/tom.jpg","https://raw.githubusercontent.com/xl2101200/-/main/tom/tom.jpg"],
-            "script": "https://raw.githubusercontent.com/xl2101200/-/main/yt.js"
+            "script": "https://raw.githubusercontent.com/xl2101200/-/main/ipxz.js"
     },{
             "id": "ggdh",
             "name": "狗狗大亨",
