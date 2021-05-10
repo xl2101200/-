@@ -197,15 +197,15 @@ function ipxzzl(timeout = 0) {
 let url = {
         url : `https://gate.wanou1.com/miniprogram3/scratch/help`,
         headers : JSON.parse(ipxzhd),
-        body : `userActivityId=10625`,}
+        body : `userActivityId=10712`,}
       $.post(url, async (err, resp, data) => {
 
         try {
     const result = JSON.parse(data)
         if(result.code == 100){
-  console.log(`\n助力成功，默认助力作者`)
+  
 } else {
-  console.log(`\n`+result.msg)
+  
 }
         } catch (e) {
         } finally {
