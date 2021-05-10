@@ -45,15 +45,19 @@ let id = ''
           ipxzhd = ipxzhdArr[i];
           $.index = i + 1;
 console.log(`\n开始【ip小站${$.index}】`)
-await ipxzqd()
-await $.wait(1000)
-await ipxzxx()
-await $.wait(1000)
-await ipxzzl()
-await ipxzlb()
+          await ipxzqd()
+          await $.wait(1000)
+          await ipxzxx()
+          await $.wait(1000)
+          await ipxzzl()
+      for (let x = 0; x < 5; x++) {
+       $.index = x + 1
+          await ipxzlb()
+          await ipxzmini()
+          await $.wait(1000)
+          await ipxzmd()
   }
-}}
-
+}}}
 })()
   .catch((e) => $.logErr(e))
   .finally(() => $.done())
@@ -127,13 +131,7 @@ let url = {
         try {
     const result = JSON.parse(data)
         if(result.code == 100){
-for(i=0; i < result.zeroBuys.length;i++){
 id = result.zeroBuys[i].id
-console.log(`\n开始执行:${name}`)
-await ipxzlb()
-await ipxzmini()
-await $.wait(1000)
-await ipxzmd()}
 } else {
   console.log(`\n`+result.msg)
 }
