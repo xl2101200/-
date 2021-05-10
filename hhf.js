@@ -2,10 +2,11 @@
 
 20210509 tom
 
-软件名称：WGC
+软件名称：WGC换话费
 下载地址：https://raw.githubusercontent.com/xl2101200/-/main/tom/wgc.jpg
 
-添加脚本后暂时禁用，等21点再打开脚本，记得调闹钟。
+5月9日~10日晚21点开启兑换话费活动，没邀请够5人的，去任务发布平台(趣赚点，哆啦赚等)发布任务
+
 
 联通号及携号转网的不可以兑换！
 
@@ -14,7 +15,7 @@ Task地址  :  https://raw.githubusercontent.com/xl2101200/-/main/Tom_task.josn
 圈X配置如下，其他软件自行测试
 [task_local]
 #WGC
-40 * * * * * https://raw.githubusercontent.com/xl2101200/-/main/hhf.js, tag=WGC, enabled=true
+0 0 21 * * * https://raw.githubusercontent.com/xl2101200/-/main/hhf.js, tag=WGC, enabled=true
 
 [rewrite_local]
 #WGC
@@ -35,7 +36,7 @@ let id= ''
     await wgcck()
   } else {
 
-   for (let x = 0; x < 10; x++) {
+   for (let x = 0; x < 5; x++) {
       $.index = x + 1
       console.log(`\n第${x+1}次执行任务！`)
     await wgchf();
