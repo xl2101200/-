@@ -10,7 +10,7 @@ boxjs地址 ： https://raw.githubusercontent.com/xl2101200/-/main/tom.box.json
 
 圈X配置如下，其他软件自行测试
 [task_local]
-0 0 0/3 * * * https://raw.githubusercontent.com/xl2101200/-/main/ipxz.js, tag=ip小站, img-url=https://raw.githubusercontent.com/sngxpro/QuanX/master/icons/tom.png, enabled=true
+0 0 * * * https://raw.githubusercontent.com/xl2101200/-/main/ipxz.js, tag=ip小站, img-url=https://raw.githubusercontent.com/sngxpro/QuanX/master/icons/tom.png, enabled=true
 
 [rewrite_local]
 https://gate.wanou1.com/miniprogram3/modelArticle url script-request-body https://raw.githubusercontent.com/xl2101200/-/main/ipxz.js
