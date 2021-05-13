@@ -1,4 +1,61 @@
+/*
+20210427 tom
 
+软件名称：火狐看看
+下载地址：https://app.mozillacoin.com/user/signup?invite_code=HG451R
+邀请码：HG451R
+
+打开软件登入即可获取ck。
+
+每天0.3金币，价值2元。
+安卓是10个币起卖！苹果目前是50个才能卖！估计过些天官方会改。
+50金币价值300元，也可以卖给我
+还是那句话，玩了可能没有！不玩一定没有！
+点击我的，有个新人福利。记得把新人福利1金币领了
+
+Task地址  :  https://raw.githubusercontent.com/xl2101200/-/main/Tom_task.josn
+boxjs地址 ： https://raw.githubusercontent.com/xl2101200/-/main/tom.box.json
+
+圈X配置如下，其他软件自行测试
+[task_local]
+#火狐看看
+2 0 * * * https://raw.githubusercontent.com/xl2101200/-/main/hhkk.js, tag=火狐看看, enabled=true
+
+[rewrite_local]
+#火狐看看
+https://api.mozillacoin.com/main/main? url script-request-body https://raw.githubusercontent.com/xl2101200/-/main/hhkk.js
+
+[MITM]
+hostname = api.mozillacoin.com
+*/
+
+const $ = new Env('火狐看看');
+let status;
+status = (status = ($.getval("hhkkstatus") || "1") ) > 1 ? `${status}` : ""; 
+const hhkkbodyArr = [], hhkkhdArr = [],hhkkurlArr = [],hhkkcount = ''
+let hhkkbody = $.getdata('hhkkbody')
+let hhkkhd = $.getdata('hhkkhd')
+let hhkkurl = $.getdata('hhkkurl')
+let id = '',uid = '';
+!(async () => {
+    if (typeof $request !== "undefined") {
+    await hhkkck()
+    } else {hhkkbodyArr.push($.getdata('hhkkbody'))
+    hhkkhdArr.push($.getdata('hhkkhd'))
+    hhkkurlArr.push($.getdata('hhkkurl'))
+    let hhkkcount = ($.getval('hhkkcount') || '1');
+    for (let i = 2; i <= hhkkcount; i++) {
+    hhkkbodyArr.push($.getdata(`hhkkbody${i}`))
+    hhkkurlArr.push($.getdata(`hhkkurl${i}`))
+    hhkkhdArr.push($.getdata(`hhkkhd${i}`))}
+    console.log(`------------- 共${hhkkhdArr.length}个账号-------------\n`)
+      for (let i = 0; i < hhkkhdArr.length; i++) {
+      if (hhkkhdArr[i]) {
+      hhkkbody = hhkkbodyArr[i];
+      hhkkhd = hhkkhdArr[i];
+      hhkkhd = hhkkhdArr[i];
+      $.index = i + 1;
+      console.log(`\n开始【火狐看看${$.index}】`)}
    for (let x = 0; x < 5; x++) {
       $.index = x + 1
       console.log(`\n第${x+1}次执行任务！`)
