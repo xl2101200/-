@@ -46,13 +46,13 @@ let hf = ($.getval('hf') || '0');  //话费兑换开关,默认关闭
 let qp = ($.getval('qp') || '0'); //收取邀请气泡开关，默认关闭
 let id = ''
 !(async () => {
+  if (typeof $request !== "undefined") {
+    await wgcck()
+  } else {
 if (!wgchd[0]) {
     $.msg($.name, '【提示】请先获取数据')
     return;
   }else {
-  if (typeof $request !== "undefined") {
-    await wgcck()
-  } else {
     await wgclq();
 if(hf == 1){
   for(let a = 0; a < 3; a++){
