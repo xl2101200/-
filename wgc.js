@@ -57,7 +57,7 @@ if(hf == 1){
     await wgchf();
     await $.wait(3000);}}
 if(qp == 1){
-  for(let x = 0; x < 30; x++){
+  for(let x = 0; x < 10; x++){
   $.index = x + 1
     console.log(`\n第${x+1}次领取邀请能量`)
     await wgcsx();
