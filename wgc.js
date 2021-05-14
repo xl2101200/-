@@ -48,10 +48,6 @@ let id = ''
 !(async () => {
   if (typeof $request !== "undefined") {
     await wgcck()
-  } else {
-if (!wgchd[0]) {
-    $.msg($.name, '【提示】请先获取数据')
-    return;
   }else {
     await wgclq();
 if(hf == 1){
@@ -67,7 +63,7 @@ if(qp == 1){
     await wgcsx();
     await $.wait(3000);
     await wgcqp();}}
-}}})()
+}})()
   .catch((e) => $.logErr(e))
   .finally(() => $.done())
 //ck
