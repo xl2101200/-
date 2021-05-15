@@ -38,18 +38,18 @@
             "icons": ["https://raw.githubusercontent.com/xl2101200/-/main/tom/tom.jpg","https://raw.githubusercontent.com/xl2101200/-/main/tom/tom.jpg"],
             "script": "https://raw.githubusercontent.com/xl2101200/-/main/wgc.js"
     },{
-            "id": "ipxz",
-            "name": "ip小站",
-            "keys": ["ipxzhd","ipxzurl","ipxzhd2","ipxzurl2","ipxzhd3","ipxzurl3","ipxzhd4","ipxzurl4","ipxzhd5","ipxzurl5"],
+            "id": "yyzb",
+            "name": "云云赚呗",
+            "keys": ["yyzbhd","yyzburl","yyzbhd2","yyzburl2","yyzbhd3","yyzburl3","yyzbhd4","yyzburl4","yyzbhd5","yyzburl5"],
             "author": "@tom",
             "settings": [{
-            "id": "ipxzstatus",
+            "id": "yyzbstatus",
             "name": "当前账号",
             "val": "1",
             "type": "number",
             "desc": "当前抓取ck记录的账号序号，如：1、2、3、4"
     },{
-            "id": "ipxzcount",
+            "id": "yyzbcount",
             "name": "账号个数",
             "val": "1",
             "type": "number",
@@ -61,9 +61,9 @@
             "type": "number",
             "desc": "默认关闭，0关闭，1打开"
     }],
-            "repo": "https://raw.githubusercontent.com/xl2101200/-/main/ipxz.js",
+            "repo": "https://raw.githubusercontent.com/xl2101200/-/main/yyzb.js",
             "icons": ["https://raw.githubusercontent.com/xl2101200/-/main/tom/tom.jpg","https://raw.githubusercontent.com/xl2101200/-/main/tom/tom.jpg"],
-            "script": "https://raw.githubusercontent.com/xl2101200/-/main/ipxz.js"
+            "script": "https://raw.githubusercontent.com/xl2101200/-/main/yyzb.js"
     },{
             "id": "ggdh",
             "name": "狗狗大亨",
