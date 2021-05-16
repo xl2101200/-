@@ -1,6 +1,15 @@
 /*
 202105016 tom
-二维码：
+公众号：云云赚呗    邀请码：26716
+关注后⇨领取会员卡⇨即可获取ck
+每天0.2～0.35元，1元提现。发脚本时我提现还没到，说是要审核2~3天
+要不要玩随意，玩了可能没有，不玩肯定没有！
+////////////////////////////////////////////////////////////
+免责声明：本脚本仅用于学习交流！请勿用于其他非法用途！
+////////////////////////////////////////////////////////////
+
+Task地址  :  https://raw.githubusercontent.com/xl2101200/-/main/Tom_task.josn
+boxjs地址 ： https://raw.githubusercontent.com/xl2101200/-/main/tom.box.json
 
 [task_local]
 0 8 * * * https://raw.githubusercontent.com/xl2101200/-/main/yyzb.js, tag=云云赚呗, img-url=https://raw.githubusercontent.com/sngxpro/QuanX/master/icons/tom.png, enabled=true
@@ -10,7 +19,6 @@ http://sef.\w+.com url script-request-header https://raw.githubusercontent.com/x
 
 [MITM]
 hostname = sef.\w+.com
-
 */
 const $ = new Env('云云赚呗');
 let status;
