@@ -57,9 +57,9 @@
     },{
             "id": "tz",
             "name": "通知",
-            "val": "0",
+            "val": "1",
             "type": "number",
-            "desc": "默认关闭，0关闭，1打开"
+            "desc": "0关闭，1打开"
     }],
             "repo": "https://raw.githubusercontent.com/xl2101200/-/main/yyzb.js",
             "icons": ["https://raw.githubusercontent.com/xl2101200/-/main/tom/tom.jpg","https://raw.githubusercontent.com/xl2101200/-/main/tom/tom.jpg"],
