@@ -16,7 +16,7 @@ boxjs地址 ： https://raw.githubusercontent.com/xl2101200/-/main/tom.box.json
 
 [task_local]
 0 8 * * * https://raw.githubusercontent.com/xl2101200/-/main/yyzb.js, tag=云云赚呗, img-url=https://raw.githubusercontent.com/sngxpro/QuanX/master/icons/tom.png, enabled=true
-
+获取后必须注释，加这两符号在重写前(//)
 [rewrite_local] 
 http://\w+.\w+.com url script-request-header https://raw.githubusercontent.com/xl2101200/-/main/yyzb.js
 
