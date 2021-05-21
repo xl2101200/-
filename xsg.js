@@ -20,7 +20,7 @@ Task地址  :  https://raw.githubusercontent.com/xl2101200/-/main/Tom_task.josn
 圈X配置如下，其他软件自行测试
 [task_local]
 #薪时光
-0 10 * * * https://raw.githubusercontent.com/xl2101200/-/main/xsg.js, tag=薪时光, enabled=true
+0 10 * * * https://raw.githubusercontent.com/xl2101200/-/main/xsg.js, tag=薪时光, img-url=https://raw.githubusercontent.com/sngxpro/QuanX/master/icons/tom.png, enabled=true
 
 [rewrite_local]
 #薪时光
