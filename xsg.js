@@ -35,7 +35,6 @@ const $ = new Env('薪时光');
 let xsgurl = $.getdata('xsgurl')
 let xsghd = $.getdata('xsghd')
 let xsgbody = $.getdata('xsgbody')
-let id= ''
 !(async () => {
   if (typeof $request !== "undefined") {
     await xsgck()
@@ -71,7 +70,6 @@ let url = {
            
     const result = JSON.parse(data)
         if(result.code == 200){
-        //id = result.data.inviteLogId[0]
         console.log('\n签到成功，获得：'+result.jin)
 }else{
         console.log('\n今日已签到')
