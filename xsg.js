@@ -6,7 +6,7 @@
 
 下载地址：http://www.hbwsnl.cn/down/
 
-TG频道 https://t.me/joinchat/2bQ71bMvHK85NjE1
+TG频道 https://t.me/tom_ww
 每天签到8元，100元提现，听说有人已经提现成功
 
 登入点击我的，然后点右上角每日签到获取ck
