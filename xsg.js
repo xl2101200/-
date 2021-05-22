@@ -2,8 +2,8 @@
 20210521 tom
 
 软件名称：薪时光
-扫码注册：https://github.com/xl2101200/-/blob/main/tom/48ABE122-A287-4A5C-A882-32C4C132DE00.jpeg
-下载地址：http://www.hbwsnl.cn/down/
+扫码注册：
+下载地址：要充钱才能提现。。。。。。
 
 TG频道 https://t.me/tom_ww
 
