@@ -10,8 +10,6 @@
 
 多账号需要卸载app重新登入新账号，具体自测，退出登入是不行的。
 
-脚本为4小时开启一次宝箱，收获气泡
-
 /////////////////////////////////////////////////
             
              本人抽中小米剃须刀已到货
@@ -25,7 +23,7 @@
 圈X配置如下，其他软件自行测试
 [task_local]
 #左边
-0 0 0/4 * * * https://raw.githubusercontent.com/xl2101200/-/main/zb.js, tag=左边, img-url=https://raw.githubusercontent.com/sngxpro/QuanX/master/icons/tom.png, enabled=true
+0 0 0/2 * * * https://raw.githubusercontent.com/xl2101200/-/main/zb.js, tag=左边, img-url=https://raw.githubusercontent.com/sngxpro/QuanX/master/icons/tom.png, enabled=true
 
 [rewrite_local]
 #左边
