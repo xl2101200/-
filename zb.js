@@ -6,26 +6,32 @@
 
 邀请码：JQ6BWT    感谢大佬们填写
 
-打开软件点击右上角“能量”
-点击宝箱即可获取ck
+20210526 更新签到及收取气泡能量
+
+打开软件点击右上角“能量” 点击宝箱即可获取ck
 
 多账号需要卸载app重新登入新账号，具体自测，退出登入是不行的。
 
-脚本为4小时开启一次宝箱获取能量币
+脚本为4小时开启一次宝箱，收获气泡
 
-额，新品抽奖和众测， 我试了一下，以小弟我目前的水平，写不出来
+/////////////////////////////////////////////////
+            
+             本人抽中小米剃须刀已到货
 
-能量币可兑换：苹果耳机，充电宝，手机支架等
+        可兑换：苹果耳机，充电宝，手机支架等
+
+          TG频道 https://t.me/tom_ww
+
+/////////////////////////////////////////////////
 
 圈X配置如下，其他软件自行测试
 [task_local]
 #左边
-0 0 0/4 * * * https://raw.githubusercontent.com/xl2101200/-/main/zb.js, tag=左边, enabled=true
-
+0 0 0/4 * * * https://raw.githubusercontent.com/xl2101200/-/main/zb.js, tag=左边, img-url=https://raw.githubusercontent.com/sngxpro/QuanX/master/icons/tom.png, enabled=true
 
 [rewrite_local]
 #左边
-https://app.zaaap.cn/points/home/openbox url script-request-body https://raw.githubusercontent.com/xl2101200/-/main/zb.js
+https://app.zaaap.cn/points/home url script-request-body https://raw.githubusercontent.com/xl2101200/-/main/zb.js
 
 
 [MITM]
@@ -36,21 +42,28 @@ hostname = app.zaaap.cn
 const $ = new Env('ZEALER');
 let status;
 status = (status = ($.getval("zbstatus") || "1") ) > 1 ? `${status}` : ""; // 账号扩展字符
-const zburlArr = [], zbbodyArr = [],zbhdArr = [],zbcount = ''
+const zburlArr = [], zbbodyArr = [],zbabodyArr = [],zbahdArr = [],zbhdArr = [],zbcount = ''
 let times = Math.round(Date.now() / 1000)
 let zburl = $.getdata('zburl')
 let zbbody = $.getdata('zbbody')
+let zbabody = $.getdata('zbabody')
+let zbahd = $.getdata('zbahd')
 let zbhd = $.getdata('zbhd')
+let id = ''
 !(async () => {
   if (typeof $request !== "undefined") {
     await zbck()
   } else {zburlArr.push($.getdata('zburl'))
     zbhdArr.push($.getdata('zbhd'))
     zbbodyArr.push($.getdata('zbbody'))
+    zbabodyArr.push($.getdata('zbabody'))
+    zbahdArr.push($.getdata('zbahd'))
     let zbcount = ($.getval('zbcount') || '1');
   for (let i = 2; i <= zbcount; i++) {
     zburlArr.push($.getdata(`zburl${i}`))
     zbbodyArr.push($.getdata(`zbbody${i}`))
+    zbabodyArr.push($.getdata(`zbabody${i}`))
+    zbahdArr.push($.getdata(`zbahd${i}`))
     zbhdArr.push($.getdata(`zbhd${i}`))
   }
     console.log(`------------- 共${zbhdArr.length}个账号-------------\n`)
@@ -58,10 +71,12 @@ let zbhd = $.getdata('zbhd')
         if (zbhdArr[i]) {
           zburl = zburlArr[i];
           zbbody = zbbodyArr[i];
+          zbabody = zbabodyArr[i];
+          zbahd = zbahdArr[i];
           zbhd = zbhdArr[i];
           $.index = i + 1;
           console.log(`\n开始ZEALER【${$.index}】`)
-    await zbbx();
+await openbox();await $.wait(1000);await index();
   }
 }}
 })()
@@ -78,11 +93,16 @@ function zbck() {
  const zbhd = JSON.stringify($request.headers)
   if(zbhd)    $.setdata(zbhd,`zbhd${status}`)
 $.log(zbhd)
-   $.msg($.name,"",'ZEALER'+`${status}` +'数据获取成功！')
-  }
+   $.msg($.name,"",'宝箱'+`${status}` +' headers获取成功！')
+  
+}else if ($request.url.indexOf("index") > -1) {
+ const zbahd = JSON.stringify($request.headers)
+  if(zbahd)    $.setdata(zbahd,`zbahd${status}`)
+$.log(zbahd)}
+   $.msg($.name,"",'气泡'+`${status}` +'headers获取成功！')
 }
 
-function zbbx(timeout = 0) {
+function openbox(timeout = 0) {
   return new Promise((resolve) => {
 let url = {
         url : `https://app.zaaap.cn/points/home/openbox`,
@@ -96,11 +116,66 @@ let url = {
 
         $.log('\n开启宝箱'+result.msg+'\n获得能量币：'+result.data.energy+'个')
 } else {
-       // $.log('\n开启宝箱'+result.msg)
-       console.log(result.msg)
+        $.log('\n'+result.msg)
+
 }
         } catch (e) {
-          //$.logErr(e, resp);
+        } finally {
+          resolve()
+        }
+    },timeout)
+  })
+}
+function index(timeout = 0) {
+  return new Promise((resolve) => {
+let url = {
+        url : `https://app.zaaap.cn/points/home/index`,
+        headers : JSON.parse($.getdata('zbhd')),
+        body : zbbody,
+}
+      $.post(url, async (err, resp, data) => {
+        try {
+    const result = JSON.parse(data)
+        if(result.status == 200){
+        $.log('\n'+result.data.registerData.txt)
+        id = result.data.energyList[0].id
+        await $.wait(1000);
+        await havingenergy();
+} else {
+        $.log('\n'+result.msg)
+}
+        } catch (e) {
+        } finally {
+          resolve()
+        }
+    },timeout)
+  })
+}
+function havingenergy(timeout = 0) {
+  return new Promise((resolve) => {
+const body = `------WebKitFormBoundaryjTp8WtM1fZs2Osll
+Content-Disposition: form-data; name="energyId"
+
+${id}
+------WebKitFormBoundaryjTp8WtM1fZs2Osll--
+`;
+
+let url = {
+        url : `https://app.zaaap.cn/points/home/havingenergy`,
+        headers : JSON.parse($.getdata('zbahd')),
+        body : body,
+}
+      $.post(url, async (err, resp, data) => {
+        try {
+    const result = JSON.parse(data)
+        if(result.status == 200){
+        $.log('\n收取气泡'+result.msg)
+    await $.wait(1000);
+    await index();
+} else {
+       $.log('\n'+result.msg)
+}
+        } catch (e) {
         } finally {
           resolve()
         }
