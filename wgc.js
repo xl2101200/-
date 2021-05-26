@@ -5,6 +5,10 @@
 增加自动兑换话费，默认关闭，需在boxjs打开。
 20210509
 增加收取邀请好友能量气泡，默认关闭，需在boxjs打开。
+20210525
+删除兑换话费功能，兑换话费需要去种树许愿获取
+20210527
+即将增加种树许愿功能
 
 100个币以上8元一个！低于100都是5元一个币。
 
@@ -67,9 +71,7 @@ $.log(wgchd)
 $.log(wgcbody)
    $.msg($.name,"","WGC获取数据成功！")
     } 
-  }
-
-//签到     
+  }    
 function wgclq(timeout = 0) {
   return new Promise((resolve) => {
 let url = {
@@ -91,9 +93,7 @@ let url = {
         }
     },timeout)
   })
-}
-
-//刷新   
+} 
 function wgcsx(timeout = 0) {
   return new Promise((resolve) => {
 let url = {
@@ -119,9 +119,7 @@ let url = {
         }
     },timeout)
   })
-}
-
-//领取  
+} 
 function wgcqp(timeout = 0) {
   return new Promise((resolve) => {
 let url = {
