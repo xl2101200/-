@@ -2,6 +2,7 @@
 
 20210418  tom
 20210526 更新签到及收取气泡能量
+
 应用商店下载：左边  搜索结果显示：ZEALER
 
 邀请码：JQ6BWT    感谢大佬们填写
@@ -34,32 +35,25 @@ https://app.zaaap.cn/points/home url script-request-body https://raw.githubuserc
 hostname = app.zaaap.cn
 
 */
-
 const $ = new Env('ZEALER');
 let status;
 status = (status = ($.getval("zbstatus") || "1") ) > 1 ? `${status}` : ""; // 账号扩展字符
-const zburlArr = [], zbbodyArr = [],zbabodyArr = [],zbahdArr = [],zbhdArr = [],zbcount = ''
+const zburlArr = [], zbbodyArr = [],zbhdArr = [],zbcount = ''
 let times = Math.round(Date.now() / 1000)
 let zburl = $.getdata('zburl')
 let zbbody = $.getdata('zbbody')
-let zbabody = $.getdata('zbabody')
-let zbahd = $.getdata('zbahd')
 let zbhd = $.getdata('zbhd')
-let id = ''
+let id = '',boundary = ''
 !(async () => {
   if (typeof $request !== "undefined") {
     await zbck()
   } else {zburlArr.push($.getdata('zburl'))
     zbhdArr.push($.getdata('zbhd'))
     zbbodyArr.push($.getdata('zbbody'))
-    zbabodyArr.push($.getdata('zbabody'))
-    zbahdArr.push($.getdata('zbahd'))
     let zbcount = ($.getval('zbcount') || '1');
   for (let i = 2; i <= zbcount; i++) {
     zburlArr.push($.getdata(`zburl${i}`))
     zbbodyArr.push($.getdata(`zbbody${i}`))
-    zbabodyArr.push($.getdata(`zbabody${i}`))
-    zbahdArr.push($.getdata(`zbahd${i}`))
     zbhdArr.push($.getdata(`zbhd${i}`))
   }
     console.log(`------------- 共${zbhdArr.length}个账号-------------\n`)
@@ -67,8 +61,6 @@ let id = ''
         if (zbhdArr[i]) {
           zburl = zburlArr[i];
           zbbody = zbbodyArr[i];
-          zbabody = zbabodyArr[i];
-          zbahd = zbahdArr[i];
           zbhd = zbhdArr[i];
           $.index = i + 1;
           console.log(`\n开始ZEALER【${$.index}】`)
@@ -79,7 +71,7 @@ await openbox();await $.wait(1000);await index();
   .catch((e) => $.logErr(e))
   .finally(() => $.done())
 function zbck() {
-   if ($request.url.indexOf("openbox") > -1) {
+   if ($request.url.indexOf("index") > -1) {
  const zburl = $request.url
   if(zburl)     $.setdata(zburl,`zburl${status}`)
     $.log(zburl)
@@ -89,13 +81,8 @@ function zbck() {
  const zbhd = JSON.stringify($request.headers)
   if(zbhd)    $.setdata(zbhd,`zbhd${status}`)
 $.log(zbhd)
-   $.msg($.name,"",'宝箱'+`${status}` +' headers获取成功！')
-  
-}else if ($request.url.indexOf("index") > -1) {
- const zbahd = JSON.stringify($request.headers)
-  if(zbahd)    $.setdata(zbahd,`zbahd${status}`)
-$.log(zbahd)}
-   $.msg($.name,"",'气泡'+`${status}` +'headers获取成功！')
+   $.msg($.name,"",'ZEALER'+`${status}` +' 获取headers成功！')
+  }
 }
 
 function openbox(timeout = 0) {
@@ -133,8 +120,10 @@ let url = {
         try {
     const result = JSON.parse(data)
         if(result.status == 200){
-        $.log('\n'+result.data.registerData.txt)
-        id = result.data.energyList[0].id
+$.log('\n'+result.data.energyList[0].id)
+id =result.data.energyList[0].id
+$.log('\n'+result.data.registerData.txt)
+
         await $.wait(1000);
         await havingenergy();
 } else {
@@ -149,16 +138,18 @@ let url = {
 }
 function havingenergy(timeout = 0) {
   return new Promise((resolve) => {
-const body = `------WebKitFormBoundaryjTp8WtM1fZs2Osll
+boundary = zbhd.match(/boundary=----(\w+)/)[1]
+const body = `------${boundary}
 Content-Disposition: form-data; name="energyId"
 
 ${id}
-------WebKitFormBoundaryjTp8WtM1fZs2Osll--
+------${boundary}--
 `;
+
 
 let url = {
         url : `https://app.zaaap.cn/points/home/havingenergy`,
-        headers : JSON.parse($.getdata('zbahd')),
+        headers : JSON.parse($.getdata('zbhd')),
         body : body,
 }
       $.post(url, async (err, resp, data) => {
