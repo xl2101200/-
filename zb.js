@@ -120,7 +120,7 @@ let url = {
         try {
     const result = JSON.parse(data)
         if(result.status == 200){
-$.log('\n'+result.data.energyList[0].id)
+//$.log('\n'+result.data.energyList[0].id)
 id =result.data.energyList[0].id
 $.log('\n'+result.data.registerData.txt)
 
