@@ -2,6 +2,7 @@
  "name": "Tom task",
  "description": "tg频道https://t.me/tom_ww",
  "task": [
+    "0 0 0/2 * * * https://raw.githubusercontent.com/xl2101200/-/main/xbzs.js, tag=小宝种树, img-url=https://raw.githubusercontent.com/sngxpro/QuanX/master/icons/tom.png, enabled=true",
     "0 10 * * * https://raw.githubusercontent.com/xl2101200/-/main/xsg.js, tag=薪时光, img-url=https://raw.githubusercontent.com/sngxpro/QuanX/master/icons/tom.png, enabled=true",
     "0 8 * * * https://raw.githubusercontent.com/xl2101200/-/main/yyzb.js, tag=云云赚呗, img-url=https://raw.githubusercontent.com/sngxpro/QuanX/master/icons/tom.png, enabled=true",
     "0 0 21 * * * https://raw.githubusercontent.com/xl2101200/-/main/hhf.js, tag=WGC换话费, img-url=https://raw.githubusercontent.com/sngxpro/QuanX/master/icons/tom.png, enabled=true",
