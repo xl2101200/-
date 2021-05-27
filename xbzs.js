@@ -98,7 +98,7 @@ function hudong(timeout = 0) {
 let url = {
         url : 'http://wishtree.enjoyha.com/api/wishtree/play/start',
         headers : JSON.parse($.getdata('xbzshd')),
-        body : `{"homeUserId":${id},"gemNum":"100"}`,}
+        body : `{"homeUserId":${id},"gemNum":"10"}`,}
       $.post(url, async (err, resp, data) => {
         try {
            
