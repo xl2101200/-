@@ -7,7 +7,7 @@
   "apps": [{
             "id": "WGC",
             "name": "WGC",
-            "keys": ["wgcurl","wgchd"],
+            "keys": ["wgcurl","wgchd","wgcurl2","wgchd2","wgcurl3","wgchd3"],
             "author": "@tom",
             "settings": [{
             "id": "wgcstatus",
