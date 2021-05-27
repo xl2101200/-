@@ -135,7 +135,7 @@ let url = {
         console.log('\n收取气泡：成功🎉🎉🎉🎉'+result.data.stcAmount)
         await wgcsx();
 }else{
-        console.log('\n收取气泡：'+result.msg)
+        //console.log('\n收取气泡：'+result.msg)
 }
         } catch (e) {
         } finally {
