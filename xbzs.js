@@ -1,6 +1,7 @@
 /*
 20210527 tom
-20210529 更新无宝石自动领低保，判断对方宝石低于1000则不互动，增加23点整自动收获宝石！建议把cron改成30分钟运行一次
+20210529 
+更新无宝石自动领低保，判断对方宝石低于1000则不互动，增加23点整自动收获宝石！建议把cron改成30分钟运行一次
 
 软件名称：WGC
 下载地址：https://github.com/xl2101200/-/blob/main/tom/wgc.jpg
@@ -51,7 +52,7 @@ let DD = '',id = '',gid = '',jg ='',bs='',mid =''
     await xbzsck()
   }else {
     await grid()
-     for (let x = 0; x < 100; x++) {
+     for (let x = 0; x < 400; x++) {
       $.index = x + 1
       console.log(`\n第${x+1}次执行任务！\n`)
     DD = RT(500, 1000)
