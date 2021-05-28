@@ -40,18 +40,19 @@ hostname = wishtree.enjoyha.com
 
 */
 
+
 const $ = new Env('小宝种树');
 let xbzsurl = $.getdata('xbzsurl')
 let xbzshd = $.getdata('xbzshd')
-let id = '',hdid = '',gid = '',jg ='',bs ='',mid =''
+let id = '',gid = '',jg ='',bs ='',mid =''
 !(async () => {
   if (typeof $request !== "undefined") {
     await xbzsck()
   }else {
     await grid()
-     for (let x = 0; x < 2; x++) {
+     for (let x = 0; x < 200; x++) {
       $.index = x + 1
-      console.log(`\n第${x+1}次执行任务！`)
+      console.log(`\n第${x+1}次执行任务！\n`)
     await $.wait(1000)
     await grbs()
     await $.wait(1000)
@@ -71,6 +72,8 @@ $.log(xbzshd)
    $.msg($.name,"","获取headers成功！")
     } 
   }    
+
+
 //获取用户id
 function homesx(timeout = 0) {
   return new Promise((resolve) => {
@@ -85,9 +88,11 @@ let url = {
         if(result.code == 200){
     id = result.data.homeUser.userId
     gid = result.data.tree.gemAmount
+    jg = result.data.resultList
 
-    if(`${gid}` <2000){$.log(`\n用户果树宝石小于2000，不助力`)}
-    if(`${gid}`>2000){$.log(`\n用户果树宝石大于2000，即将开始互动助力`),await hudong()}
+    if(`${gid}` >1000&&jg.length<18){$.log(`\n用户果树宝石大于1000，开始互动`),await hudong()}
+
+    if(`${gid}` <1000||jg.length>18){$.log(`\n用户果树宝石小于1000，不互动`)}
 
 }else{
      
@@ -114,8 +119,6 @@ let url = {
         if(result.code == 200){
         console.log('\n互动成功')
         await $.wait(1000)
-        await zljg()
-    await $.wait(2000)
         await homesx()
         await $.wait(2000)
         await grbs()
@@ -176,58 +179,6 @@ let url = {
     },timeout)
   })
 } 
-//追加互动
-function zjhudong(timeout = 0) {
-  return new Promise((resolve) => {
-let url = {
-        url : 'http://wishtree.enjoyha.com/api/wishtree/play/start',
-        headers : JSON.parse($.getdata('xbzshd')),
-        body : `{"homeUserId":${id},"gemNum":"20"}`,}//默认使用20宝石追加互动
-      $.post(url, async (err, resp, data) => {
-        try {
-    const result = JSON.parse(data)
-        if(result.code == 200){
-    console.log('\n追加互动成功')
-
-}else{
-        console.log('\n追加互动'+result.msg)
-}
-        } catch (e) {
-        } finally {
-          resolve()
-        }
-    },timeout)
-  })
-} 
-//互动结果
-function zljg(timeout = 0) {
-  return new Promise((resolve) => {
-let url = {
-        url : `http://wishtree.enjoyha.com/api/wishtree/home?atHome=true&homeUserId=${id}`,
-        headers : JSON.parse($.getdata('xbzshd')),}
-      $.get(url, async (err, resp, data) => {
-        try {
-           
-    const result = JSON.parse(data)
-        if(result.code == 200){
-
-jg = result.data.resultList
-
-$.log(jg[jg.length-1])
-
-if(jg =1){await $.wait(12000);await zjhudong()}
-
-}else{
-        console.log('\n'+result.msg)
-}
-        } catch (e) {
-        } finally {
-          resolve()
-        }
-    },timeout)
-  })
-} 
-
 
 //低保
 function dibao(timeout = 0) {
@@ -243,7 +194,7 @@ let url = {
         $.log('\n领取低保成功，获得10宝石')
 
 }else{
-        console.log('\n'+result.msg)
+        console.log(result.msg)
 }
         } catch (e) {
         } finally {
