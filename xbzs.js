@@ -116,7 +116,7 @@ let url = {
     gid = result.data.tree.gemAmount
     jg = result.data.resultList
 
-    if(`${gid}` >1000&&jg.length<18){$.log(`\n用户果树宝石大于1000，开始互动`),await hudong();}
+    if(`${gid}` >1000&&jg.length<18){$.log(`\n用户果树宝石大于1000，开始互动`),await hudong();DD = RT(6000, 10000);await $.wait(DD);}
 
     if(`${gid}` <1000||jg.length>18){$.log(`\n用户果树宝石小于1000，不互动`)}
 
@@ -143,9 +143,8 @@ let url = {
            
     const result = JSON.parse(data)
         if(result.code == 200){
-        console.log('\n互动成功，随机延迟'+`${DID/1000}`+'秒')
-        DD = RT(6000, 10000);
-        await $.wait(DD);
+        console.log('\n互动成功)
+  
 
 }else{
         console.log('\n'+result.msg)
