@@ -61,7 +61,7 @@ let DD = '',id = '',gid = '',jg ='',bs='',mid =''
     await grbs()
     await homesx()
 }
-    if(getHours >= 22 && getMinutes <= 59)
+    if(getHours >= 23 && getMinutes >= 5)
 {await ss()}
 }})()
   .catch((e) => $.logErr(e))
