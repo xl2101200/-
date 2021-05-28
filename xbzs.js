@@ -1,6 +1,6 @@
 /*
 20210527 tom
-
+0528 更新领取低保，追加互动
 软件名称：WGC
 下载地址：https://github.com/xl2101200/-/blob/main/tom/wgc.jpg
 
