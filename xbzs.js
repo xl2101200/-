@@ -55,9 +55,9 @@ let DD = '',id = '',gid = '',jg ='',bs='',mid =''
      for (let x = 0; x < 400; x++) {
       $.index = x + 1
       console.log(`\n第${x+1}次执行任务！\n`)
-    DD = RT(500, 1000)
+    DD = RT(500, 1000);
     await $.wait(DD);
-    await grbs()
+    await grbs();
     await homesx()
 }
     if(getHours >= 23 && getMinutes >= 5)
@@ -116,7 +116,7 @@ let url = {
     gid = result.data.tree.gemAmount
     jg = result.data.resultList
 
-    if(`${gid}` >1000&&jg.length<18){$.log(`\n用户果树宝石大于1000，开始互动`),await hudong();DD = RT(6000, 10000);await $.wait(DD);}
+    if(`${gid}` >1000&&jg.length<18){$.log(`\n用户果树宝石大于1000，开始互动`),await hudong();}
 
     if(`${gid}` <1000||jg.length>18){$.log(`\n用户果树宝石小于1000，不互动`)}
 
@@ -143,8 +143,9 @@ let url = {
            
     const result = JSON.parse(data)
         if(result.code == 200){
-        console.log('\n互动成功')
-        
+        console.log('\n互动成功，随机延迟'+`${DID/1000}`+'秒')
+        DD = RT(6000, 10000);
+        await $.wait(DD);
 
 }else{
         console.log('\n'+result.msg)
