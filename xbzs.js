@@ -143,7 +143,7 @@ let url = {
            
     const result = JSON.parse(data)
         if(result.code == 200){
-        console.log('\n互动成功)
+        console.log('\n互动成功')
   
 
 }else{
