@@ -20,6 +20,7 @@ TG频道 https://t.me/tom_ww
 是撸钱还是撸实物你们随意，撸钱最少最少每天可以撸25元左右！
 /////////////////////////////////////////////////
 
+互动宝石默认10，可自行boxjs更改
 
 还是那句话，玩了可能没有！不玩一定没有！
 
@@ -46,6 +47,7 @@ let getHours = myDate.getHours();
 let getMinutes = myDate.getMinutes(); 
 let xbzsurl = $.getdata('xbzsurl')
 let xbzshd = $.getdata('xbzshd')
+let sl = ($.getval('sl') || '10');//互动宝石默认10
 let DD = '',id = '',gid = '',jg ='',bs='',mid =''
 !(async () => {
   if (typeof $request !== "undefined") {
@@ -137,7 +139,7 @@ function hudong(timeout = 0) {
 let url = {
         url : 'http://wishtree.enjoyha.com/api/wishtree/play/start',
         headers : JSON.parse($.getdata('xbzshd')),
-        body : `{"homeUserId":${id},"gemNum":"10"}`,}//默认使用10宝石互动，可自行更改
+        body : `{"homeUserId":${id},"gemNum":"${sl}"}`,}//默认使用10宝石互动，可自行更改
       $.post(url, async (err, resp, data) => {
         try {
            
