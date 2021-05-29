@@ -5,6 +5,33 @@
   "icon": "https://raw.githubusercontent.com/xl2101200/-/main/tom/tom.png",
   "repo": "https://github.com/xl2101200/-",
   "apps": [{
+            "id": "xbzs",
+            "name": "小宝种树",
+            "keys": ["xbzsurl","xbzshd","xbzsurl2","xbzshd2","xbzsurl3","xbzshd3"],
+            "author": "@tom",
+            "settings": [{
+            "id": "wgcstatus",
+            "name": "当前账号",
+            "val": "1",
+            "type": "number",
+            "desc": "当前抓取ck记录的账号序号，如：1、2、3、4"
+    },{
+            "id": "wgccount",
+            "name": "账号个数",
+            "val": "1",
+            "type": "number",
+            "desc": "指定任务最多跑几个账号，根据抓取的账号数据个数来设值"
+    },{
+            "id": "sl",
+            "name": "兑互动宝石",
+            "val": "10",
+            "type": "number",
+            "desc": "互动宝石数量默认10,可自行更改(50,100,200,1000等)"
+    }],
+            "repo": "https://raw.githubusercontent.com/xl2101200/-/main/xbzs.js",
+            "icons": ["https://raw.githubusercontent.com/xl2101200/-/main/tom/tom.jpg","https://raw.githubusercontent.com/xl2101200/-/main/tom/tom.jpg"],
+            "script": "https://raw.githubusercontent.com/xl2101200/-/main/xbzs.js"
+    },{
             "id": "WGC",
             "name": "WGC",
             "keys": ["wgcurl","wgchd","wgcurl2","wgchd2","wgcurl3","wgchd3"],
