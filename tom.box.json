@@ -4,11 +4,10 @@
   "author": "@tom",
   "icon": "https://raw.githubusercontent.com/xl2101200/-/main/tom/tom.png",
   "repo": "https://github.com/xl2101200/-",
-  "apps": [
-{
+  "apps": [{
             "id": "xcsh",
             "name": "湘创生活",
-            "keys": ["xcshurl","xcshhd","xcshbody", "xcshurl2","xcshhd2","xcshbody2",],
+            "keys": ["xcshurl","xcshhd","xcshbody","xcshurl2","xcshhd2","xcshbody2"],
             "author": "@tom",
             "settings": [{
             "id": "xcshstatus",
