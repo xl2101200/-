@@ -40,6 +40,12 @@ boxjs地址 ： https://raw.githubusercontent.com/xl2101200/-/main/tom.box.json
 #WGC
 http://stc.enjoyha.com/api/miner/mining/receive_award? url script-request-header https://raw.githubusercontent.com/xl2101200/-/main/wgc.js
 
+=loon=
+http://stc.enjoyha.com/api/miner/mining/receive_award? script-path=https://raw.githubusercontent.com/xl2101200/-/main/wgc.js, requires-header=true, timeout=10, tag=wgc
+
+=surge=
+wgc = type=http-request,pattern= http://stc.enjoyha.com/api/miner/mining/receive_award?,requires-header=1,max-size=0,script-path=https://raw.githubusercontent.com/xl2101200/-/main/wgc.js,script-update-interval=0
+
 [MITM]
 hostname = stc.enjoyha.com
 
