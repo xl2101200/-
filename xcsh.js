@@ -22,7 +22,7 @@ boxjs地址 ： https://raw.githubusercontent.com/xl2101200/-/main/tom.box.json
 圈X
 [task_local]
 #湘创生活
-1 0 * * * https://raw.githubusercontent.com/xl2101200/-/main/xcsh.js, tag=湘创生活, img-url=https://raw.githubusercontent.com/sngxpro/QuanX/master/icons/tom.png, enabled=true
+0 9 * * * https://raw.githubusercontent.com/xl2101200/-/main/xcsh.js, tag=湘创生活, img-url=https://raw.githubusercontent.com/sngxpro/QuanX/master/icons/tom.png, enabled=true
 
 [rewrite_local]
 #湘创生活
@@ -32,17 +32,36 @@ https://api.csxcsh.com/api/sign url script-request-body https://raw.githubuserco
 hostname = api.csxcsh.com
 
 */
+
 const $ = new Env('湘创生活');
+let status;
+status = (status = ($.getval("tygstatus") || "1") ) > 1 ? `${status}` : ""; // 账号扩展字符
+const xcshhdArr = [],xcshurlArr = [],xcshcount = ''
 let xcshurl = $.getdata('xcshurl')
 let xcshhd = $.getdata('xcshhd')
 let xcshbody = $.getdata('xcshbody')
-let DD = RT(2000, 30000)
+let DD = RT(10000, 30000)
 !(async () => {
   if (typeof $request !== "undefined") {
     await xcshck()
   }else {
-    await $.wait(DD)
-    await xcshqd()
+    xcshhdArr.push($.getdata('xcshhd'))
+    xcshurlArr.push($.getdata('xcshurl'))
+    let xcshcount = ($.getval('xcshcount') || '1');
+  for (let i = 2; i <= xcshcount; i++) {
+    xcshhdArr.push($.getdata(`xcshhd${i}`))
+    xcshurlArr.push($.getdata(`xcshurl${i}`))
+  }
+    console.log(`------------- 共${xcshhdArr.length}个账号-------------\n`)
+     for (let i = 0; i < xcshhdArr.length; i++) {
+        if (xcshhdArr[i]) {
+         xcshhd = xcshhdArr[i];
+         xcshurl = xcshurlArr[i];
+         $.index = i + 1;
+         console.log(`\n开始【湘创生活${$.index}】`)
+
+          await $.wait(DD)
+          await xcshqd()}}
 }})()
   .catch((e) => $.logErr(e))
   .finally(() => $.done())
@@ -84,7 +103,7 @@ function RT(X, Y) {
     do rt = Math.floor(Math.random() * Y);
     while (rt < X)
     return rt;}
-console.log('\n--------------'+getCurrentDate()+'--------------');
+console.log('\n'+getCurrentDate());
 function getCurrentDate() {
 var date = new Date();
 var seperator1 = "-";
