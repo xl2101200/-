@@ -36,6 +36,13 @@ boxjs地址 ： https://raw.githubusercontent.com/xl2101200/-/main/tom.box.json
 #小宝种树
 http://wishtree.enjoyha.com/api/wishtree url script-request-header https://raw.githubusercontent.com/xl2101200/-/main/xbzs.js
 
+=loon=
+http://wishtree.enjoyha.com/api/wishtree script-path=https://raw.githubusercontent.com/xl2101200/-/main/xbzs.js, requires-header=true, timeout=10, tag=小宝种树
+
+=surge=
+小宝种树 = type=http-request,pattern=http://wishtree.enjoyha.com/api/wishtree,requires-header=1,max-size=0,script-path=https://raw.githubusercontent.com/xl2101200/-/main/xbzs.js,script-update-interval=0
+
+
 [MITM]
 hostname = wishtree.enjoyha.com
 
