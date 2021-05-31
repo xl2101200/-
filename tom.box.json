@@ -7,7 +7,7 @@
   "apps": [{
             "id": "zy",
             "name": "知驿",
-            "keys": ["zyurl","zyhd","zybody","utoken","zyurl2","zyhd2","zybody2""utoken2"],
+            "keys": ["zyurl","zyhd","zybody","utoken","zyurl2","zyhd2","zybody2","utoken2"],
             "author": "@tom",
             "settings": [{
             "id": "zystatus",
