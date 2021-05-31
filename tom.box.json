@@ -33,6 +33,24 @@
             "val": "",
             "type": "number",
             "desc": "获取的验证码"
+    },{
+            "id": "xc",
+            "name": "县城名",
+            "val": "",
+            "type": "number",
+            "desc": "如：临泉县、沐阳县等"
+    },{
+            "id": "lode",
+            "name": "县名经度",
+            "val": "",
+            "type": "number",
+            "desc": "如：118.76873"
+    },{
+            "id": "lade",
+            "name": "县城名纬度",
+            "val": "",
+            "type": "number",
+            "desc": "如：34.11446"
     }],
             "repo": "https://raw.githubusercontent.com/xl2101200/-/main/zy.js",
             "icons": ["https://raw.githubusercontent.com/xl2101200/-/main/tom/tom.jpg","https://raw.githubusercontent.com/xl2101200/-/main/tom/tom.jpg"],
