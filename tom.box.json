@@ -24,31 +24,31 @@
     },{
             "id": "phone",
             "name": "手机号",
-            "val": "",
+            "val": "0",
             "type": "number",
             "desc": "输入需要登入的手机号"
     },{
             "id": "code",
             "name": "验证码",
-            "val": "",
+            "val": "0",
             "type": "number",
             "desc": "获取的验证码"
     },{
             "id": "xc",
             "name": "县城名",
-            "val": "",
+            "val": "0",
             "type": "number",
             "desc": "如：临泉县、沐阳县等"
     },{
             "id": "lode",
             "name": "县名经度",
-            "val": "",
+            "val": "0",
             "type": "number",
             "desc": "如：118.76873"
     },{
             "id": "lade",
             "name": "县城名纬度",
-            "val": "",
+            "val": "0",
             "type": "number",
             "desc": "如：34.11446"
     }],
