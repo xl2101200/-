@@ -37,7 +37,7 @@
             "id": "xc",
             "name": "县城名",
             "val": "0",
-            "type": "number",
+            "type": "String",
             "desc": "如：临泉县、沐阳县等"
     },{
             "id": "lode",
