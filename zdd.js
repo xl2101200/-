@@ -13,7 +13,8 @@ ios 圈X不要添加此脚本，没法获取ck的。
 不会用v2p请关注公众号《少年歌行》 查看历史文字，很多教程
 
 用v2p获取ck，以下是对应设置方式
-cron自己设置
+
+cron自己设置，每天运行一次就行
 
 [REWRITE]
 匹配连接：http://sczdd.xjr123.cn/api    对应重写目标：https://raw.githubusercontent.com/xl2101200/-/main/zdd.js
