@@ -2,20 +2,14 @@
  "name": "Tom task",
  "description": "tg频道https://t.me/tom_ww",
  "task": [
-    "0 12 * * * https://raw.githubusercontent.com/xl2101200/-/main/qjyy.js, tag=青椒音乐, img-url=https://raw.githubusercontent.com/sngxpro/QuanX/master/icons/tom.png, enabled=true",
     "1 0 * * * https://raw.githubusercontent.com/xl2101200/-/main/xcsh.js, tag=湘创生活, img-url=https://raw.githubusercontent.com/sngxpro/QuanX/master/icons/tom.png, enabled=true",
     "0 0/30 * * * * https://raw.githubusercontent.com/xl2101200/-/main/xbzs.js, tag=小宝种树, img-url=https://raw.githubusercontent.com/sngxpro/QuanX/master/icons/tom.png, enabled=true",
-    "0 10 * * * https://raw.githubusercontent.com/xl2101200/-/main/xsg.js, tag=薪时光, img-url=https://raw.githubusercontent.com/sngxpro/QuanX/master/icons/tom.png, enabled=true",
-    "0 8 * * * https://raw.githubusercontent.com/xl2101200/-/main/yyzb.js, tag=云云赚呗, img-url=https://raw.githubusercontent.com/sngxpro/QuanX/master/icons/tom.png, enabled=true",
-    "0 0 21 * * * https://raw.githubusercontent.com/xl2101200/-/main/hhf.js, tag=WGC换话费, img-url=https://raw.githubusercontent.com/sngxpro/QuanX/master/icons/tom.png, enabled=true",
-    "0 0 * * * https://raw.githubusercontent.com/xl2101200/-/main/ipxz.js, tag=ip小站, img-url=https://raw.githubusercontent.com/sngxpro/QuanX/master/icons/tom.png, enabled=true",
     "5 0 * * * https://raw.githubusercontent.com/xl2101200/-/main/ecwk.js, tag=EC挖矿, img-url=https://raw.githubusercontent.com/sngxpro/QuanX/master/icons/tom.png, enabled=true",
     "0 1 0/5 * * * https://raw.githubusercontent.com/xl2101200/-/main/fcs.js, tag=发财树, img-url=https://raw.githubusercontent.com/sngxpro/QuanX/master/icons/tom.png, enabled=true",
     "0 0 0/3 * * * https://raw.githubusercontent.com/xl2101200/-/main/wgc.js, tag=WGC, img-url=https://raw.githubusercontent.com/sngxpro/QuanX/master/icons/tom.png, enabled=true",
     "2 0 * * * https://raw.githubusercontent.com/xl2101200/-/main/hhkk.js,tag=火狐看看, img-url=https://raw.githubusercontent.com/sngxpro/QuanX/master/icons/tom.png, enabled=true",
     "0 0 0/2 * * * https://raw.githubusercontent.com/xl2101200/-/main/zb.js, tag=左边, img-url=https://raw.githubusercontent.com/sngxpro/QuanX/master/icons/tom.png, enabled=true",
     "0 8 * * * https://raw.githubusercontent.com/xl2101200/-/main/smyj.js, tag=圣牧有机, img-url=https://raw.githubusercontent.com/sngxpro/QuanX/master/icons/tom.png, enabled=true",
-    "0 0 1 1 * https://raw.githubusercontent.com/xl2101200/-/main/zsb.js, tag=再生贝, img-url=https://raw.githubusercontent.com/sngxpro/QuanX/master/icons/tom.png, enabled=true",
     "0 8 * * * https://raw.githubusercontent.com/xl2101200/-/main/ttcj.js,tag=天天抽奖365, img-url=https://raw.githubusercontent.com/sngxpro/QuanX/master/icons/tom.png, enabled=true",
     "0 0 1 1 * https://raw.githubusercontent.com/xl2101200/-/main/kkj.js, tag=❗看看集, img-url=https://raw.githubusercontent.com/sngxpro/QuanX/master/icons/tom.png, enabled=true",
     "0 0/40 * * * * https://raw.githubusercontent.com/xl2101200/-/main/keepjs.js, tag=❗keep浇水, img-url=https://raw.githubusercontent.com/sngxpro/QuanX/master/icons/tom.png, enabled=true",
@@ -25,5 +19,11 @@
     "0 0 0/1 * * ? https://raw.githubusercontent.com/xl2101200/-/main/btdh.js, tag=❗比特大亨, img-url=https://raw.githubusercontent.com/sngxpro/QuanX/master/icons/tom.png, enabled=true",
     "0 0 0/4 * * ? https://raw.githubusercontent.com/xl2101200/-/main/ggdh.js, tag=❗狗狗大亨, img-url=https://raw.githubusercontent.com/sngxpro/QuanX/master/icons/tom.png, enabled=true",
     "0 16 * * * https://raw.githubusercontent.com/xl2101200/-/main/dogeda.js,tag=❗DOGEDA, img-url=https://raw.githubusercontent.com/sngxpro/QuanX/master/icons/tom.png, enabled=true",
+    "0 12 * * * https://raw.githubusercontent.com/xl2101200/-/main/qjyy.js, tag=❗青椒音乐, img-url=https://raw.githubusercontent.com/sngxpro/QuanX/master/icons/tom.png, enabled=true",
+    "0 10 * * * https://raw.githubusercontent.com/xl2101200/-/main/xsg.js, tag=❗薪时光, img-url=https://raw.githubusercontent.com/sngxpro/QuanX/master/icons/tom.png, enabled=true",
+    "0 8 * * * https://raw.githubusercontent.com/xl2101200/-/main/yyzb.js, tag=❗云云赚呗, img-url=https://raw.githubusercontent.com/sngxpro/QuanX/master/icons/tom.png, enabled=true",
+    "0 0 1 1 * https://raw.githubusercontent.com/xl2101200/-/main/zsb.js, tag=❗再生贝, img-url=https://raw.githubusercontent.com/sngxpro/QuanX/master/icons/tom.png, enabled=true",
+    "0 0 * * * https://raw.githubusercontent.com/xl2101200/-/main/ipxz.js, tag=❗ip小站, img-url=https://raw.githubusercontent.com/sngxpro/QuanX/master/icons/tom.png, enabled=true",
+    
     ]
 }
