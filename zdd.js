@@ -1,6 +1,5 @@
 /*
 20210602 tom
-暂时写了签到功能，等晚上有时间了在写看视频
 
 ////////////////////////////////////
 圈X不要添加此脚本，没法获取ck的。
@@ -22,7 +21,6 @@ cron自己设置
 sczdd.xjr123.cn
 
 */
-
 const $ = new Env('赚多多');
 let status;
 status = (status = ($.getval("zduoduostatus") || "1") ) > 1 ? `${status}` : ""; // 账号扩展字符
@@ -30,8 +28,8 @@ const zduoduobodyArr = [], zduoduohdArr = [],zduoduourlArr = [],zduoduocount = '
 let zduoduobody = $.getdata('zduoduobody')
 let zduoduohd = $.getdata('zwbhd')
 let zduoduourl = $.getdata('zduoduourl')
-let DD = RT(10000, 30000)
-let mission_id = '';
+let DD = RT(20000, 30000)
+let aid = '',bid = '',cid = '',did = '',sign = '',ct = '',token = '',device = ''
 !(async () => {
   if (typeof $request !== "undefined") {
     await zduoduock()
@@ -53,15 +51,26 @@ let mission_id = '';
           zduoduohd = zduoduohdArr[i];
           zduoduohd = zduoduohdArr[i];
           $.index = i + 1;
-          console.log(`\n开始【赚多多${$.index}】`)
+          console.log(`\n开始【赚多多看视频${$.index}】`)
 }
+    await zduoduoqd()
+    await $.wait(DD)
+    await zduoduospid()
+    await $.wait(DD)
+    await zduoduoksp()
+    await $.wait(DD)
+    await zduoduoksp1()
+    await $.wait(DD)
+    await zduoduoksp2()
+    await $.wait(DD)
+    await zduoduoksp3()
 
-     for (let x = 0; x < 1; x++) {
+     for (let x = 0; x < 10; x++) {
       $.index = x + 1
       console.log(`\n第${x+1}次执行任务！`)
-    await zduoduoqd()
-    await zduoduospid()
-    await zduoduoksp();
+    await zduoduoxsp()
+    await $.wait(DD)
+    await zduoduokgg()
 
   }
 }}
@@ -84,7 +93,7 @@ $.log(zduoduohd)
    $.msg($.name,"",'赚多多'+`${status}` +'headrs获取成功！')
   }
 }
-//http://sczdd.xjr123.cn/api/money/sign
+
 //签到
 function zduoduoqd(timeout = 0) {
   return new Promise((resolve) => {
@@ -110,10 +119,15 @@ let url = {
     },timeout)
   })
 }
-//http://sczdd.xjr123.cn/api/money/video
+
 //视频id
 function zduoduospid(timeout = 0) {
   return new Promise((resolve) => {
+sign = zduoduohd.match(/sign=(\w+)&/)[1]
+ct = zduoduohd.match(/ct=(\d+)&/)[1]
+token = zduoduohd.match(/token=(\w+)&/)[1]
+device = zduoduohd.match(/device_id=(\w+)/)[1]
+
 let url = {
         url : `http://sczdd.xjr123.cn/api/money/video`,
         headers : JSON.parse(zduoduohd),
@@ -123,8 +137,14 @@ let url = {
            
     const result = JSON.parse(data)
         if(result.code == 0){
-   mission_id = result.data[0].id
- $.log(mission_id)
+   aid = result.data.data[0].id
+   bid = result.data.data[1].id
+   cid = result.data.data[2].id
+   did = result.data.data[3].id
+
+ $.log(aid)
+ $.log(bid)
+
         console.log('\n： '+result.data.title)
 
     }else{
@@ -145,7 +165,7 @@ function zduoduoksp(timeout = 0) {
 let url = {
         url : `http://sczdd.xjr123.cn/api/money/finish_video`,
         headers : JSON.parse(zduoduohd),
-        body : zduoduobody,}
+        body : `mission_id=${aid}&platform=android&sign=${sign}&ct=${ct}&token=${token}&device_id=${device}`,}
       $.post(url, async (err, resp, data) => {
         try {
            
@@ -155,6 +175,128 @@ let url = {
         console.log('\n赚多多看视频： '+result.data.msg)
     }else{
         console.log('\n赚多多看视频： '+result.data.msg)
+}
+        } catch (e) {
+          //$.logErr(e, resp);
+        } finally {
+          resolve()
+        }
+    },timeout)
+  })
+}
+function zduoduoksp1(timeout = 0) {
+  return new Promise((resolve) => {
+let url = {
+        url : `http://sczdd.xjr123.cn/api/money/finish_video`,
+        headers : JSON.parse(zduoduohd),
+        body : `mission_id=${bid}&platform=android&sign=${sign}&ct=${ct}&token=${token}&device_id=${device}`,}
+      $.post(url, async (err, resp, data) => {
+        try {
+           
+    const result = JSON.parse(data)
+        if(result.code == 0){
+ 
+        console.log('\n赚多多看视频： '+result.data.msg)
+    }else{
+        console.log('\n赚多多看视频： '+result.data.msg)
+}
+        } catch (e) {
+          //$.logErr(e, resp);
+        } finally {
+          resolve()
+        }
+    },timeout)
+  })
+}
+function zduoduoksp2(timeout = 0) {
+  return new Promise((resolve) => {
+let url = {
+        url : `http://sczdd.xjr123.cn/api/money/finish_video`,
+        headers : JSON.parse(zduoduohd),
+        body : `mission_id=${cid}&platform=android&sign=${sign}&ct=${ct}&token=${token}&device_id=${device}`,}
+      $.post(url, async (err, resp, data) => {
+        try {
+           
+    const result = JSON.parse(data)
+        if(result.code == 0){
+ 
+        console.log('\n赚多多看视频： '+result.data.msg)
+    }else{
+        console.log('\n赚多多看视频： '+result.data.msg)
+}
+        } catch (e) {
+          //$.logErr(e, resp);
+        } finally {
+          resolve()
+        }
+    },timeout)
+  })
+}
+function zduoduoksp3(timeout = 0) {
+  return new Promise((resolve) => {
+let url = {
+        url : `http://sczdd.xjr123.cn/api/money/finish_video`,
+        headers : JSON.parse(zduoduohd),
+        body : `mission_id=${did}&platform=android&sign=${sign}&ct=${ct}&token=${token}&device_id=${device}`,}
+      $.post(url, async (err, resp, data) => {
+        try {
+           
+    const result = JSON.parse(data)
+        if(result.code == 0){
+ 
+        console.log('\n赚多多看视频： '+result.data.msg)
+    }else{
+        console.log('\n赚多多看视频： '+result.data.msg)
+}
+        } catch (e) {
+          //$.logErr(e, resp);
+        } finally {
+          resolve()
+        }
+    },timeout)
+  })
+}
+//小视频
+function zduoduoxsp(timeout = 0) {
+  return new Promise((resolve) => {
+let url = {
+        url : `http://sczdd.xjr123.cn/api/money/view_video`,
+        headers : JSON.parse(zduoduohd),
+        body : zduoduobody,}
+      $.post(url, async (err, resp, data) => {
+        try {
+           
+    const result = JSON.parse(data)
+        if(result.code == 0){
+ 
+        console.log('\n看小视频： '+result.data.msg)
+    }else{
+        console.log('\n看小视频： '+result.message)
+}
+        } catch (e) {
+          //$.logErr(e, resp);
+        } finally {
+          resolve()
+        }
+    },timeout)
+  })
+}
+//广告
+function zduoduokgg(timeout = 0) {
+  return new Promise((resolve) => {
+let url = {
+        url : `http://sczdd.xjr123.cn/api/money/view_ad`,
+        headers : JSON.parse(zduoduohd),
+        body : zduoduobody,}
+      $.post(url, async (err, resp, data) => {
+        try {
+           
+    const result = JSON.parse(data)
+        if(result.code == 0){
+ 
+        console.log('\n看广告： '+result.data.msg)
+    }else{
+        console.log('\n看广告： '+result.message)
 }
         } catch (e) {
           //$.logErr(e, resp);
