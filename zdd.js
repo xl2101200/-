@@ -144,10 +144,7 @@ let url = {
    cid = result.data.data[2].id
    did = result.data.data[3].id
 
- $.log(aid)
- $.log(bid)
-
-        console.log('\n： '+result.data.title)
+        console.log('\n：'+result.data.title)
 
     }else{
         console.log('\n '+result.message)
