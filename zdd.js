@@ -1,6 +1,6 @@
 /*
 20210602 tom
-每天1-2R，看别人已经提现几百都没问题
+每天0.5-2R，看别人已经提现几百都没问题
 
 ////////////////////////////////////
 ios 圈X不要添加此脚本，没法获取ck的。
@@ -9,6 +9,7 @@ ios 圈X不要添加此脚本，没法获取ck的。
 
 软件名：赚多多
 下载地址：http://sczdd.xjr123.cn/h5/zhuce.html?invite_code=FL77
+设置好代理打开软件，点击赚钱即可获取ck
 
 不会用v2p请关注公众号《少年歌行》 查看历史文字，很多教程
 
@@ -125,11 +126,10 @@ let url = {
 //视频id
 function zduoduospid(timeout = 0) {
   return new Promise((resolve) => {
-sign = zduoduohd.match(/sign=(\w+)&/)[1]
-ct = zduoduohd.match(/ct=(\d+)&/)[1]
-token = zduoduohd.match(/token=(\w+)&/)[1]
-device = zduoduohd.match(/device_id=(\w+)/)[1]
-
+sign = zduoduobody.match(/sign=(\w+)&/)[1]
+ct = zduoduobody.match(/ct=(\d+)&/)[1]
+token = zduoduobody.match(/token=(\w+)&/)[1]
+device = zduoduobody.match(/device_id=(\w+)/)[1]
 let url = {
         url : `http://sczdd.xjr123.cn/api/money/video`,
         headers : JSON.parse(zduoduohd),
