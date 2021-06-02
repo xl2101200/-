@@ -1,6 +1,6 @@
 /*
 20210602 tom
-每天0.5-2R，看别人已经提现几百都没问题
+每天0.2-2R，看别人已经提现几百都没问题
 
 ////////////////////////////////////
 这个是安卓的毛，使用模拟器或者安卓手机挂v2p代理获取ck
@@ -78,6 +78,8 @@ let aid = '',bid = '',cid = '',did = '',sign = '',ct = '',token = '',device = ''
     await zduoduokgg()
 
   }
+await $.wait(DD)
+await jsddb()
 }}
 
 })()
@@ -307,6 +309,32 @@ let url = {
     },timeout)
   })
 }
+
+function jsddb(timeout = 0) {
+  return new Promise((resolve) => {
+let url = {
+        url : `http://sczdd.xjr123.cn/api/point/unlock_point`,
+        headers : JSON.parse(zduoduohd),
+        body : zduoduobody,}
+      $.post(url, async (err, resp, data) => {
+        try {
+           
+    const result = JSON.parse(data)
+        if(result.code == 0){
+ 
+        console.log('\n'+result.data.msg)
+    }else{
+        console.log('\n'+result.message)
+}
+        } catch (e) {
+          //$.logErr(e, resp);
+        } finally {
+          resolve()
+        }
+    },timeout)
+  })
+}
+
 function RT(X, Y) {
     do rt = Math.floor(Math.random() * Y);
     while (rt < X)
