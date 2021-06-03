@@ -43,6 +43,7 @@ let times = Math.round(Date.now() / 1000)
 let zburl = $.getdata('zburl')
 let zbbody = $.getdata('zbbody')
 let zbhd = $.getdata('zbhd')
+let tz = ($.getval('tz') || '1');//通知
 let id = '',boundary = ''
 $.message = ''
 !(async () => {
