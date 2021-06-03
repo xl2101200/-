@@ -159,7 +159,7 @@ let url = {
     const result = JSON.parse(data)
         if(result.status == 200){
         $.log('\n收取气泡'+result.msg)
-        $.message +=result.msg+'\n'
+        $.message +='\n收取气泡'+result.msg
     await $.wait(1000);
     await index();
 } else {
