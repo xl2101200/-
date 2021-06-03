@@ -354,8 +354,8 @@ let url = {
     },timeout)
   })
 }
-function message {
-if(tz == 1){$.msg($.name,"",$.message)}
+function message() {
+if(tz == 1){$.msg($.name,``,$.message)}
 }
 function RT(X, Y) {
     do rt = Math.floor(Math.random() * Y);
