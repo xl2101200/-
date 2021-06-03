@@ -34,7 +34,7 @@
     },{
             "id": "xcsh",
             "name": "湘创生活",
-            "keys": ["xcshurl","xcshhd","xcshbody","xcshurl2","xcshhd2","xcshbody2"],
+            "keys": ["xcshurl","xcshhd","xcshurl2","xcshhd2"],
             "author": "@tom",
             "settings": [{
             "id": "xcshstatus",
