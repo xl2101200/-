@@ -33,8 +33,10 @@ const zduoduobodyArr = [], zduoduohdArr = [],zduoduourlArr = [],zduoduocount = '
 let zduoduobody = $.getdata('zduoduobody')
 let zduoduohd = $.getdata('zwbhd')
 let zduoduourl = $.getdata('zduoduourl')
-let DD = RT(20000, 30000)
+let tz = ($.getval('tz') || '1');//通知
+let DD = RT(20000, 35000)
 let aid = '',bid = '',cid = '',did = '',sign = '',ct = '',token = '',device = ''
+$.message = ''
 !(async () => {
   if (typeof $request !== "undefined") {
     await zduoduock()
@@ -80,6 +82,8 @@ let aid = '',bid = '',cid = '',did = '',sign = '',ct = '',token = '',device = ''
   }
 await $.wait(DD)
 await jsddb()
+await $.wait(DD)
+await message()
 }}
 
 })()
@@ -115,8 +119,10 @@ let url = {
         if(result.code == 0){
  
         console.log('\n'+result.data.msg)
+          $.message +=result.data.msg+'\n'
     }else{
         console.log('\n '+result.message)
+      $.message +=result.message+'\n'
 }
         } catch (e) {
           //$.logErr(e, resp);
@@ -176,8 +182,10 @@ let url = {
         if(result.code == 0){
  
         console.log('\n赚多多看视频： '+result.data.msg)
+          $.message +='\n赚多多看视频： '+result.data.msg+'\n'
     }else{
         console.log('\n赚多多看视频： '+result.data.msg)
+      $.message +='\n赚多多看视频： '+result.data.msg+'\n'
 }
         } catch (e) {
           //$.logErr(e, resp);
@@ -200,8 +208,10 @@ let url = {
         if(result.code == 0){
  
         console.log('\n赚多多看视频： '+result.data.msg)
+          $.message +='\n赚多多看视频： '+result.data.msg+'\n'
     }else{
         console.log('\n赚多多看视频： '+result.data.msg)
+      $.message +='\n赚多多看视频： '+result.data.msg+'\n'
 }
         } catch (e) {
           //$.logErr(e, resp);
@@ -224,8 +234,10 @@ let url = {
         if(result.code == 0){
  
         console.log('\n赚多多看视频： '+result.data.msg)
+          $.message +='\n赚多多看视频： '+result.data.msg+'\n'
     }else{
         console.log('\n赚多多看视频： '+result.data.msg)
+      $.message +='\n赚多多看视频： '+result.data.msg+'\n'
 }
         } catch (e) {
           //$.logErr(e, resp);
@@ -248,8 +260,10 @@ let url = {
         if(result.code == 0){
  
         console.log('\n赚多多看视频： '+result.data.msg)
+          $.message +='\n赚多多看视频： '+result.data.msg+'\n'
     }else{
         console.log('\n赚多多看视频： '+result.data.msg)
+      $.message +='\n赚多多看视频： '+result.data.msg+'\n'
 }
         } catch (e) {
           //$.logErr(e, resp);
@@ -273,8 +287,10 @@ let url = {
         if(result.code == 0){
  
         console.log('\n看小视频： '+result.data.msg)
+        $.message +='\n看小视频： '+result.data.msg+'\n'
     }else{
         console.log('\n看小视频： '+result.message)
+        $.message +='\n看小视频： '+result.message+'\n'
 }
         } catch (e) {
           //$.logErr(e, resp);
@@ -298,8 +314,10 @@ let url = {
         if(result.code == 0){
  
         console.log('\n看广告： '+result.data.msg)
+        $.message +='\n看广告： '+result.data.msg+'\n'
     }else{
         console.log('\n看广告： '+result.message)
+        $.message +='\n看广告： '+result.message+'\n'
 }
         } catch (e) {
           //$.logErr(e, resp);
@@ -323,8 +341,10 @@ let url = {
         if(result.code == 0){
  
         console.log('\n'+result.data.msg)
+        $.message +=result.result.data.msg+'\n'
     }else{
         console.log('\n'+result.message)
+        $.message +=result.message+'\n'
 }
         } catch (e) {
           //$.logErr(e, resp);
@@ -334,8 +354,10 @@ let url = {
     },timeout)
   })
 }
-
-function RT(X, Y) {
+function message {
+if(tz == 1){$.msg($.name,"",$.message)}
+}
+function RT(X, Y) {
     do rt = Math.floor(Math.random() * Y);
     while (rt < X)
     return rt;}
