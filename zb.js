@@ -99,8 +99,8 @@ let url = {
     const result = JSON.parse(data)
         if(result.status == 200){
 
-        $.log('\n开启宝箱'+result.msg+'\n获得能量币：'+result.data.energy+'个')
-        $.message +='\n开启宝箱'+result.msg+'\n获得能量币：'+result.data.energy+'个'+'\n'
+        $.log('\n开启宝箱'+result.msg+'  获得能量币：'+result.data.energy+'个')
+        $.message +='\n开启宝箱'+result.msg+'  获得能量币：'+result.data.energy+'个'
 } else {
         $.log('\n'+result.msg)
         $.message +=result.msg+'\n'
