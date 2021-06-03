@@ -314,10 +314,10 @@ let url = {
         if(result.code == 0){
  
         console.log('\n看广告： '+result.data.msg)
-        $.message +='\n看广告： '+result.data.msg+'\n'
+        $.message +='\n看广告：  '+result.data.msg+'\n'
     }else{
         console.log('\n看广告： '+result.message)
-        $.message +='\n看广告： '+result.message+'\n'
+        $.message +='\n看广告：  '+result.message+'\n'
 }
         } catch (e) {
           //$.logErr(e, resp);
