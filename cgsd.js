@@ -60,11 +60,11 @@ $.message = ''
           $.index = i + 1;
           console.log(`\n开始【草根时代看视频${$.index}】`)
 }
-$.log(`${ckck}`)
+
 await cgsddr()
 await $.wait(500)
 await cgsddri()
-
+await $.wait(1000)
 await cgsdxx()
 await $.wait(1000)
 await message()
