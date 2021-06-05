@@ -31,7 +31,7 @@
     },{
             "id": "ckck",
             "name": "你的ck",
-            "val": "",
+            "val": "''",
             "type": "String",
             "desc": "把抓到的ck放进来即可"
     }],
