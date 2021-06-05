@@ -72,17 +72,17 @@ await message()
   .finally(() => $.done())
 
 function cgsdck() {
-   if ($request.url.indexOf("getUserFlowerAccount") > -1) {
- const cgsdbody = $request.body
+   if ($request.url.indexOf("getBannerSettingList") > -1) {
+/* const cgsdbody = $request.body
   if(cgsdbody)     $.setdata(cgsdbody,`cgsdbody${status}`)
-    $.log(cgsdbody)
+    $.log(cgsdbody)*/
 const cgsdurl = $request.url
   if(cgsdurl)     $.setdata(cgsdurl,`cgsdurl${status}`)
     $.log(cgsdurl)
   const cgsdhd = JSON.stringify($request.headers)
         if(cgsdhd)    $.setdata(cgsdhd,`cgsdhd${status}`)
 $.log(cgsdhd)
-   $.msg($.name,"",'草根时代'+`${status}` +'body获取成功！')
+   $.msg($.name,"",'草根时代'+`${status}` +'headers获取成功！')
   }
 }
 
