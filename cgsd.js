@@ -35,9 +35,7 @@ $.message = ''
 !(async () => {
   if (typeof $request !== "undefined") {
     await cgsdck()
-    await cgsddr()
-    await $.wait(500)
-    await cgsddri()
+
   } else {cgsdbodyArr.push($.getdata('cgsdbody'))
     cgsdhdArr.push($.getdata('cgsdhd'))
     cgsdurlArr.push($.getdata('cgsdurl'))
@@ -58,18 +56,11 @@ $.message = ''
           console.log(`\n开始【草根时代看视频${$.index}】`)
 }
 
- 
+     await cgsddr()
+    await $.wait(500)
+    await cgsddri()
 
-     for (let x = 0; x < 1; x++) {
-      $.index = x + 1
-      console.log(`\n第${x+1}次执行任务！`)
-    await cgsdsp()
-    await $.wait(DD)
-    await cgsdsp2()
-    await $.wait(DD)
-    await cgsdsp3()
-    await $.wait(DD)
-  }
+
 
 await $.wait(1000)
 await message()
@@ -156,9 +147,19 @@ let url = {
         if(result.resultCode == 200){
     
  token = result.bizBody
- 
+      $.log('登入成功')
+      for (let x = 0; x < 20; x++) {
+      $.index = x + 1
+      console.log(`\n第${x+1}次执行任务！`)
+    await cgsdsp()
+    await $.wait(DD)
+    await cgsdsp2()
+    await $.wait(DD)
+    await cgsdsp3()
+    await $.wait(DD)
+  }
     }else{
-
+      $.log('登入失败')
 }
         } catch (e) {
           
