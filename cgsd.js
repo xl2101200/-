@@ -72,7 +72,7 @@ await message()
   .finally(() => $.done())
 
 function cgsdck() {
-   if ($request.url.indexOf("awardUserFlower") > -1) {
+   if ($request.url.indexOf("getUserFlowerAccount") > -1) {
  const cgsdbody = $request.body
   if(cgsdbody)     $.setdata(cgsdbody,`cgsdbody${status}`)
     $.log(cgsdbody)
