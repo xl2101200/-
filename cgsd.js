@@ -149,7 +149,7 @@ let url = {
  token = result.bizBody
  $.log('登入成功')
  
- for (let x = 0; x < 1; x++) {
+ for (let x = 0; x < 20; x++) {
   $.index = x + 1
   console.log(`\n第${x+1}次执行任务！`)
 await cgsdsp()
