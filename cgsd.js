@@ -28,6 +28,9 @@ let cgsdhd = $.getdata('zwbhd')
 let cgsdurl = $.getdata('cgsdurl')
 let tz = ($.getval('tz') || '1');//通知
 let ckck = ($.getval('ckck') || '');//ck
+let sp1 = ($.getval('sp1') || '');//视频1
+let sp2 = ($.getval('sp2') || '');//视频2
+let sp3 = ($.getval('sp3') || '');//视频3
 let DD = RT(28000, 35000)
 let accessToken = '',token = '',userid = '',headers33 = ''
 $.message = ''
@@ -194,7 +197,7 @@ function cgsdsp(timeout = 0) {
 let url = {
         url : `http://demo.cgsd163.com/api/v1/task/awardUserFlower`,
         headers : headers33,
-        body : '{"keycode":"4R5w/sCKxt4qV1XSdzBXDFXnk1fZBiebnZscf5Ya4Sc\u003d","taskId":"1"}',}
+        body : `${sp1}`,}
       $.post(url, async (err, resp, data) => {
         try {
            
@@ -221,7 +224,7 @@ function cgsdsp2(timeout = 0) {
 let url = {
         url : `http://demo.cgsd163.com/api/v1/task/awardUserFlower`,
         headers : headers33,
-        body : '{"keycode":"SznMAoNnJhVGxBl0fOP1i8tFKjpKuoCiMqu1eqbe54E\u003d","taskId":"2"}',}
+        body : `${sp2}`,}
       $.post(url, async (err, resp, data) => {
         try {
            
@@ -249,7 +252,7 @@ function cgsdsp3(timeout = 0) {
 let url = {
         url : `http://demo.cgsd163.com/api/v1/task/awardUserFlower`,
         headers : headers33,
-        body : '{"keycode":"Ry8CNB9J56LEnFqxNVaCBHMb9gACbQ8A8Cu43M53EOM\u003d","taskId":"4"}',}
+        body : `${sp3}`,}
       $.post(url, async (err, resp, data) => {
         try {
            
