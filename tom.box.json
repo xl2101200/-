@@ -34,6 +34,24 @@
             "val": "",
             "type": "String",
             "desc": "把抓到的ck放加来即可运行脚本"
+    },{
+            "id": "sp1",
+            "name": "视频通道1",
+            "val": "",
+            "type": "String",
+            "desc": "视频body"
+    },{
+            "id": "sp2",
+            "name": "视频通道2",
+            "val": "",
+            "type": "String",
+            "desc": "视频body"
+    },{
+            "id": "sp3",
+            "name": "视频通道3",
+            "val": "",
+            "type": "String",
+            "desc": "视频body"
     }],
             "repo": "https://raw.githubusercontent.com/xl2101200/-/main/cgsd.js",
             "icons": ["https://raw.githubusercontent.com/xl2101200/-/main/tom/tom.jpg","https://raw.githubusercontent.com/xl2101200/-/main/tom/tom.jpg"],
