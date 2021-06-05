@@ -70,20 +70,20 @@ await message()
 })()
   .catch((e) => $.logErr(e))
   .finally(() => $.done())
-
+//http://demo.cgsd163.com/api/v1/task/awardUserFlower
 function cgsdck() {
-   if ($request.url.indexOf("getBannerSettingList") > -1) {
-/* const cgsdbody = $request.body
-  if(cgsdbody)     $.setdata(cgsdbody,`cgsdbody${status}`)
-    $.log(cgsdbody)*/
+  if ($request.url.indexOf("awardUserFlower") > -1 || $request.url.indexOf("task") > -1) {
 const cgsdurl = $request.url
   if(cgsdurl)     $.setdata(cgsdurl,`cgsdurl${status}`)
-    $.log(cgsdurl)
+  $.log(cgsdurl)
   const cgsdhd = JSON.stringify($request.headers)
-        if(cgsdhd)    $.setdata(cgsdhd,`cgsdhd${status}`)
+  if(cgsdhd)    $.setdata(cgsdhd,`cgsdhd${status}`)
 $.log(cgsdhd)
-   $.msg($.name,"",'草根时代'+`${status}` +'headers获取成功！')
-  }
+const cgsdbody = $request.body
+if(cgsdbody)     $.setdata(cgsdbody,`cgsdbody${status}`)
+ $.log(cgsdbody)
+ $.msg($.name,"",'草根时代'+`${status}` +'body获取成功！')
+ }
 }
 
 
