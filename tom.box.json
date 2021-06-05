@@ -33,7 +33,7 @@
             "name": "你的ck",
             "val": "",
             "type": "String",
-            "desc": "0关闭通知，1打开通知"
+            "desc": "把抓到的ck放进来即可"
     }],
             "repo": "https://raw.githubusercontent.com/xl2101200/-/main/cgsd.js",
             "icons": ["https://raw.githubusercontent.com/xl2101200/-/main/tom/tom.jpg","https://raw.githubusercontent.com/xl2101200/-/main/tom/tom.jpg"],
