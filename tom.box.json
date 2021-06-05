@@ -28,6 +28,12 @@
             "val": "1",
             "type": "number",
             "desc": "0关闭通知，1打开通知"
+    },{
+            "id": "ckck",
+            "name": "你的ck",
+            "val": "",
+            "type": "String",
+            "desc": "0关闭通知，1打开通知"
     }],
             "repo": "https://raw.githubusercontent.com/xl2101200/-/main/cgsd.js",
             "icons": ["https://raw.githubusercontent.com/xl2101200/-/main/tom/tom.jpg","https://raw.githubusercontent.com/xl2101200/-/main/tom/tom.jpg"],
