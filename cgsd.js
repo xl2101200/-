@@ -17,6 +17,7 @@ cron自己改 每天运行一次即可
 
 */
 
+
 const $ = new Env('草根时代');
 let status;
 status = (status = ($.getval("cgsdstatus") || "1") ) > 1 ? `${status}` : ""; // 账号扩展字符
@@ -55,12 +56,10 @@ $.message = ''
           $.index = i + 1;
           console.log(`\n开始【草根时代看视频${$.index}】`)
 }
-
-     await cgsddr()
-    await $.wait(500)
-    await cgsddri()
-
-
+$.log(`${ckck}`)
+await cgsddr()
+await $.wait(500)
+await cgsddri()
 
 await $.wait(1000)
 await message()
@@ -102,7 +101,7 @@ function cgsddr(timeout = 0) {
 let url = {
         url : `http://demo.cgsd163.com/user-service/login/v1/userLoginPassword`,
         headers : headers1,
-        body : `${ckck}`,}
+        body : `'${ckck}'`,}
       $.post(url, async (err, resp, data) => {
         try {
            
@@ -147,19 +146,21 @@ let url = {
         if(result.resultCode == 200){
     
  token = result.bizBody
-      $.log('登入成功')
-      for (let x = 0; x < 20; x++) {
-      $.index = x + 1
-      console.log(`\n第${x+1}次执行任务！`)
-    await cgsdsp()
-    await $.wait(DD)
-    await cgsdsp2()
-    await $.wait(DD)
-    await cgsdsp3()
-    await $.wait(DD)
-  }
+ $.log('登入成功')
+ 
+ for (let x = 0; x < 1; x++) {
+  $.index = x + 1
+  console.log(`\n第${x+1}次执行任务！`)
+await cgsdsp()
+await $.wait(DD)
+await cgsdsp2()
+await $.wait(DD)
+await cgsdsp3()
+await $.wait(DD)
+}
+
     }else{
-      $.log('登入失败')
+$.log('登入失败')
 }
         } catch (e) {
           
@@ -267,6 +268,7 @@ let url = {
     },timeout)
   })
 }
+
 
 
 
