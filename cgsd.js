@@ -2,24 +2,15 @@
 20210605 tom
 软件名：草根时代
 下载地址：
-每天看视频领低保稳如老狗 
-第一次提现需要完成一次高佣任务或试玩，以后就不需要了。
+每天看视频领低保稳如老狗，第一次提现需要完成一次高佣任务或试玩，以后就不需要了。
 
 ////////////////////////////////////
-这个是安卓的毛，使用模拟器或者安卓手机挂v2p代理获取ck
-没有v2p，或者不想玩v2p，可以进tg群，
-看看群里的大佬是怎么用安卓抓包，放到圈x来跑的
+这个是安卓的毛，使用模拟器或者安卓手机  用小黄鸟来抓包
+
+可以看看群里的大佬是怎么用安卓抓包，放到圈x来跑的
 Tg群：https://t.me/tom_210120
 ///////////////////////////////////
 
-设置好代理打开软件，看个视频获取ck
-不会用v2p请关注公众号《少年歌行》 查看历史文章，有很多详细的教程
-用v2p获取ck，以下是对应设置方式
-cron自己设置，每天运行一次就行
-[REWRITE]
-匹配连接：http://demo.cgsd163.com/api/v1/task    对应重写目标：https://raw.githubusercontent.com/xl2101200/-/main/cgsd.js
-[MITM]
-demo.cgsd163.com
 
 */
 const $ = new Env('草根时代');
@@ -32,6 +23,20 @@ let cgsdurl = $.getdata('cgsdurl')
 let tz = ($.getval('tz') || '1');//通知
 let DD = RT(28000, 35000)
 $.message = ''
+headers = {
+  'accessToken': '',//把抓取的accessToken放到单引号内
+  'token': '',//把抓取的token放到单引号内
+  'userChannel': '2',
+  'Content-Type': 'application/json; charset=utf-8',
+  'Content-Length': '76',
+  'Host': 'demo.cgsd163.com',
+  'Connection': 'Keep-Alive',
+  'Accept-Encoding': 'gzip',
+  'User-Agent': 'okhttp/4.2.2',
+
+}
+
+
 !(async () => {
   if (typeof $request !== "undefined") {
     await cgsdck()
@@ -60,38 +65,41 @@ $.message = ''
       console.log(`\n第${x+1}次执行任务！`)
     await cgsdsp()
     await $.wait(DD)
-
+    await cgsdsp2()
+    await $.wait(DD)
+    await cgsdsp3()
+    await $.wait(DD)
   }
 
-await $.wait(DD)
+await $.wait(3000)
 await message()
 }}
 
 })()
   .catch((e) => $.logErr(e))
   .finally(() => $.done())
-//http://demo.cgsd163.com/api/v1/task/awardUserFlower
+
 function cgsdck() {
   if ($request.url.indexOf("awardUserFlower") > -1 || $request.url.indexOf("task") > -1) {
-const cgsdurl = $request.url
-  if(cgsdurl)     $.setdata(cgsdurl,`cgsdurl${status}`)
-  $.log(cgsdurl)
-  const cgsdhd = JSON.stringify($request.headers)
+    const cgsdurl = $request.url
+ if(cgsdurl)     $.setdata(cgsdurl,`cgsdurl${status}`)
+      $.log(cgsdurl)
+    const cgsdhd = JSON.stringify($request.headers)
   if(cgsdhd)    $.setdata(cgsdhd,`cgsdhd${status}`)
-$.log(cgsdhd)
-const cgsdbody = $request.body
-if(cgsdbody)     $.setdata(cgsdbody,`cgsdbody${status}`)
- $.log(cgsdbody)
- $.msg($.name,"",'草根时代'+`${status}` +'body获取成功！')
- }
+      $.log(cgsdhd)
+    const cgsdbody = $request.body
+  if(cgsdbody)     $.setdata(cgsdbody,`cgsdbody${status}`)
+     $.log(cgsdbody)
+   $.msg($.name,"",'草根时代'+`${status}` +'body获取成功！')
+  }
 }
 
-
+//视频1
 function cgsdsp(timeout = 0) {
   return new Promise((resolve) => {
 let url = {
         url : `http://demo.cgsd163.com/api/v1/task/awardUserFlower`,
-        headers : JSON.parse(cgsdhd),
+        headers : headers,
         body : '{"keycode":"4R5w/sCKxt4qV1XSdzBXDFXnk1fZBiebnZscf5Ya4Sc\u003d","taskId":"1"}',}
       $.post(url, async (err, resp, data) => {
         try {
@@ -113,8 +121,61 @@ let url = {
     },timeout)
   })
 }
+//视频2
+function cgsdsp2(timeout = 0) {
+  return new Promise((resolve) => {
+let url = {
+        url : `http://demo.cgsd163.com/api/v1/task/awardUserFlower`,
+        headers : headers,
+        body : '{"keycode":"SznMAoNnJhVGxBl0fOP1i8tFKjpKuoCiMqu1eqbe54E\u003d","taskId":"2"}',}
+      $.post(url, async (err, resp, data) => {
+        try {
+           
+    const result = JSON.parse(data)
+        if(result.resultCode == 200){
+ 
+        $.log('\n观看视频成功  获得'+result.bizBody.awardNum+'积分')
+          $.message +='\n观看视频成功  获得'+result.bizBody.awardNum+'积分'
+    }else{
+        $.log('\n '+result.resultMsg)
+      $.message +='\n '+result.resultMsg
+}
+        } catch (e) {
+          
+        } finally {
+          resolve()
+        }
+    },timeout)
+  })
+}
 
-
+//视频3
+function cgsdsp3(timeout = 0) {
+  return new Promise((resolve) => {
+let url = {
+        url : `http://demo.cgsd163.com/api/v1/task/awardUserFlower`,
+        headers : headers,
+        body : '{"keycode":"Ry8CNB9J56LEnFqxNVaCBHMb9gACbQ8A8Cu43M53EOM\u003d","taskId":"4"}',}
+      $.post(url, async (err, resp, data) => {
+        try {
+           
+    const result = JSON.parse(data)
+        if(result.resultCode == 200){
+ 
+        $.log('\n观看视频成功  获得'+result.bizBody.awardNum+'积分')
+          $.message +='\n观看视频成功  获得'+result.bizBody.awardNum+'积分'
+    }else{
+        $.log('\n '+result.resultMsg)
+      $.message +='\n '+result.resultMsg
+}
+        } catch (e) {
+          
+        } finally {
+          resolve()
+        }
+    },timeout)
+  })
+}
 
 
 
