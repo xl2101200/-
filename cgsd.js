@@ -62,6 +62,7 @@ await cgsddr()
 await $.wait(500)
 await cgsddri()
 
+await cgsdxx()
 await $.wait(1000)
 await message()
 }}
@@ -269,7 +270,33 @@ let url = {
     },timeout)
   })
 }
-
+//积分
+function cgsdxx(timeout = 0) {
+  return new Promise((resolve) => {
+let url = {
+        url : `http://demo.cgsd163.com/user-service/flower/v1/getUserFlowerAccount`,
+        headers : headers33,
+        body :  `{"uid":"${userid}"}`,}
+      $.post(url, async (err, resp, data) => {
+        try {
+           
+    const result = JSON.parse(data)
+        if(result.resultCode == 200){
+ 
+        $.log('\n现有'+result.bizBody.totalAmount+'积分')
+          $.message +='\n现有'+result.bizBody.totalAmount+'积分'
+    }else{
+        $.log('\n '+result.resultMsg)
+      $.message +='\n '+result.resultMsg
+}
+        } catch (e) {
+          
+        } finally {
+          resolve()
+        }
+    },timeout)
+  })
+}
 
 
 
