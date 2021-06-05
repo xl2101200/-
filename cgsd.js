@@ -101,7 +101,7 @@ function cgsddr(timeout = 0) {
 let url = {
         url : `http://demo.cgsd163.com/user-service/login/v1/userLoginPassword`,
         headers : headers1,
-        body : `'${ckck}'`,}
+        body : `${ckck}`,}
       $.post(url, async (err, resp, data) => {
         try {
            
