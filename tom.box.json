@@ -31,9 +31,9 @@
     },{
             "id": "ckck",
             "name": "你的ck",
-            "val": "''",
+            "val": "",
             "type": "String",
-            "desc": "把抓到的ck放到 '' 单引号内即可"
+            "desc": "把抓到的ck放加来即可运行脚本"
     }],
             "repo": "https://raw.githubusercontent.com/xl2101200/-/main/cgsd.js",
             "icons": ["https://raw.githubusercontent.com/xl2101200/-/main/tom/tom.jpg","https://raw.githubusercontent.com/xl2101200/-/main/tom/tom.jpg"],
