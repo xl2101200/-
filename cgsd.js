@@ -92,7 +92,7 @@ function cgsdsp(timeout = 0) {
 let url = {
         url : `http://demo.cgsd163.com/api/v1/task/awardUserFlower`,
         headers : JSON.parse(cgsdhd),
-        body : cgsdbody,}
+        body : '{"keycode":"4R5w/sCKxt4qV1XSdzBXDFXnk1fZBiebnZscf5Ya4Sc\u003d","taskId":"1"}',}
       $.post(url, async (err, resp, data) => {
         try {
            
