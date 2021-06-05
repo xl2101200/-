@@ -6,7 +6,7 @@
   "repo": "https://github.com/xl2101200/-",
   "apps": [
     {
-            "id": "zduoduo",
+            "id": "cgsd",
             "name": "草根时代",
             "keys": ["cgsdurl","cgsdhd","cgsdbody","cgsdurl2","cgsdhd2","cgsdbody2"],
             "author": "@tom",
