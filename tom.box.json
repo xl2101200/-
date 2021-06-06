@@ -299,7 +299,7 @@
     },{
             "id": "zb",
             "name": "ZEALER",
-            "keys": ["zburl", "zbhd","zbbody","zburl2", "zbhd2","zbbody2"],
+            "keys": ["zburl", "zbhd","zbbody","zb1body","zburl2", "zbhd2","zbbody2","zb1body2"],
             "author": "@tom",
             "settings": [{
             "id": "zbstatus",
