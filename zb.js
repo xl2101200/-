@@ -117,7 +117,7 @@ let url = {
 
         fxid = result.data[RT(0,10)].id
 
-        $.log(''+result.data[RT(0,10)].id)
+        //$.log(''+result.data[RT(0,10)].id)
         //$.message +=''+result.data[RT(0,10)].id
        await zbfx()
         
