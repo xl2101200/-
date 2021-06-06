@@ -10,7 +10,7 @@
 
 进入软件==赚钱==看专属视频一次即可获取ck
 
-已知bug，需要每天更新body，等有空在修复
+已知bug，需要每天手动看一次视频更新body，等有空在修复
 
 怎么兑换大米？拥有足够的米粒就可以兑换了
 点我的-领米中心，根据自己的米粒多少兑换相应斤数的大米，然后填写自己的收货地址等发货就行了，一般4天左右到。
@@ -33,9 +33,11 @@ CRON自己改，默认写了22点运行   每天运行一次即可！
 [task_local]
 #引力生活
 0 22 * * * https://raw.githubusercontent.com/xl2101200/-/main/ylsh.js, tag=引力生活, img-url=https://raw.githubusercontent.com/sngxpro/QuanX/master/icons/tom.png, enabled=true
+
 [rewrite_local]
 #引力生活
 http://app-api.yinlishenghuo.com/api/jingdian/reward/video url script-request-body https://raw.githubusercontent.com/xl2101200/-/main/ylsh.js
+
 [MITM]
 hostname = app-api.yinlishenghuo.com
 
