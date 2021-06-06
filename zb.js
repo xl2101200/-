@@ -23,6 +23,345 @@ https://app.zaaap.cn/group url script-request-body https://raw.githubusercontent
 hostname = app.zaaap.cn
 */
 
- const toolfk0_0x534f=['次执行任务！','body','https://app.zaaap.cn/content/contentshare','prototype','energyList','getMinutes','https://app.zaaap.cn/contentcp/homeContent','index','https://app.zaaap.cn/user/contentpraise','__proto__','--\x0a','\x0a------','message','271873NDyrBK','return\x20(function()\x20','registerData','done','constructor','table','------','lastId=0&pageNum=1&verifyStr=','getdata','catch','3EYYqau','return\x20/\x22\x20+\x20this\x20+\x20\x22/','5856hesPqW','&type=0&verifyStr=','log','getMonth','276846NkIYLP','floor','apply','parse','getval','https://app.zaaap.cn/points/home/openbox','zbbody','indexOf','headers','content_id=','match','39826jTkAIT','ZEALER','txt','\x0a开始ZEALER【','activitylist','1RSORlf','length','bind','undefined','272942ijKkdl','error','https://app.zaaap.cn/points/home/havingenergy','zb1body','402319PaaRdc','info','warn','\x0a收取气泡','wait','zbstatus','\x0a开启宝箱','zbhd','getFullYear','1415094BneHrT','msg','post','exception','console','setdata','url','stringify','status','\x0aContent-Disposition:\x20form-data;\x20name=\x22energyId\x22\x0a','name','data','zburl','toString','getSeconds','&type=1&verifyStr=','47ltBddC','push','getHours','{}.constructor(\x22return\x20this\x22)(\x20)','random','energy','&verifyTime=','\x20\x20获得能量币：'];const toolfk0_0x2ecfcb=toolfk0_0x2327;(function(_0x3aebff,_0xe98a1){const _0x23d671=toolfk0_0x2327;while(!![]){try{const _0x442e7e=parseInt(_0x23d671(0x190))*parseInt(_0x23d671(0x198))+parseInt(_0x23d671(0x194))+-parseInt(_0x23d671(0x17a))*-parseInt(_0x23d671(0x18b))+parseInt(_0x23d671(0x180))+-parseInt(_0x23d671(0x1b1))*-parseInt(_0x23d671(0x17c))+parseInt(_0x23d671(0x170))+-parseInt(_0x23d671(0x1a1));if(_0x442e7e===_0xe98a1)break;else _0x3aebff['push'](_0x3aebff['shift']());}catch(_0x3e2134){_0x3aebff['push'](_0x3aebff['shift']());}}}(toolfk0_0x534f,0x31b4c));const $=new Env(toolfk0_0x2ecfcb(0x18c));let status;status=(status=$[toolfk0_0x2ecfcb(0x184)](toolfk0_0x2ecfcb(0x19d))||'1')>0x1?''+status:'';const zburlArr=[],zbbodyArr=[],zb1bodyArr=[],zbhdArr=[],zbcount='';let zburl=$[toolfk0_0x2ecfcb(0x178)]('zburl'),zbbody=$['getdata'](toolfk0_0x2ecfcb(0x186)),zbhd=$[toolfk0_0x2ecfcb(0x178)](toolfk0_0x2ecfcb(0x19f)),DD=RT(0xfa0,0x2710),tz=$[toolfk0_0x2ecfcb(0x184)]('tz')||'1',id='',boundary='',dzid='',verifyStr='',verifyTime='',fxid='';$[toolfk0_0x2ecfcb(0x16f)]='',!(async()=>{const _0x354589=toolfk0_0x2ecfcb;if(typeof $request!==_0x354589(0x193))await zbck();else{zburlArr[_0x354589(0x1b2)]($[_0x354589(0x178)](_0x354589(0x1ad))),zbhdArr[_0x354589(0x1b2)]($[_0x354589(0x178)](_0x354589(0x19f))),zbbodyArr[_0x354589(0x1b2)]($[_0x354589(0x178)](_0x354589(0x186))),zb1bodyArr[_0x354589(0x1b2)]($[_0x354589(0x178)]('zb1body'));let _0x535cb5=$[_0x354589(0x184)]('zbcount')||'1';for(let _0x18c5e4=0x2;_0x18c5e4<=_0x535cb5;_0x18c5e4++){zburlArr[_0x354589(0x1b2)]($[_0x354589(0x178)](_0x354589(0x1ad)+_0x18c5e4)),zbbodyArr['push']($[_0x354589(0x178)](_0x354589(0x186)+_0x18c5e4)),zbhdArr['push']($[_0x354589(0x178)](_0x354589(0x19f)+_0x18c5e4));}console[_0x354589(0x17e)]('-------------\x20共'+zbhdArr['length']+'个账号-------------\x0a');for(let _0x11bec3=0x0;_0x11bec3<zbhdArr[_0x354589(0x191)];_0x11bec3++){if(zbhdArr[_0x11bec3]){zburl=zburlArr[_0x11bec3],zbbody=zbbodyArr[_0x11bec3],zb1body=zb1bodyArr[_0x11bec3],zbhd=zbhdArr[_0x11bec3],$[_0x354589(0x1c0)]=_0x11bec3+0x1,console[_0x354589(0x17e)](_0x354589(0x18e)+$['index']+'】'),await openbox(),await $['wait'](0x3e8),await index(),await $[_0x354589(0x19c)](DD);for(let _0x360ce4=0x0;_0x360ce4<0x5;_0x360ce4++){$[_0x354589(0x1c0)]=_0x360ce4+0x1,console[_0x354589(0x17e)]('\x0a第'+(_0x360ce4+0x1)+_0x354589(0x1b9)),await zbdzlb(),await $[_0x354589(0x19c)](DD),await zbfxlb(),await $[_0x354589(0x19c)](DD);}message();}}}})()[toolfk0_0x2ecfcb(0x179)](_0x4e9e68=>$['logErr'](_0x4e9e68))['finally'](()=>$[toolfk0_0x2ecfcb(0x173)]());function zbck(){const _0x2e8f14=toolfk0_0x2ecfcb;if($request['url'][_0x2e8f14(0x187)](_0x2e8f14(0x1c0))>-0x1){const _0xf74f72=$request[_0x2e8f14(0x1a7)];if(_0xf74f72)$[_0x2e8f14(0x1a6)](_0xf74f72,_0x2e8f14(0x1ad)+status);$[_0x2e8f14(0x17e)](_0xf74f72);const _0x593721=$request[_0x2e8f14(0x1ba)];if(_0x593721)$['setdata'](_0x593721,_0x2e8f14(0x186)+status);$['log'](_0x593721);const _0x11719c=JSON[_0x2e8f14(0x1a8)]($request[_0x2e8f14(0x188)]);if(_0x11719c)$['setdata'](_0x11719c,_0x2e8f14(0x19f)+status);$['log'](_0x11719c),$['msg']($[_0x2e8f14(0x1ab)],'',_0x2e8f14(0x18c)+(''+status)+'\x20获取headers成功！');}else{if($request[_0x2e8f14(0x1a7)][_0x2e8f14(0x187)](_0x2e8f14(0x18f))>-0x1){const _0x3619d2=$request[_0x2e8f14(0x1ba)];if(_0x3619d2)$[_0x2e8f14(0x1a6)](_0x3619d2,_0x2e8f14(0x197)+status);$[_0x2e8f14(0x17e)](_0x3619d2),$[_0x2e8f14(0x1a2)]($[_0x2e8f14(0x1ab)],'',_0x2e8f14(0x18c)+(''+status)+'\x20获取body成功！');}}}function zbfxlb(_0x40b278=0x0){return new Promise(_0x168756=>{const _0x5c945d=toolfk0_0x2327;let _0x469903={'url':'https://app.zaaap.cn/contentcp/homeContent','headers':JSON[_0x5c945d(0x183)]($['getdata'](_0x5c945d(0x19f))),'body':_0x5c945d(0x177)+verifyStr+_0x5c945d(0x1b7)+verifyTime};$[_0x5c945d(0x1a3)](_0x469903,async(_0x2060f6,_0xa3819d,_0x5ca619)=>{const _0x5be844=_0x5c945d;try{const _0x215680=JSON[_0x5be844(0x183)](_0x5ca619);_0x215680['status']==0xc8?(fxid=_0x215680[_0x5be844(0x1ac)][RT(0x0,0xa)]['id'],await zbfx()):$[_0x5be844(0x17e)]('\x0a'+_0x215680['msg']);}catch(_0x6bacd9){}finally{_0x168756();}},_0x40b278);});}function zbfx(_0x252b9f=0x0){return new Promise(_0x5cf967=>{const _0x2a6da7=toolfk0_0x2327;let _0x24946b={'url':_0x2a6da7(0x1bb),'headers':JSON[_0x2a6da7(0x183)]($[_0x2a6da7(0x178)]('zbhd')),'body':'content_id='+fxid+_0x2a6da7(0x1b0)+verifyStr+_0x2a6da7(0x1b7)+verifyTime};$['post'](_0x24946b,async(_0x342d87,_0xdd655f,_0x5c9dd7)=>{const _0x1097ca=_0x2a6da7;try{const _0x5f503c=JSON[_0x1097ca(0x183)](_0x5c9dd7);_0x5f503c[_0x1097ca(0x1a9)]==0xc8?($[_0x1097ca(0x17e)](''+_0x5f503c[_0x1097ca(0x1a2)]),$[_0x1097ca(0x16f)]+=_0x5f503c[_0x1097ca(0x1a2)]+'\x0a'):$[_0x1097ca(0x17e)]('\x0a'+_0x5f503c[_0x1097ca(0x1a2)]);}catch(_0x10dbcc){}finally{_0x5cf967();}},_0x252b9f);});}function openbox(_0x345831=0x0){return new Promise(_0x73f40f=>{const _0x34f767=toolfk0_0x2327;let _0x58d05c={'url':_0x34f767(0x185),'headers':JSON['parse']($[_0x34f767(0x178)]('zbhd')),'body':zbbody};$['post'](_0x58d05c,async(_0x9d5825,_0x270de8,_0x1a82cf)=>{const _0x49c1aa=_0x34f767;try{const _0x4a109d=JSON[_0x49c1aa(0x183)](_0x1a82cf);_0x4a109d[_0x49c1aa(0x1a9)]==0xc8?($[_0x49c1aa(0x17e)](_0x49c1aa(0x19e)+_0x4a109d[_0x49c1aa(0x1a2)]+_0x49c1aa(0x1b8)+_0x4a109d[_0x49c1aa(0x1ac)][_0x49c1aa(0x1b6)]+'个'),$[_0x49c1aa(0x16f)]+=_0x49c1aa(0x19e)+_0x4a109d[_0x49c1aa(0x1a2)]+'\x20\x20获得能量币：'+_0x4a109d[_0x49c1aa(0x1ac)]['energy']+'个'):($[_0x49c1aa(0x17e)]('\x0a'+_0x4a109d[_0x49c1aa(0x1a2)]),$[_0x49c1aa(0x16f)]+=_0x4a109d[_0x49c1aa(0x1a2)]+'\x0a');}catch(_0x34f9eb){}finally{_0x73f40f();}},_0x345831);});}function index(_0x47e34e=0x0){return new Promise(_0xaf77a7=>{const _0x5be93f=toolfk0_0x2327;let _0x344d1d={'url':'https://app.zaaap.cn/points/home/index','headers':JSON['parse']($[_0x5be93f(0x178)](_0x5be93f(0x19f))),'body':zbbody};$[_0x5be93f(0x1a3)](_0x344d1d,async(_0x14f5df,_0x40915e,_0x5b4bab)=>{const _0x338e30=_0x5be93f;try{const _0x255d4a=JSON['parse'](_0x5b4bab);_0x255d4a[_0x338e30(0x1a9)]==0xc8?(id=_0x255d4a[_0x338e30(0x1ac)][_0x338e30(0x1bd)][0x0]['id'],$[_0x338e30(0x17e)]('\x0a'+_0x255d4a['data'][_0x338e30(0x172)][_0x338e30(0x18d)]),await $[_0x338e30(0x19c)](0x3e8),await havingenergy()):($['log']('\x0a'+_0x255d4a[_0x338e30(0x1a2)]),$['message']+=_0x255d4a[_0x338e30(0x1a2)]+'\x0a');}catch(_0x5d13f6){}finally{_0xaf77a7();}},_0x47e34e);});}function zbdzlb(_0x24ae06=0x0){return new Promise(_0x28563b=>{const _0x131286=toolfk0_0x2327;let _0x1de732={'url':_0x131286(0x1bf),'headers':JSON[_0x131286(0x183)]($[_0x131286(0x178)](_0x131286(0x19f))),'body':_0x131286(0x177)+verifyStr+_0x131286(0x1b7)+verifyTime};$[_0x131286(0x1a3)](_0x1de732,async(_0x436a31,_0x1f9d97,_0xd2e28)=>{const _0x317f04=_0x131286;try{const _0x4fb4bb=JSON[_0x317f04(0x183)](_0xd2e28);_0x4fb4bb[_0x317f04(0x1a9)]==0xc8?(dzid=_0x4fb4bb[_0x317f04(0x1ac)][RT(0x0,0xa)]['id'],await zbdz()):$['log']('\x0a'+_0x4fb4bb[_0x317f04(0x1a2)]);}catch(_0x58dcdd){}finally{_0x28563b();}},_0x24ae06);});}function zbdz(_0x2a8c5d=0x0){return new Promise(_0x3d921a=>{const _0x5391c9=toolfk0_0x2327;let _0x73b2c={'url':_0x5391c9(0x1c1),'headers':JSON['parse']($[_0x5391c9(0x178)](_0x5391c9(0x19f))),'body':_0x5391c9(0x189)+dzid+_0x5391c9(0x17d)+verifyStr+_0x5391c9(0x1b7)+verifyTime};$[_0x5391c9(0x1a3)](_0x73b2c,async(_0x1f33f2,_0x3d06db,_0x360ae2)=>{const _0x4377ef=_0x5391c9;try{const _0x44f858=JSON[_0x4377ef(0x183)](_0x360ae2);_0x44f858[_0x4377ef(0x1a9)]==0xc8?($[_0x4377ef(0x17e)](''+_0x44f858[_0x4377ef(0x1a2)]),$[_0x4377ef(0x16f)]+=_0x44f858[_0x4377ef(0x1a2)]+'\x0a'):$[_0x4377ef(0x17e)]('\x0a'+_0x44f858[_0x4377ef(0x1a2)]);}catch(_0x79a4af){}finally{_0x3d921a();}},_0x2a8c5d);});}function havingenergy(_0x2d7b0d=0x0){return new Promise(_0x1fbe96=>{const _0x5b86e1=toolfk0_0x2327;boundary=zbhd[_0x5b86e1(0x18a)](/boundary=----(\w+)/)[0x1];const _0x24ee23=_0x5b86e1(0x176)+boundary+_0x5b86e1(0x1aa)+id+_0x5b86e1(0x16e)+boundary+_0x5b86e1(0x16d);let _0x5dbf2d={'url':_0x5b86e1(0x196),'headers':JSON[_0x5b86e1(0x183)]($['getdata'](_0x5b86e1(0x19f))),'body':_0x24ee23};$[_0x5b86e1(0x1a3)](_0x5dbf2d,async(_0x4035a5,_0x1fe2d4,_0x1a2add)=>{const _0x4bd3c9=_0x5b86e1;try{const _0x18ea1f=JSON[_0x4bd3c9(0x183)](_0x1a2add);_0x18ea1f['status']==0xc8?($[_0x4bd3c9(0x17e)](_0x4bd3c9(0x19b)+_0x18ea1f['msg']),$[_0x4bd3c9(0x16f)]+=_0x4bd3c9(0x19b)+_0x18ea1f[_0x4bd3c9(0x1a2)],await $[_0x4bd3c9(0x19c)](0x3e8),await index()):($[_0x4bd3c9(0x17e)]('\x0a'+_0x18ea1f[_0x4bd3c9(0x1a2)]),$[_0x4bd3c9(0x16f)]+=_0x18ea1f['msg']+'\x0a');}catch(_0x115b5d){}finally{_0x1fbe96();}},_0x2d7b0d);});}function toolfk0_0x2327(_0x450418,_0x2a55b5){_0x450418=_0x450418-0x16c;let _0x33ca9c=toolfk0_0x534f[_0x450418];return _0x33ca9c;}function message(){const _0x140b67=toolfk0_0x2ecfcb;tz==0x1&&$[_0x140b67(0x1a2)]($[_0x140b67(0x1ab)],'',$[_0x140b67(0x16f)]);}function RT(_0x13b935,_0x2d1c07){const _0x3503c2=toolfk0_0x2ecfcb,_0x1e83f8=function(){let _0x45e63a=!![];return function(_0x5e2b71,_0x50a898){const _0x5a2fd6=_0x45e63a?function(){if(_0x50a898){const _0x5a2455=_0x50a898['apply'](_0x5e2b71,arguments);return _0x50a898=null,_0x5a2455;}}:function(){};return _0x45e63a=![],_0x5a2fd6;};}(),_0x4f9cb8=_0x1e83f8(this,function(){const _0x32931b=function(){const _0x241c49=toolfk0_0x2327,_0x5dd447=_0x32931b[_0x241c49(0x174)](_0x241c49(0x17b))()['constructor']('^([^\x20]+(\x20+[^\x20]+)+)+[^\x20]}');return!_0x5dd447['test'](_0x4f9cb8);};return _0x32931b();});_0x4f9cb8();do rt=Math[_0x3503c2(0x181)](Math[_0x3503c2(0x1b5)]()*_0x2d1c07);while(rt<_0x13b935);return rt;}console[toolfk0_0x2ecfcb(0x17e)]('\x0a'+getCurrentDate());function getCurrentDate(){const _0x57c8be=toolfk0_0x2ecfcb,_0x36df38=function(){let _0x453538=!![];return function(_0x38d448,_0x52fc85){const _0x1cdc9c=_0x453538?function(){const _0x4f3dc8=toolfk0_0x2327;if(_0x52fc85){const _0x112542=_0x52fc85[_0x4f3dc8(0x182)](_0x38d448,arguments);return _0x52fc85=null,_0x112542;}}:function(){};return _0x453538=![],_0x1cdc9c;};}(),_0x14b5cd=_0x36df38(this,function(){const _0x3d9785=toolfk0_0x2327;let _0xdb1126;try{const _0xdca519=Function(_0x3d9785(0x171)+_0x3d9785(0x1b4)+');');_0xdb1126=_0xdca519();}catch(_0x3a5d88){_0xdb1126=window;}const _0x228c08=_0xdb1126['console']=_0xdb1126[_0x3d9785(0x1a5)]||{},_0x5a2cac=[_0x3d9785(0x17e),_0x3d9785(0x19a),_0x3d9785(0x199),_0x3d9785(0x195),_0x3d9785(0x1a4),_0x3d9785(0x175),'trace'];for(let _0x442ffc=0x0;_0x442ffc<_0x5a2cac[_0x3d9785(0x191)];_0x442ffc++){const _0x232d9c=_0x36df38[_0x3d9785(0x174)][_0x3d9785(0x1bc)][_0x3d9785(0x192)](_0x36df38),_0x4da239=_0x5a2cac[_0x442ffc],_0x5d50f2=_0x228c08[_0x4da239]||_0x232d9c;_0x232d9c[_0x3d9785(0x16c)]=_0x36df38[_0x3d9785(0x192)](_0x36df38),_0x232d9c[_0x3d9785(0x1ae)]=_0x5d50f2[_0x3d9785(0x1ae)][_0x3d9785(0x192)](_0x5d50f2),_0x228c08[_0x4da239]=_0x232d9c;}});_0x14b5cd();var _0x2f940e=new Date(),_0x22d2f0='-',_0x583bcc=':',_0xe64cf9=_0x2f940e[_0x57c8be(0x17f)]()+0x1,_0xcf216=_0x2f940e['getDate']();_0xe64cf9>=0x1&&_0xe64cf9<=0x9&&(_0xe64cf9='0'+_0xe64cf9);_0xcf216>=0x0&&_0xcf216<=0x9&&(_0xcf216='0'+_0xcf216);var _0x5e6945=_0x2f940e[_0x57c8be(0x1a0)]()+_0x22d2f0+_0xe64cf9+_0x22d2f0+_0xcf216+'\x20'+_0x2f940e[_0x57c8be(0x1b3)]()+_0x583bcc+_0x2f940e[_0x57c8be(0x1be)]()+_0x583bcc+_0x2f940e[_0x57c8be(0x1af)]();return _0x5e6945;}
 
- function Env(t,e){class s{constructor(t){this.env=t}send(t,e="GET"){t="string"==typeof t?{url:t}:t;let s=this.get;return"POST"===e&&(s=this.post),new Promise((e,i)=>{s.call(this,t,(t,s,r)=>{t?i(t):e(s)})})}get(t){return this.send.call(this.env,t)}post(t){return this.send.call(this.env,t,"POST")}}return new class{constructor(t,e){this.name=t,this.http=new s(this),this.data=null,this.dataFile="box.dat",this.logs=[],this.isMute=!1,this.isNeedRewrite=!1,this.logSeparator="\n",this.startTime=(new Date).getTime(),Object.assign(this,e),this.log("",`\ud83d\udd14${this.name}, \u5f00\u59cb!`)}isNode(){return"undefined"!=typeof module&&!!module.exports}isQuanX(){return"undefined"!=typeof $task}isSurge(){return"undefined"!=typeof $httpClient&&"undefined"==typeof $loon}isLoon(){return"undefined"!=typeof $loon}toObj(t,e=null){try{return JSON.parse(t)}catch{return e}}toStr(t,e=null){try{return JSON.stringify(t)}catch{return e}}getjson(t,e){let s=e;const i=this.getdata(t);if(i)try{s=JSON.parse(this.getdata(t))}catch{}return s}setjson(t,e){try{return this.setdata(JSON.stringify(t),e)}catch{return!1}}getScript(t){return new Promise(e=>{this.get({url:t},(t,s,i)=>e(i))})}runScript(t,e){return new Promise(s=>{let i=this.getdata("@chavy_boxjs_userCfgs.httpapi");i=i?i.replace(/\n/g,"").trim():i;let r=this.getdata("@chavy_boxjs_userCfgs.httpapi_timeout");r=r?1*r:20,r=e&&e.timeout?e.timeout:r;const[o,h]=i.split("@"),a={url:`http://${h}/v1/scripting/evaluate`,body:{script_text:t,mock_type:"cron",timeout:r},headers:{"X-Key":o,Accept:"*/*"}};this.post(a,(t,e,i)=>s(i))}).catch(t=>this.logErr(t))}loaddata(){if(!this.isNode())return{};{this.fs=this.fs?this.fs:require("fs"),this.path=this.path?this.path:require("path");const t=this.path.resolve(this.dataFile),e=this.path.resolve(process.cwd(),this.dataFile),s=this.fs.existsSync(t),i=!s&&this.fs.existsSync(e);if(!s&&!i)return{};{const i=s?t:e;try{return JSON.parse(this.fs.readFileSync(i))}catch(t){return{}}}}}writedata(){if(this.isNode()){this.fs=this.fs?this.fs:require("fs"),this.path=this.path?this.path:require("path");const t=this.path.resolve(this.dataFile),e=this.path.resolve(process.cwd(),this.dataFile),s=this.fs.existsSync(t),i=!s&&this.fs.existsSync(e),r=JSON.stringify(this.data);s?this.fs.writeFileSync(t,r):i?this.fs.writeFileSync(e,r):this.fs.writeFileSync(t,r)}}lodash_get(t,e,s){const i=e.replace(/\[(\d+)\]/g,".$1").split(".");let r=t;for(const t of i)if(r=Object(r)[t],void 0===r)return s;return r}lodash_set(t,e,s){return Object(t)!==t?t:(Array.isArray(e)||(e=e.toString().match(/[^.[\]]+/g)||[]),e.slice(0,-1).reduce((t,s,i)=>Object(t[s])===t[s]?t[s]:t[s]=Math.abs(e[i+1])>>0==+e[i+1]?[]:{},t)[e[e.length-1]]=s,t)}getdata(t){let e=this.getval(t);if(/^@/.test(t)){const[,s,i]=/^@(.*?)\.(.*?)$/.exec(t),r=s?this.getval(s):"";if(r)try{const t=JSON.parse(r);e=t?this.lodash_get(t,i,""):e}catch(t){e=""}}return e}setdata(t,e){let s=!1;if(/^@/.test(e)){const[,i,r]=/^@(.*?)\.(.*?)$/.exec(e),o=this.getval(i),h=i?"null"===o?null:o||"{}":"{}";try{const e=JSON.parse(h);this.lodash_set(e,r,t),s=this.setval(JSON.stringify(e),i)}catch(e){const o={};this.lodash_set(o,r,t),s=this.setval(JSON.stringify(o),i)}}else s=this.setval(t,e);return s}getval(t){return this.isSurge()||this.isLoon()?$persistentStore.read(t):this.isQuanX()?$prefs.valueForKey(t):this.isNode()?(this.data=this.loaddata(),this.data[t]):this.data&&this.data[t]||null}setval(t,e){return this.isSurge()||this.isLoon()?$persistentStore.write(t,e):this.isQuanX()?$prefs.setValueForKey(t,e):this.isNode()?(this.data=this.loaddata(),this.data[e]=t,this.writedata(),!0):this.data&&this.data[e]||null}initGotEnv(t){this.got=this.got?this.got:require("got"),this.cktough=this.cktough?this.cktough:require("tough-cookie"),this.ckjar=this.ckjar?this.ckjar:new this.cktough.CookieJar,t&&(t.headers=t.headers?t.headers:{},void 0===t.headers.Cookie&&void 0===t.cookieJar&&(t.cookieJar=this.ckjar))}get(t,e=(()=>{})){t.headers&&(delete t.headers["Content-Type"],delete t.headers["Content-Length"]),this.isSurge()||this.isLoon()?(this.isSurge()&&this.isNeedRewrite&&(t.headers=t.headers||{},Object.assign(t.headers,{"X-Surge-Skip-Scripting":!1})),$httpClient.get(t,(t,s,i)=>{!t&&s&&(s.body=i,s.statusCode=s.status),e(t,s,i)})):this.isQuanX()?(this.isNeedRewrite&&(t.opts=t.opts||{},Object.assign(t.opts,{hints:!1})),$task.fetch(t).then(t=>{const{statusCode:s,statusCode:i,headers:r,body:o}=t;e(null,{status:s,statusCode:i,headers:r,body:o},o)},t=>e(t))):this.isNode()&&(this.initGotEnv(t),this.got(t).on("redirect",(t,e)=>{try{if(t.headers["set-cookie"]){const s=t.headers["set-cookie"].map(this.cktough.Cookie.parse).toString();this.ckjar.setCookieSync(s,null),e.cookieJar=this.ckjar}}catch(t){this.logErr(t)}}).then(t=>{const{statusCode:s,statusCode:i,headers:r,body:o}=t;e(null,{status:s,statusCode:i,headers:r,body:o},o)},t=>{const{message:s,response:i}=t;e(s,i,i&&i.body)}))}post(t,e=(()=>{})){if(t.body&&t.headers&&!t.headers["Content-Type"]&&(t.headers["Content-Type"]="application/x-www-form-urlencoded"),t.headers&&delete t.headers["Content-Length"],this.isSurge()||this.isLoon())this.isSurge()&&this.isNeedRewrite&&(t.headers=t.headers||{},Object.assign(t.headers,{"X-Surge-Skip-Scripting":!1})),$httpClient.post(t,(t,s,i)=>{!t&&s&&(s.body=i,s.statusCode=s.status),e(t,s,i)});else if(this.isQuanX())t.method="POST",this.isNeedRewrite&&(t.opts=t.opts||{},Object.assign(t.opts,{hints:!1})),$task.fetch(t).then(t=>{const{statusCode:s,statusCode:i,headers:r,body:o}=t;e(null,{status:s,statusCode:i,headers:r,body:o},o)},t=>e(t));else if(this.isNode()){this.initGotEnv(t);const{url:s,...i}=t;this.got.post(s,i).then(t=>{const{statusCode:s,statusCode:i,headers:r,body:o}=t;e(null,{status:s,statusCode:i,headers:r,body:o},o)},t=>{const{message:s,response:i}=t;e(s,i,i&&i.body)})}}time(t){let e={"M+":(new Date).getMonth()+1,"d+":(new Date).getDate(),"H+":(new Date).getHours(),"m+":(new Date).getMinutes(),"s+":(new Date).getSeconds(),"q+":Math.floor(((new Date).getMonth()+3)/3),S:(new Date).getMilliseconds()};/(y+)/.test(t)&&(t=t.replace(RegExp.$1,((new Date).getFullYear()+"").substr(4-RegExp.$1.length)));for(let s in e)new RegExp("("+s+")").test(t)&&(t=t.replace(RegExp.$1,1==RegExp.$1.length?e[s]:("00"+e[s]).substr((""+e[s]).length)));return t}msg(e=t,s="",i="",r){const o=t=>{if(!t)return t;if("string"==typeof t)return this.isLoon()?t:this.isQuanX()?{"open-url":t}:this.isSurge()?{url:t}:void 0;if("object"==typeof t){if(this.isLoon()){let e=t.openUrl||t.url||t["open-url"],s=t.mediaUrl||t["media-url"];return{openUrl:e,mediaUrl:s}}if(this.isQuanX()){let e=t["open-url"]||t.url||t.openUrl,s=t["media-url"]||t.mediaUrl;return{"open-url":e,"media-url":s}}if(this.isSurge()){let e=t.url||t.openUrl||t["open-url"];return{url:e}}}};this.isMute||(this.isSurge()||this.isLoon()?$notification.post(e,s,i,o(r)):this.isQuanX()&&$notify(e,s,i,o(r)));let h=["","==============\ud83d\udce3\u7cfb\u7edf\u901a\u77e5\ud83d\udce3=============="];h.push(e),s&&h.push(s),i&&h.push(i),console.log(h.join("\n")),this.logs=this.logs.concat(h)}log(...t){t.length>0&&(this.logs=[...this.logs,...t]),console.log(t.join(this.logSeparator))}logErr(t,e){const s=!this.isSurge()&&!this.isQuanX()&&!this.isLoon();s?this.log("",`\u2757\ufe0f${this.name}, \u9519\u8bef!`,t.stack):this.log("",`\u2757\ufe0f${this.name}, \u9519\u8bef!`,t)}wait(t){return new Promise(e=>setTimeout(e,t))}done(t={}){const e=(new Date).getTime(),s=(e-this.startTime)/1e3;this.log("",`\ud83d\udd14${this.name}, \u7ed3\u675f! \ud83d\udd5b ${s} \u79d2`),this.log(),(this.isSurge()||this.isQuanX()||this.isLoon())&&$done(t)}}(t,e)}
+const $ = new Env('ZEALER');
+let status;
+status = (status = ($.getval("zbstatus") || "1") ) > 1 ? `${status}` : ""; // 账号扩展字符
+const zburlArr = [], zbbodyArr = [],zb1bodyArr = [],zbhdArr = [],zbcount = ''
+let zburl = $.getdata('zburl')
+let zbbody = $.getdata('zbbody')
+let zbhd = $.getdata('zbhd')
+let DD = RT(4000,10000)
+let tz = ($.getval('tz') || '1');//通知
+let id = '',boundary = '',dzid = '',verifyStr = '',verifyTime = '',fxid = ''
+$.message = ''
+
+
+!(async () => {
+  if (typeof $request !== "undefined") {
+    await zbck()
+  } else {zburlArr.push($.getdata('zburl'))
+    zbhdArr.push($.getdata('zbhd'))
+    zbbodyArr.push($.getdata('zbbody'))
+    zb1bodyArr.push($.getdata('zb1body'))
+    let zbcount = ($.getval('zbcount') || '1');
+  for (let i = 2; i <= zbcount; i++) {
+    zburlArr.push($.getdata(`zburl${i}`))
+    zbbodyArr.push($.getdata(`zbbody${i}`))
+    zbhdArr.push($.getdata(`zbhd${i}`))
+  }
+    console.log(`------------- 共${zbhdArr.length}个账号-------------\n`)
+      for (let i = 0; i < zbhdArr.length; i++) {
+        if (zbhdArr[i]) {
+          zburl = zburlArr[i];
+          zbbody = zbbodyArr[i];
+          zb1body = zb1bodyArr[i];
+          zbhd = zbhdArr[i];
+          $.index = i + 1;
+          console.log(`\n开始ZEALER【${$.index}】`)
+await openbox()
+await $.wait(1000)
+await index()
+await $.wait(DD)
+for (let c = 0; c < 5; c++) {
+  $.index = c + 1
+  console.log(`\n第${c+1}次执行任务！`)
+    await zbdzlb()
+    await $.wait(DD)
+    await zbfxlb()
+    await $.wait(DD)
+}
+ message()
+  }
+  
+  
+}}
+})()
+  .catch((e) => $.logErr(e))
+  .finally(() => $.done())
+function zbck() {
+   if ($request.url.indexOf("index") > -1) {
+ const zburl = $request.url
+  if(zburl)     $.setdata(zburl,`zburl${status}`)
+    $.log(zburl)
+ const zbbody = $request.body
+  if(zbbody)   $.setdata(zbbody,`zbbody${status}`)
+    $.log(zbbody)
+ const zbhd = JSON.stringify($request.headers)
+  if(zbhd)    $.setdata(zbhd,`zbhd${status}`)
+$.log(zbhd)
+   $.msg($.name,"",'ZEALER'+`${status}` +' 获取headers成功！')
+} else if ($request.url.indexOf("activitylist") > -1) {
+   const zb1body = $request.body
+  if(zb1body)   $.setdata(zb1body,`zb1body${status}`)
+  
+    $.log(zb1body)
+    $.msg($.name,"",'ZEALER'+`${status}` +' 获取body成功！')
+  }
+}
+
+
+//分享列表
+function zbfxlb(timeout = 0) {
+  return new Promise((resolve) => {
+let url = {
+        url : `https://app.zaaap.cn/contentcp/homeContent`,
+        headers : JSON.parse($.getdata('zbhd')),
+        body : `lastId=0&pageNum=1&verifyStr=${verifyStr}&verifyTime=${verifyTime}`,
+}
+      $.post(url, async (err, resp, data) => {
+        try {
+    const result = JSON.parse(data)
+        if(result.status == 200){
+
+        fxid = result.data[RT(0,10)].id
+
+        //$.log(''+result.data[RT(0,10)].id)
+        //$.message +=''+result.data[RT(0,10)].id
+       await zbfx()
+        
+} else {
+        $.log('\n'+result.msg)
+        
+}
+        } catch (e) {
+        } finally {
+          resolve()
+        }
+    },timeout)
+  })
+}
+
+//分享
+function zbfx(timeout = 0) {
+  return new Promise((resolve) => {
+let url = {
+        url : `https://app.zaaap.cn/content/contentshare`,
+        headers : JSON.parse($.getdata('zbhd')),
+        body : `content_id=${fxid}&type=1&verifyStr=${verifyStr}&verifyTime=${verifyTime}`,
+}
+      $.post(url, async (err, resp, data) => {
+        try {
+    const result = JSON.parse(data)
+        if(result.status == 200){
+
+      
+        $.log(''+result.msg)
+        $.message +=result.msg+'\n'
+       
+        
+} else {
+        $.log('\n'+result.msg)
+        
+}
+        } catch (e) {
+        } finally {
+          resolve()
+        }
+    },timeout)
+  })
+}
+
+//开宝箱
+function openbox(timeout = 0) {
+  return new Promise((resolve) => {
+let url = {
+        url : `https://app.zaaap.cn/points/home/openbox`,
+        headers : JSON.parse($.getdata('zbhd')),
+        body : zbbody,
+}
+      $.post(url, async (err, resp, data) => {
+        try {
+    const result = JSON.parse(data)
+        if(result.status == 200){
+
+        $.log('\n开启宝箱'+result.msg+'  获得能量币：'+result.data.energy+'个')
+        $.message +='\n开启宝箱'+result.msg+'  获得能量币：'+result.data.energy+'个'
+} else {
+        $.log('\n'+result.msg)
+        $.message +=result.msg+'\n'
+}
+        } catch (e) {
+        } finally {
+          resolve()
+        }
+    },timeout)
+  })
+}
+
+//能量球ID
+function index(timeout = 0) {
+  return new Promise((resolve) => {
+let url = {
+        url : `https://app.zaaap.cn/points/home/index`,
+        headers : JSON.parse($.getdata('zbhd')),
+        body : zbbody,
+}
+      $.post(url, async (err, resp, data) => {
+        try {
+    const result = JSON.parse(data)
+        if(result.status == 200){
+id =result.data.energyList[0].id
+$.log('\n'+result.data.registerData.txt)
+        await $.wait(1000);
+        await havingenergy();
+} else {
+        $.log('\n'+result.msg)
+       $.message +=result.msg+'\n'
+}
+        } catch (e) {
+        } finally {
+          resolve()
+        }
+    },timeout)
+  })
+}
+
+//点赞列表
+function zbdzlb(timeout = 0) {
+    return new Promise((resolve) => {
+  let url = {
+          url : `https://app.zaaap.cn/contentcp/homeContent`,
+          headers : JSON.parse($.getdata('zbhd')),
+          body : `lastId=0&pageNum=1&verifyStr=${verifyStr}&verifyTime=${verifyTime}`,
+  }
+        $.post(url, async (err, resp, data) => {
+          try {
+      const result = JSON.parse(data)
+          if(result.status == 200){
+
+          dzid = result.data[RT(0,10)].id
+
+          //$.log(''+result.data[RT(0,10)].id)
+          //$.message +=''+result.data[RT(0,10)].id
+         await zbdz()
+          
+  } else {
+          $.log('\n'+result.msg)
+          
+  }
+          } catch (e) {
+          } finally {
+            resolve()
+          }
+      },timeout)
+    })
+  }
+
+//点赞
+function zbdz(timeout = 0) {
+    return new Promise((resolve) => {
+  let url = {
+          url : `https://app.zaaap.cn/user/contentpraise`,
+          headers : JSON.parse($.getdata('zbhd')),
+          body : `content_id=${dzid}&type=0&verifyStr=${verifyStr}&verifyTime=${verifyTime}`,
+  }
+        $.post(url, async (err, resp, data) => {
+          try {
+      const result = JSON.parse(data)
+          if(result.status == 200){
+          $.log(''+result.msg)
+          $.message +=result.msg+'\n'
+          
+  } else {
+          $.log('\n'+result.msg)
+          
+  }
+          } catch (e) {
+          } finally {
+            resolve()
+          }
+      },timeout)
+    })
+  }
+
+
+//收能量
+function havingenergy(timeout = 0) {
+  return new Promise((resolve) => {
+boundary = zbhd.match(/boundary=----(\w+)/)[1]
+const body = `------${boundary}
+Content-Disposition: form-data; name="energyId"
+${id}
+------${boundary}--
+`;
+
+
+
+let url = {
+        url : `https://app.zaaap.cn/points/home/havingenergy`,
+        headers : JSON.parse($.getdata('zbhd')),
+        body : body,
+}
+      $.post(url, async (err, resp, data) => {
+        try {
+    const result = JSON.parse(data)
+        if(result.status == 200){
+
+        $.log('\n收取气泡'+result.msg)
+
+        $.message +='\n收取气泡'+result.msg
+
+    await $.wait(1000);
+
+    await index();
+
+} else {
+
+       $.log('\n'+result.msg)
+
+       $.message +=result.msg+'\n'
+}
+
+        } catch (e) {
+
+        } finally {
+
+          resolve()
+        }
+    },timeout)
+  })
+}
+
+
+
+
+
+//通知
+function message() {
+    if(tz == 1){$.msg($.name,"",$.message)}
+    }
+  
+    //随机延迟
+  function RT(X, Y) {
+      do rt = Math.floor(Math.random() * Y);
+      while (rt < X)
+      return rt;}
+  
+    //当前时间
+  console.log('\n'+getCurrentDate());
+  function getCurrentDate() {
+  var date = new Date();
+  var seperator1 = "-";
+  var seperator2 = ":";
+  var month = date.getMonth() + 1;
+  var strDate = date.getDate();
+  if (month >= 1 && month <= 9) {
+  month = "0" + month;
+  }
+  if (strDate >= 0 && strDate <= 9) {
+    strDate = "0" + strDate;
+  }
+  var currentdate = date.getFullYear() + seperator1 + month + seperator1 + strDate
+  + " " + date.getHours() + seperator2 + date.getMinutes()
+  + seperator2 + date.getSeconds();
+  return currentdate;
+    
+    
+    }
+  
+  
+  
+  
+  
+function Env(t,e){class s{constructor(t){this.env=t}send(t,e="GET"){t="string"==typeof t?{url:t}:t;let s=this.get;return"POST"===e&&(s=this.post),new Promise((e,i)=>{s.call(this,t,(t,s,r)=>{t?i(t):e(s)})})}get(t){return this.send.call(this.env,t)}post(t){return this.send.call(this.env,t,"POST")}}return new class{constructor(t,e){this.name=t,this.http=new s(this),this.data=null,this.dataFile="box.dat",this.logs=[],this.isMute=!1,this.isNeedRewrite=!1,this.logSeparator="\n",this.startTime=(new Date).getTime(),Object.assign(this,e),this.log("",`\ud83d\udd14${this.name}, \u5f00\u59cb!`)}isNode(){return"undefined"!=typeof module&&!!module.exports}isQuanX(){return"undefined"!=typeof $task}isSurge(){return"undefined"!=typeof $httpClient&&"undefined"==typeof $loon}isLoon(){return"undefined"!=typeof $loon}toObj(t,e=null){try{return JSON.parse(t)}catch{return e}}toStr(t,e=null){try{return JSON.stringify(t)}catch{return e}}getjson(t,e){let s=e;const i=this.getdata(t);if(i)try{s=JSON.parse(this.getdata(t))}catch{}return s}setjson(t,e){try{return this.setdata(JSON.stringify(t),e)}catch{return!1}}getScript(t){return new Promise(e=>{this.get({url:t},(t,s,i)=>e(i))})}runScript(t,e){return new Promise(s=>{let i=this.getdata("@chavy_boxjs_userCfgs.httpapi");i=i?i.replace(/\n/g,"").trim():i;let r=this.getdata("@chavy_boxjs_userCfgs.httpapi_timeout");r=r?1*r:20,r=e&&e.timeout?e.timeout:r;const[o,h]=i.split("@"),a={url:`http://${h}/v1/scripting/evaluate`,body:{script_text:t,mock_type:"cron",timeout:r},headers:{"X-Key":o,Accept:"*/*"}};this.post(a,(t,e,i)=>s(i))}).catch(t=>this.logErr(t))}loaddata(){if(!this.isNode())return{};{this.fs=this.fs?this.fs:require("fs"),this.path=this.path?this.path:require("path");const t=this.path.resolve(this.dataFile),e=this.path.resolve(process.cwd(),this.dataFile),s=this.fs.existsSync(t),i=!s&&this.fs.existsSync(e);if(!s&&!i)return{};{const i=s?t:e;try{return JSON.parse(this.fs.readFileSync(i))}catch(t){return{}}}}}writedata(){if(this.isNode()){this.fs=this.fs?this.fs:require("fs"),this.path=this.path?this.path:require("path");const t=this.path.resolve(this.dataFile),e=this.path.resolve(process.cwd(),this.dataFile),s=this.fs.existsSync(t),i=!s&&this.fs.existsSync(e),r=JSON.stringify(this.data);s?this.fs.writeFileSync(t,r):i?this.fs.writeFileSync(e,r):this.fs.writeFileSync(t,r)}}lodash_get(t,e,s){const i=e.replace(/\[(\d+)\]/g,".$1").split(".");let r=t;for(const t of i)if(r=Object(r)[t],void 0===r)return s;return r}lodash_set(t,e,s){return Object(t)!==t?t:(Array.isArray(e)||(e=e.toString().match(/[^.[\]]+/g)||[]),e.slice(0,-1).reduce((t,s,i)=>Object(t[s])===t[s]?t[s]:t[s]=Math.abs(e[i+1])>>0==+e[i+1]?[]:{},t)[e[e.length-1]]=s,t)}getdata(t){let e=this.getval(t);if(/^@/.test(t)){const[,s,i]=/^@(.*?)\.(.*?)$/.exec(t),r=s?this.getval(s):"";if(r)try{const t=JSON.parse(r);e=t?this.lodash_get(t,i,""):e}catch(t){e=""}}return e}setdata(t,e){let s=!1;if(/^@/.test(e)){const[,i,r]=/^@(.*?)\.(.*?)$/.exec(e),o=this.getval(i),h=i?"null"===o?null:o||"{}":"{}";try{const e=JSON.parse(h);this.lodash_set(e,r,t),s=this.setval(JSON.stringify(e),i)}catch(e){const o={};this.lodash_set(o,r,t),s=this.setval(JSON.stringify(o),i)}}else s=this.setval(t,e);return s}getval(t){return this.isSurge()||this.isLoon()?$persistentStore.read(t):this.isQuanX()?$prefs.valueForKey(t):this.isNode()?(this.data=this.loaddata(),this.data[t]):this.data&&this.data[t]||null}setval(t,e){return this.isSurge()||this.isLoon()?$persistentStore.write(t,e):this.isQuanX()?$prefs.setValueForKey(t,e):this.isNode()?(this.data=this.loaddata(),this.data[e]=t,this.writedata(),!0):this.data&&this.data[e]||null}initGotEnv(t){this.got=this.got?this.got:require("got"),this.cktough=this.cktough?this.cktough:require("tough-cookie"),this.ckjar=this.ckjar?this.ckjar:new this.cktough.CookieJar,t&&(t.headers=t.headers?t.headers:{},void 0===t.headers.Cookie&&void 0===t.cookieJar&&(t.cookieJar=this.ckjar))}get(t,e=(()=>{})){t.headers&&(delete t.headers["Content-Type"],delete t.headers["Content-Length"]),this.isSurge()||this.isLoon()?(this.isSurge()&&this.isNeedRewrite&&(t.headers=t.headers||{},Object.assign(t.headers,{"X-Surge-Skip-Scripting":!1})),$httpClient.get(t,(t,s,i)=>{!t&&s&&(s.body=i,s.statusCode=s.status),e(t,s,i)})):this.isQuanX()?(this.isNeedRewrite&&(t.opts=t.opts||{},Object.assign(t.opts,{hints:!1})),$task.fetch(t).then(t=>{const{statusCode:s,statusCode:i,headers:r,body:o}=t;e(null,{status:s,statusCode:i,headers:r,body:o},o)},t=>e(t))):this.isNode()&&(this.initGotEnv(t),this.got(t).on("redirect",(t,e)=>{try{if(t.headers["set-cookie"]){const s=t.headers["set-cookie"].map(this.cktough.Cookie.parse).toString();this.ckjar.setCookieSync(s,null),e.cookieJar=this.ckjar}}catch(t){this.logErr(t)}}).then(t=>{const{statusCode:s,statusCode:i,headers:r,body:o}=t;e(null,{status:s,statusCode:i,headers:r,body:o},o)},t=>{const{message:s,response:i}=t;e(s,i,i&&i.body)}))}post(t,e=(()=>{})){if(t.body&&t.headers&&!t.headers["Content-Type"]&&(t.headers["Content-Type"]="application/x-www-form-urlencoded"),t.headers&&delete t.headers["Content-Length"],this.isSurge()||this.isLoon())this.isSurge()&&this.isNeedRewrite&&(t.headers=t.headers||{},Object.assign(t.headers,{"X-Surge-Skip-Scripting":!1})),$httpClient.post(t,(t,s,i)=>{!t&&s&&(s.body=i,s.statusCode=s.status),e(t,s,i)});else if(this.isQuanX())t.method="POST",this.isNeedRewrite&&(t.opts=t.opts||{},Object.assign(t.opts,{hints:!1})),$task.fetch(t).then(t=>{const{statusCode:s,statusCode:i,headers:r,body:o}=t;e(null,{status:s,statusCode:i,headers:r,body:o},o)},t=>e(t));else if(this.isNode()){this.initGotEnv(t);const{url:s,...i}=t;this.got.post(s,i).then(t=>{const{statusCode:s,statusCode:i,headers:r,body:o}=t;e(null,{status:s,statusCode:i,headers:r,body:o},o)},t=>{const{message:s,response:i}=t;e(s,i,i&&i.body)})}}time(t){let e={"M+":(new Date).getMonth()+1,"d+":(new Date).getDate(),"H+":(new Date).getHours(),"m+":(new Date).getMinutes(),"s+":(new Date).getSeconds(),"q+":Math.floor(((new Date).getMonth()+3)/3),S:(new Date).getMilliseconds()};/(y+)/.test(t)&&(t=t.replace(RegExp.$1,((new Date).getFullYear()+"").substr(4-RegExp.$1.length)));for(let s in e)new RegExp("("+s+")").test(t)&&(t=t.replace(RegExp.$1,1==RegExp.$1.length?e[s]:("00"+e[s]).substr((""+e[s]).length)));return t}msg(e=t,s="",i="",r){const o=t=>{if(!t)return t;if("string"==typeof t)return this.isLoon()?t:this.isQuanX()?{"open-url":t}:this.isSurge()?{url:t}:void 0;if("object"==typeof t){if(this.isLoon()){let e=t.openUrl||t.url||t["open-url"],s=t.mediaUrl||t["media-url"];return{openUrl:e,mediaUrl:s}}if(this.isQuanX()){let e=t["open-url"]||t.url||t.openUrl,s=t["media-url"]||t.mediaUrl;return{"open-url":e,"media-url":s}}if(this.isSurge()){let e=t.url||t.openUrl||t["open-url"];return{url:e}}}};this.isMute||(this.isSurge()||this.isLoon()?$notification.post(e,s,i,o(r)):this.isQuanX()&&$notify(e,s,i,o(r)));let h=["","==============\ud83d\udce3\u7cfb\u7edf\u901a\u77e5\ud83d\udce3=============="];h.push(e),s&&h.push(s),i&&h.push(i),console.log(h.join("\n")),this.logs=this.logs.concat(h)}log(...t){t.length>0&&(this.logs=[...this.logs,...t]),console.log(t.join(this.logSeparator))}logErr(t,e){const s=!this.isSurge()&&!this.isQuanX()&&!this.isLoon();s?this.log("",`\u2757\ufe0f${this.name}, \u9519\u8bef!`,t.stack):this.log("",`\u2757\ufe0f${this.name}, \u9519\u8bef!`,t)}wait(t){return new Promise(e=>setTimeout(e,t))}done(t={}){const e=(new Date).getTime(),s=(e-this.startTime)/1e3;this.log("",`\ud83d\udd14${this.name}, \u7ed3\u675f! \ud83d\udd5b ${s} \u79d2`),this.log(),(this.isSurge()||this.isQuanX()||this.isLoon())&&$done(t)}}(t,e)}
