@@ -148,7 +148,7 @@ let url = {
 
       
         $.log(''+result.msg)
-        $.message +=''+result.msg
+        $.message +=result.msg+'\n'
        
         
 } else {
@@ -262,7 +262,7 @@ function zbdz(timeout = 0) {
       const result = JSON.parse(data)
           if(result.status == 200){
           $.log(''+result.msg)
-          $.message +=''+result.msg
+          $.message +=result.msg+'\n'
           
   } else {
           $.log('\n'+result.msg)
