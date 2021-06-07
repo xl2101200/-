@@ -286,12 +286,12 @@ function zbdz(timeout = 0) {
 //收能量
 function havingenergy(timeout = 0) {
   return new Promise((resolve) => {
-boundary = zb2body.match(/boundary=----(\w+)/)[1]
-const body = `--${boundary}
+boundary = zb2body.match(/--Boundary+(\w+)--/)[1]
+const body = `--Boundary+${boundary}
 Content-Disposition: form-data; name="energyId"
 
 ${id}
---${boundary}--`;
+--Boundary+${boundary}--`;
 
 
 let url = {
