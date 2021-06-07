@@ -299,11 +299,7 @@ Content-Disposition: form-data; name="energyId"
 ${id}
 ------${boundary}--`;
               
-------WebKitFormBoundarymLdAct1v0UFYaj8g
-Content-Disposition: form-data; name="energyId"
-
-20217383
-------WebKitFormBoundarymLdAct1v0UFYaj8g--             
+          
 
               
 let url = {
