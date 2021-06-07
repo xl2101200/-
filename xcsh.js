@@ -2,7 +2,7 @@
 20210530 tom
 
 软件名称：湘创生活
-下载地址：https://raw.githubusercontent.com/xl2101200/-/main/tom/EDD2DA49-D2D4-417B-83F3-E99003947685.jpeg
+下载地址：读书少找不到邀请连接，自己百度下载！
 
 获取ck → 我的 → 每日签到
 
