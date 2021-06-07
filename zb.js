@@ -18,7 +18,7 @@
 0 0 0/4 * * * https://raw.githubusercontent.com/xl2101200/-/main/zb.js, tag=左边, img-url=https://raw.githubusercontent.com/sngxpro/QuanX/master/icons/tom.png, enabled=true
 [rewrite_local]
 #左边
-https://app.zaaap.cn/group url script-request-body https://raw.githubusercontent.com/xl2101200/-/main/zb.js
+https://app.zaaap.cn/points/home url script-request-body https://raw.githubusercontent.com/xl2101200/-/main/zb.js
 [MITM]
 hostname = app.zaaap.cn
 */
@@ -80,7 +80,7 @@ for (let c = 0; c < 5; c++) {
   .catch((e) => $.logErr(e))
   .finally(() => $.done())
 function zbck() {
-   if ($request.url.indexOf("index") > -1) {
+   if ($request.url.indexOf("index") > -1){
  const zburl = $request.url
   if(zburl)     $.setdata(zburl,`zburl${status}`)
     $.log(zburl)
@@ -97,7 +97,14 @@ $.log(zbhd)
   
     $.log(zb1body)
     $.msg($.name,"",'ZEALER'+`${status}` +' 获取body成功！')
+} else if ($request.url.indexOf("havingenergy") > -1) {
+   const zb2body = $request.body
+  if(zb2body)   $.setdata(zb2body,`zb2body${status}`)
+  
+    $.log(zb2body)
+    $.msg($.name,"",'ZEALER'+`${status}` +' 获取气泡body成功！')
   }
+            
 }
 
 
@@ -279,7 +286,7 @@ function zbdz(timeout = 0) {
 //收能量
 function havingenergy(timeout = 0) {
   return new Promise((resolve) => {
-boundary = zbhd.match(/boundary=----(\w+)/)[1]
+boundary = zb2body.match(/boundary=----(\w+)/)[1]
 const body = `------${boundary}
 Content-Disposition: form-data; name="energyId"
 ${id}
