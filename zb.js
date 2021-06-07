@@ -292,14 +292,20 @@ function zbdz(timeout = 0) {
 //收能量
 function havingenergy(timeout = 0) {
   return new Promise((resolve) => {
-boundary = zb2body.match(/--(\w+\+\w+)--/)[1]
-const body = `--${boundary}
+boundary = zb2body.match(/------(\w+)--/)[1]
+const body = `------${boundary}
 Content-Disposition: form-data; name="energyId"
 
 ${id}
---${boundary}--`;
+------${boundary}--`;
+              
+------WebKitFormBoundarymLdAct1v0UFYaj8g
+Content-Disposition: form-data; name="energyId"
 
+20217383
+------WebKitFormBoundarymLdAct1v0UFYaj8g--             
 
+              
 let url = {
         url : `https://app.zaaap.cn/points/home/havingenergy`,
         headers : JSON.parse($.getdata('zbhd')),
