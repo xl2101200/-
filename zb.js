@@ -27,9 +27,11 @@ hostname = app.zaaap.cn
 const $ = new Env('ZEALER');
 let status;
 status = (status = ($.getval("zbstatus") || "1") ) > 1 ? `${status}` : ""; // 账号扩展字符
-const zburlArr = [], zbbodyArr = [],zb1bodyArr = [],zbhdArr = [],zbcount = ''
+const zburlArr = [], zbbodyArr = [],zb1bodyArr = [],zb2bodyArr = [],zbhdArr = [],zbcount = ''
 let zburl = $.getdata('zburl')
 let zbbody = $.getdata('zbbody')
+let zb1body = $.getdata('zb1body')
+let zb2body = $.getdata('zb2body')
 let zbhd = $.getdata('zbhd')
 let DD = RT(4000,10000)
 let tz = ($.getval('tz') || '1');//通知
@@ -44,10 +46,13 @@ $.message = ''
     zbhdArr.push($.getdata('zbhd'))
     zbbodyArr.push($.getdata('zbbody'))
     zb1bodyArr.push($.getdata('zb1body'))
+    zb2bodyArr.push($.getdata('zb2body'))
     let zbcount = ($.getval('zbcount') || '1');
   for (let i = 2; i <= zbcount; i++) {
     zburlArr.push($.getdata(`zburl${i}`))
     zbbodyArr.push($.getdata(`zbbody${i}`))
+    zb1bodyArr.push($.getdata(`zb1body${i}`))
+    zb2bodyArr.push($.getdata(`zb2body${i}`))
     zbhdArr.push($.getdata(`zbhd${i}`))
   }
     console.log(`------------- 共${zbhdArr.length}个账号-------------\n`)
@@ -56,6 +61,7 @@ $.message = ''
           zburl = zburlArr[i];
           zbbody = zbbodyArr[i];
           zb1body = zb1bodyArr[i];
+          zb2body = zb2bodyArr[i];
           zbhd = zbhdArr[i];
           $.index = i + 1;
           console.log(`\n开始ZEALER【${$.index}】`)
