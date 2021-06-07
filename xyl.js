@@ -11,7 +11,7 @@
 
 20210430 已跑路。
 
-下载地址：https://raw.githubusercontent.com/xl2101200/-/main/tom/xyl.png
+下载地址：读书少找不到邀请连接，自己百度下载！
 
 圈x
 [task_local]
