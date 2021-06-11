@@ -329,7 +329,7 @@ function RT(X, Y) {
     return rt;}
 
 
-console.log('\n'+getCurrentDate());
+//console.log('\n'+getCurrentDate());
 function getCurrentDate() {
 var date = new Date();
 var seperator1 = "-";
