@@ -3,7 +3,8 @@
 软件名：草根时代
 下载地址：  读书少找不到邀请连接，自己百度下载！
 
-每天看视频领低保稳如老狗，一天800-1200积分，5000=5元！第一次提现需要完成一次高佣任务或试玩，以后就不需要了。
+每天看视频领低保1.2元稳如老狗，一天1200+积分，5000=5元！提现需要完成一次高佣任务或试玩，建议选择微信点赞任务。
+不秒到，审核需要一天
 
 ////////////////////////////////////
 这个是安卓的毛，使用模拟器或者安卓手机  用小黄鸟来抓包
@@ -205,10 +206,10 @@ let url = {
         if(result.resultCode == 200){
  
         $.log('\n观看视频成功  获得'+result.bizBody.awardNum+'积分')
-          $.message +='\n观看视频成功  获得'+result.bizBody.awardNum+'积分'
+         // $.message +='\n观看视频成功  获得'+result.bizBody.awardNum+'积分'
     }else{
         $.log('\n '+result.resultMsg)
-      $.message +='\n '+result.resultMsg
+      //$.message +='\n '+result.resultMsg
 }
         } catch (e) {
           
@@ -232,10 +233,10 @@ let url = {
         if(result.resultCode == 200){
  
         $.log('\n观看视频成功  获得'+result.bizBody.awardNum+'积分')
-          $.message +='\n观看视频成功  获得'+result.bizBody.awardNum+'积分'
+          //$.message +='\n观看视频成功  获得'+result.bizBody.awardNum+'积分'
     }else{
         $.log('\n '+result.resultMsg)
-      $.message +='\n '+result.resultMsg
+      //$.message +='\n '+result.resultMsg
 }
         } catch (e) {
           
@@ -260,10 +261,10 @@ let url = {
         if(result.resultCode == 200){
  
         $.log('\n观看视频成功  获得'+result.bizBody.awardNum+'积分')
-          $.message +='\n观看视频成功  获得'+result.bizBody.awardNum+'积分'
+         // $.message +='\n观看视频成功  获得'+result.bizBody.awardNum+'积分'
     }else{
         $.log('\n '+result.resultMsg)
-      $.message +='\n '+result.resultMsg
+      //$.message +='\n '+result.resultMsg
 }
         } catch (e) {
           
@@ -287,10 +288,10 @@ let url = {
         if(result.resultCode == 200){
  
         $.log('\n现有'+result.bizBody.totalAmount+'积分')
-          $.message +='\n现有'+result.bizBody.totalAmount+'积分'
+        $.message +='\n现有'+result.bizBody.totalAmount+'积分'+'\n积分达到5000请立即提现，提现需要完成一次高佣任务'
     }else{
         $.log('\n '+result.resultMsg)
-      $.message +='\n '+result.resultMsg
+      //$.message +='\n '+result.resultMsg
 }
         } catch (e) {
           
