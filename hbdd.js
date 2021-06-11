@@ -67,10 +67,9 @@ const $ = new Env('红包多多');
 let status;
 
 status = (status = ($.getval("hbddstatus") || "1") ) > 1 ? `${status}` : ""; // 账号扩展字符
-const hbddurlArr = [],hbddhdArr = [],hbdd1hdArr = [],hbddbodyArr = [],hbddcount = ''
+const hbddurlArr = [],hbddhdArr = [],hbddbodyArr = [],hbddcount = ''
 let hbddurl = $.getdata('hbddurl')
 let hbddhd = $.getdata('hbddhd')
-let hbdd1hd = $.getdata('hbdd1hd')
 let hbddbody = $.getdata('hbddbody')
 let b = new Date().getTime()
 let DD = RT(28000,35000)
@@ -86,13 +85,11 @@ let txid = ''
     await hbddck()
   } else {hbddurlArr.push($.getdata('hbddurl'))
     hbddhdArr.push($.getdata('hbddhd'))
-    hbdd1hdArr.push($.getdata('hbdd1hd'))
     hbddbodyArr.push($.getdata('hbddbody'))
     let hbddcount = ($.getval('hbddcount') || '1');
   for (let i = 2; i <= hbddcount; i++) {
     hbddurlArr.push($.getdata(`hbddurl${i}`))
     hbddhdArr.push($.getdata(`hbddhd${i}`))
-    hbdd1hdArr.push($.getdata(`hbdd1hd${i}`))
     hbddbodyArr.push($.getdata(`hbddbody${i}`))}
     console.log(`------------- 共${hbddhdArr.length}个账号-------------\n`)
   for (let i = 0; i < hbddhdArr.length; i++) {
@@ -100,7 +97,6 @@ let txid = ''
       $.message = ''
       hbddurl = hbddurlArr[i];
       hbddhd = hbddhdArr[i];
-      hbdd1hd = hbdd1hdArr[i];
       hbddbody = hbddbodyArr[i];
       $.index = i + 1;
       console.log(`\n开始【红包多多${$.index}】`)}
@@ -143,11 +139,7 @@ if(hbddbody)     $.setdata(hbddbody,`hbddbody${status}`)
   $.log(hbddbody)
 
  $.msg($.name,"",`红包多多${status}视频body获取成功`)
-} else if ($request.url.indexOf("index") > -1) {
-  const hbdd1hd = JSON.stringify($request.headers)
-   if(hbdd1hd)    $.setdata(hbdd1hd,`hbdd1hd${status}`)
-$.log(hbdd1hd)
-   $.msg($.name,"",'红包多多'+`${status}` +' 提现headers成功！')
+
   }
 }
 
@@ -194,7 +186,7 @@ function tx(timeout = 0) {
     txid = hbddbody.match(/phead"(\S+)/)[1]
 let url = {
       url : `https://api.jidiandian.cn/redchat-account/api/cashOut/action`,
-      headers : JSON.parse($.getdata('hbdd1hd')),
+      headers : JSON.parse($.getdata('hbddhd')),
       body : `{"id":"46","type":0,"phead"${txid}}`,
 }
       $.post(url, async (err, resp, data) => {
@@ -229,7 +221,7 @@ function tx1(timeout = 0) {
     
 let url = {
       url : `https://api.jidiandian.cn/redchat-account/api/cashOut/action`,
-      headers : JSON.parse($.getdata('hbdd1hd')),
+      headers : JSON.parse($.getdata('hbddhd')),
       body : `{"id":"47","type":0,"phead"${txid}}`,
 }
       $.post(url, async (err, resp, data) => {
@@ -264,7 +256,7 @@ function tx2(timeout = 0) {
    
 let url = {
       url : `https://api.jidiandian.cn/redchat-account/api/cashOut/action`,
-      headers : JSON.parse($.getdata('hbdd1hd')),
+      headers : JSON.parse($.getdata('hbddhd')),
       body : `{"id":"48","type":0,"phead"${txid}}`,
 }
       $.post(url, async (err, resp, data) => {
@@ -297,7 +289,7 @@ function tx3(timeout = 0) {
     
 let url = {
       url : `https://api.jidiandian.cn/redchat-account/api/cashOut/action`,
-      headers : JSON.parse($.getdata('hbdd1hd')),
+      headers : JSON.parse($.getdata('hbddhd')),
       body : `{"id":"49","type":0,"phead"${txid}}`,
 }
       $.post(url, async (err, resp, data) => {
