@@ -187,7 +187,7 @@ function tx(timeout = 0) {
 let url = {
       url : `https://api.jidiandian.cn/redchat-account/api/cashOut/action`,
       headers : JSON.parse($.getdata('hbddhd')),
-      body : `{"id":"46","type":0,"phead"${txid}}`,
+      body : `{"id":"46","type":0,"phead"${txid}`,
 }
       $.post(url, async (err, resp, data) => {
       try {
@@ -222,7 +222,7 @@ function tx1(timeout = 0) {
 let url = {
       url : `https://api.jidiandian.cn/redchat-account/api/cashOut/action`,
       headers : JSON.parse($.getdata('hbddhd')),
-      body : `{"id":"47","type":0,"phead"${txid}}`,
+      body : `{"id":"47","type":0,"phead"${txid}`,
 }
       $.post(url, async (err, resp, data) => {
       try {
@@ -257,7 +257,7 @@ function tx2(timeout = 0) {
 let url = {
       url : `https://api.jidiandian.cn/redchat-account/api/cashOut/action`,
       headers : JSON.parse($.getdata('hbddhd')),
-      body : `{"id":"48","type":0,"phead"${txid}}`,
+      body : `{"id":"48","type":0,"phead"${txid}`,
 }
       $.post(url, async (err, resp, data) => {
       try {
@@ -290,7 +290,7 @@ function tx3(timeout = 0) {
 let url = {
       url : `https://api.jidiandian.cn/redchat-account/api/cashOut/action`,
       headers : JSON.parse($.getdata('hbddhd')),
-      body : `{"id":"49","type":0,"phead"${txid}}`,
+      body : `{"id":"49","type":0,"phead"${txid}`,
 }
       $.post(url, async (err, resp, data) => {
       try {
