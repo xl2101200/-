@@ -8,7 +8,7 @@
     {
             "id": "hbdd",
             "name": "红包多多",
-            "keys": ["hbddurl","hbddhd","hbddbody","hbddurl2","hbddhd2","hbddbody2"],
+            "keys": ["hbddhd","hbdd1hd","hbddbody","hbddhd2","hbdd1hd2","hbddbody2","hbddhd3","hbdd1hd3","hbddbody3","hbddhd4","hbdd1hd4","hbddbody4"],
             "author": "@tom",
             "settings": [{
             "id": "hbddstatus",
