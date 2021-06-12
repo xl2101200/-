@@ -31,7 +31,7 @@ CRON自行设置
 
 v2p配置如下：
 【REWRITE】
-匹配链接（正则表达式） https://tzdefend.auto98.com/
+匹配链接（正则表达式） https://tzdefend.auto98.com/prizeWheel
 
 对应重写目标   https://raw.githubusercontent.com/xl2101200/-/main/jsm.js
 
@@ -47,7 +47,7 @@ cron自己设置
 0 22 * * * https://raw.githubusercontent.com/xl2101200/-/main/jsm.js, tag=健身猫, img-url=https://raw.githubusercontent.com/sngxpro/QuanX/master/icons/tom.png, enabled=true
 [rewrite_local]
 #健身猫
-https://tzdefend.auto98.com/ url script-request-body https://raw.githubusercontent.com/xl2101200/-/main/jsm.js
+https://tzdefend.auto98.com/prizeWheel url script-request-body https://raw.githubusercontent.com/xl2101200/-/main/jsm.js
 [MITM]
 hostname = tzdefend.auto98.com
 
@@ -59,15 +59,14 @@ const $ = new Env('健身猫');
 let status;
 
 status = (status = ($.getval("jsmstatus") || "1") ) > 1 ? `${status}` : ""; // 账号扩展字符
-const jsmurlArr = [],jsmhdArr = [],jsmbodyArr = [],jsm1bodyArr = [],jsmcount = ''
+const jsmurlArr = [],jsmhdArr = [],jsmbodyArr = [],jsmcount = ''
 let jsmurl = $.getdata('jsmurl')
 let jsmhd = $.getdata('jsmhd')
 let jsmbody = $.getdata('jsmbody')
-let jsm1body = $.getdata('jsm1body')
+
 let b = new Date().getTime()
 let DD = RT(28000,35000)
 let tz = ($.getval('tz') || '1'); //签到通知
-let tx = ($.getval('tx') || '1'); //签到通知
 let txidd = '',ibody = ''
 $.message = ''
 
@@ -81,13 +80,13 @@ $.message = ''
   } else {jsmurlArr.push($.getdata('jsmurl'))
     jsmhdArr.push($.getdata('jsmhd'))
     jsmbodyArr.push($.getdata('jsmbody'))
-    jsm1bodyArr.push($.getdata('jsm1body'))
+
     let jsmcount = ($.getval('jsmcount') || '1');
   for (let i = 2; i <= jsmcount; i++) {
     jsmurlArr.push($.getdata(`jsmurl${i}`))
     jsmhdArr.push($.getdata(`jsmhd${i}`))
     jsmbodyArr.push($.getdata(`jsmbody${i}`))
-    jsm1bodyArr.push($.getdata(`jsm1body${i}`))}
+}
     console.log(
         `================== 脚本执行 - 北京时间(UTC+8)：${new Date(
         new Date().getTime() +
@@ -101,7 +100,7 @@ $.message = ''
       jsmurl = jsmurlArr[i];
       jsmhd = jsmhdArr[i];
       jsmbody = jsmbodyArr[i];
-      jsm1body = jsm1bodyArr[i];
+
       $.index = i + 1;
       console.log(`\n开始【健身猫${$.index}】`)}
 
@@ -116,8 +115,7 @@ $.message = ''
 
       }
 
-        await txx()
-        await $.wait(1000)
+
 
 
 
@@ -141,12 +139,7 @@ if(jsmbody)     $.setdata(jsmbody,`jsmbody${status}`)
   $.log(jsmbody)
 
  $.msg($.name,"",`健身猫${status}转盘body获取成功`)
-} else if ($request.url.indexOf("withdraw") > -1) {
-    const jsm1body = $request.body
-   if(jsm1body)   $.setdata(jsm1body,`jsm1body${status}`)
-   
-     $.log(jsm1body)
-     $.msg($.name,"",'健身猫'+`${status}` +'提现body获取成功！')
+
   }
 }
 
@@ -156,7 +149,7 @@ if(jsmbody)     $.setdata(jsmbody,`jsmbody${status}`)
 //转盘
 function jsmzp(timeout = 0) {
   return new Promise((resolve) => {
-    //ibody = (jsmbody).replace(/timestamp=\d+/g,`timestamp=${b}`)
+    
 let url = {
       url : jsmurl,
      headers : JSON.parse($.getdata('jsmhd')),
@@ -188,42 +181,6 @@ let url = {
 }
 
 
-
-//提现
-function txx(timeout = 0) {
-  return new Promise((resolve) => {
-    //txid = jsmbody.match(/"phead":(\S+)/)[1]
-    txidd = (jsm1body).replace(/cashIndex=\d/g,`cashIndex=${tx}`)
-let url = {
-     url : `https://tzdefend.auto98.com/RECouponsWallet/withdraw`,
-     headers : JSON.parse($.getdata('jsmhd')),
-     body : txidd,
-}
-      $.post(url, async (err, resp, data) => {
-      try {
-
-      data = JSON.parse(data)
-
-      if(data.code == 0){  
-        
-        console.log('\n'+data.data.msg)
-        $.message +='\n'+data.data.msg
-      await txx()
-      
-      } else {
-
-      console.log('\n'+data.msg)
-      
-    }
-        } catch (e) {
-
-        } finally {
-
-          resolve()
-        }
-    },timeout)
-  })
-}
 
 
 
