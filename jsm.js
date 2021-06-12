@@ -149,11 +149,11 @@ if(jsmbody)     $.setdata(jsmbody,`jsmbody${status}`)
 //转盘
 function jsmzp(timeout = 0) {
   return new Promise((resolve) => {
-    ibody = (jsmbody).replace(/timestamp=\d+&/g,`envelope_id=${b}&`)
+    
 let url = {
       url : jsmurl,
      headers : JSON.parse($.getdata('jsmhd')),
-      body : ibody,
+      body : jsmbody,
 }
       $.post(url, async (err, resp, data) => {
       try {
