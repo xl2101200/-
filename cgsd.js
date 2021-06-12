@@ -43,8 +43,8 @@ $.message = ''
     cgsdbodyArr.push($.getdata(`cgsdbody${i}`))
   }
     console.log(`------------- 共${cgsdhdArr.length}个账号-------------\n`)
-      for (let i = 0; i < cgsdhdArr.length; i++) {
-        if (cgsdhdArr[i]) {
+      for (let i = 0; i < cgsdbodyArr.length; i++) {
+        if (cgsdbodyArr[i]) {
          
           cgsdbody = cgsdbodyArr[i];
           $.index = i + 1;
