@@ -8,7 +8,7 @@
     {
             "id": "jsm",
             "name": "健身猫",
-            "keys": ["jsmurl","jsmhd","jsmbody","jsm1body","jsmurl2","jsmhd2","jsmbody2","jsm1body2","jsmurl3","jsmhd3","jsmbody3","jsm1body3","jsmurl4","jsmhd4","jsm1body4","jsmbody4"],
+            "keys": ["jsmurl","jsmhd","jsmbody","jsmurl2","jsmhd2","jsmbody2","jsmurl3","jsmhd3","jsmbody3","jsmurl4","jsmhd4",,"jsmbody4"],
             "author": "@tom",
             "settings": [{
             "id": "jsmstatus",
@@ -28,12 +28,6 @@
             "val": "1",
             "type": "number",
             "desc": "0关闭通知，1打开通知"
-    },{
-            "id": "tx",
-            "name": "提现金额",
-            "val": "1",
-            "type": "number",
-            "desc": "1=0.3元，2=0.5元，3=1元，4=10元，默认1，提现0.3元"
     }],
             "repo": "https://raw.githubusercontent.com/xl2101200/-/main/jsm.js",
             "icons": ["https://raw.githubusercontent.com/xl2101200/-/main/tom/tom.jpg","https://raw.githubusercontent.com/xl2101200/-/main/tom/tom.jpg"],
