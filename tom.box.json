@@ -8,7 +8,7 @@
     {
             "id": "jsm",
             "name": "健身猫",
-            "keys": ["jsmurl","jsmhd","jsmbody","jsmurl2","jsmhd2","jsmbody2","jsmurl3","jsmhd3","jsmbody3","jsmurl4","jsmhd4",,"jsmbody4"],
+            "keys": ["jsmurl","jsmhd","jsmbody","jsmurl2","jsmhd2","jsmbody2","jsmurl3","jsmhd3","jsmbody3","jsmurl4","jsmhd4","jsmbody4"],
             "author": "@tom",
             "settings": [{
             "id": "jsmstatus",
