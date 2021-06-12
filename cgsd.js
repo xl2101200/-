@@ -1,11 +1,9 @@
 /*
 20210605 tom
 软件名：草根时代
-下载地址： http://h5.cgsd163.com/register?recommendMemberNo=761783
+下载地址：  读书少找不到邀请连接，自己百度下载！
 每天看视频领低保1.2元稳如老狗，一天1200+积分，5000=5元！提现需要完成一次高佣任务或试玩，建议选择微信点赞任务。
 不秒到，审核需要一天
-
-多账号抓登入的数据
 ////////////////////////////////////
 这个是安卓的毛，使用模拟器或者安卓手机  用小黄鸟来抓包
 可以看看群里的大佬是怎么用安卓抓包，放到圈x来跑的
@@ -13,22 +11,24 @@ Tg群：https://t.me/tom_210120
 ///////////////////////////////////
 把抓到的ck放到boxjs即可！
 cron自己改 每天运行一次即可
+
+http://demo.cgsd163.com/api
 */
 
 
 const $ = new Env('草根时代');
 let status;
 status = (status = ($.getval("cgsdstatus") || "1") ) > 1 ? `${status}` : ""; // 账号扩展字符
-const cgsdbodyArr = [], cgsdhdArr = [],cgsdurlArr = [],cgsdcount = ''
+const cgsdbodyArr = [], sp1bodyArr = [],sp2bodyArr = [],sp3bodyArr = [],cgsdhdArr = [],sphdArr = [],cgsdurlArr = [],spurlArr = [],cgsdcount = ''
 let cgsdbody = $.getdata('cgsdbody')
-
+let sp1body = $.getdata('sp1body')
+let sp2body = $.getdata('sp2body')
+let sp3body = $.getdata('sp3body')
+let cgsdhd = $.getdata('cgsdhd')
+let sphd = $.getdata('sphd')
 let tz = ($.getval('tz') || '1');//通知
-
 let DD = RT(28000, 35000)
-let accessToken = '',token = '',userid = '',headers33 = ''
 $.message = ''
-
-
 
 
 
@@ -37,27 +37,45 @@ $.message = ''
     await cgsdck()
 
   } else {cgsdbodyArr.push($.getdata('cgsdbody'))
-
+    sp1bodyArr.push($.getdata('sp1body'))
+    sp2bodyArr.push($.getdata('sp2body'))
+    sp3bodyArr.push($.getdata('sp3body'))
+    sphdArr.push($.getdata('sphd'))
+    cgsdhdArr.push($.getdata('cgsdhd'))
+    cgsdurlArr.push($.getdata('cgsdurl'))
+    spurlArr.push($.getdata('spurl'))
     let cgsdcount = ($.getval('cgsdcount') || '1');
   for (let i = 2; i <= cgsdcount; i++) {
+    cgsdurlArr.push($.getdata(`cgsdurl${i}`))
+    spurlArr.push($.getdata(`spurl${i}`))
     cgsdbodyArr.push($.getdata(`cgsdbody${i}`))
+    sp1bodyArr.push($.getdata(`sp1body${i}`))
+    sp2bodyArr.push($.getdata(`sp2body${i}`))
+    sp3bodyArr.push($.getdata(`sp3body${i}`))
+    sphdArr.push($.getdata(`sphd${i}`))
+    cgsdhdArr.push($.getdata(`cgsdhd${i}`))
   }
     console.log(`------------- 共${cgsdhdArr.length}个账号-------------\n`)
-      for (let i = 0; i < cgsdbodyArr.length; i++) {
-        if (cgsdbodyArr[i]) {
-         
+      for (let i = 0; i < cgsdhdArr.length; i++) {
+        if (cgsdhdArr[i]) {
+          cgsdurl = cgsdurlArr[i];
           cgsdbody = cgsdbodyArr[i];
+          cgsdhd = cgsdhdArr[i];
+          spurl = spurlArr[i];
+          sp1body = sp1bodyArr[i];
+          sp2body = sp2bodyArr[i];
+          sp3body = sp3bodyArr[i];
+          sphd = sphdArr[i];
           $.index = i + 1;
           console.log(`\n开始【草根时代看视频${$.index}】`)
 }
 
-await cgsddr()
-await $.wait(500)
+
 await cgsddri()
 await $.wait(1000)
 await cgsdxx()
 await $.wait(1000)
-await message()
+message()
 }}
 
 
@@ -67,7 +85,7 @@ await message()
   .finally(() => $.done())
 
 function cgsdck() {
-  if ($request.url.indexOf("awardUserFlower") > -1 || $request.url.indexOf("task") > -1) {
+  if ($request.url.indexOf("loginin") > -1) {
     const cgsdurl = $request.url
  if(cgsdurl)     $.setdata(cgsdurl,`cgsdurl${status}`)
       $.log(cgsdurl)
@@ -77,72 +95,48 @@ function cgsdck() {
     const cgsdbody = $request.body
   if(cgsdbody)     $.setdata(cgsdbody,`cgsdbody${status}`)
      $.log(cgsdbody)
-   $.msg($.name,"",'草根时代'+`${status}` +'body获取成功！')
+   $.msg($.name,"",'草根时代'+`${status}` +'登入headers获取成功！')
+} else if ($request.url.indexOf("awardUserFlower") > -1 && $request.body.indexOf("1") > -1) {
+    const spurl = $request.url
+ if(spurl)     $.setdata(spurl,`spurl${status}`)
+      $.log(spurl)
+    const sp1body = $request.body
+   if(sp1body)   $.setdata(sp1body,`sp1body${status}`)
+     $.log(sp1body)
+     const sphd = JSON.stringify($request.headers)
+  if(sphd)    $.setdata(sphd,`sphd${status}`)
+      $.log(sphd)
+     $.msg($.name,"",'草根时代'+`${status}` +' 视频1 body获取成功！')
+} else if ($request.url.indexOf("awardUserFlower") > -1 && $request.body.indexOf("2") > -1) {
+       const sp2body = $request.body
+       if(sp2body)   $.setdata(sp2body,`sp2body${status}`)
+         $.log(sp2body)
+         $.msg($.name,"",'草根时代'+`${status}` +' 视频2 body获取成功！')
+} else if ($request.url.indexOf("awardUserFlower") > -1 && $request.body.indexOf("4") > -1) {
+            const sp3body = $request.body
+            if(sp3body)   $.setdata(sp3body,`sp3body${status}`)
+              $.log(sp3body)
+              $.msg($.name,"",'草根时代'+`${status}` +' 视频3 body获取成功！')        
   }
-}
-
-//登入
-function cgsddr(timeout = 0) {
-  return new Promise((resolve) => {
-    headers1 = {
-      'userChannel': '2',
-      'Content-Type': 'application/json; charset=utf-8',
-      'Content-Length': '120',
-      'Host': 'demo.cgsd163.com',
-      'Connection': 'Keep-Alive',
-      'Accept-Encoding': 'gzip',
-      'User-Agent': 'okhttp/4.2.2',
-    }
-let url = {
-        url : `http://demo.cgsd163.com/user-service/login/v1/userLoginPassword`,
-        headers : headers1,
-        body : cgsdbody,}
-      $.post(url, async (err, resp, data) => {
-        try {
-           
-    const result = JSON.parse(data)
-        if(result.resultCode == 200){
- userid = result.bizBody.userId
- accessToken = result.bizBody.accessToken
-    }else{
-  
-}
-        } catch (e) {
-          
-        } finally {
-          resolve()
-        }
-    },timeout)
-  })
 }
 
 //登入
 function cgsddri(timeout = 0) {
-  headers2 = {
-    "accessToken":`${accessToken}`,
-    "userChannel": "2",
-    "Content-Type": "application/json; charset=utf-8",
-    "Content-Length": "120",
-    "Host": "demo.cgsd163.com",
-    "Connection": "Keep-Alive",
-    "Accept-Encoding": "gzip",
-    "User-Agent": "okhttp/4.2.2",
-  }
 
   return new Promise((resolve) => {
 
 let url = {
-        url : `http://demo.cgsd163.com/api/user/loginin`,
-        headers : headers2,
-        body : `{"uid":"${userid}"}`,}
+        url : cgsdurl,
+        headers : JSON.parse($.getdata('cgsdhd')),
+        body : cgsdbody,
+    }
       $.post(url, async (err, resp, data) => {
         try {
            
     const result = JSON.parse(data)
         if(result.resultCode == 200){
     
- token = result.bizBody
- $.log('登入成功')
+          $.log('登入成功')
  
  for (let x = 0; x < 20; x++) {
   $.index = x + 1
@@ -156,7 +150,9 @@ await $.wait(DD)
 }
 
     }else{
+
 $.log('登入失败')
+
 }
         } catch (e) {
           
@@ -173,22 +169,10 @@ $.log('登入失败')
 //视频1
 function cgsdsp(timeout = 0) {
   return new Promise((resolve) => {
-    headers33 = {
-      'accessToken': `${accessToken}`,
-      'token': `${token}`,
-      'userChannel': '2',
-      'Content-Type': 'application/json; charset=utf-8',
-      'Content-Length': '76',
-      'Host': 'demo.cgsd163.com',
-      'Connection': 'Keep-Alive',
-      'Accept-Encoding': 'gzip',
-      'User-Agent': 'okhttp/4.2.2',
-      }
-    
 let url = {
-        url : `http://demo.cgsd163.com/api/v1/task/awardUserFlower`,
-        headers : headers33,
-        body : `{"keycode":"dCeT5zhGqM7/nw/U6gCVQXx+JeX8u48XNK7b1lvK5M8\u003d","taskId":"1"}`,
+        url : spurl,
+        headers : JSON.parse($.getdata('sphd')),
+        body : sp1body,
     }
       $.post(url, async (err, resp, data) => {
         try {
@@ -214,9 +198,9 @@ let url = {
 function cgsdsp2(timeout = 0) {
   return new Promise((resolve) => {
 let url = {
-        url : `http://demo.cgsd163.com/api/v1/task/awardUserFlower`,
-        headers : headers33,
-        body : `{"keycode":"6e9rXs1qKmvOb/ddlJbBYbqKW0K87S385LiS0WSP6yA\u003d","taskId":"2"}`,
+        url : spurl,
+        headers : JSON.parse($.getdata('sphd')),
+        body : sp2body,
     }
       $.post(url, async (err, resp, data) => {
         try {
@@ -243,9 +227,10 @@ let url = {
 function cgsdsp3(timeout = 0) {
   return new Promise((resolve) => {
 let url = {
-        url : `http://demo.cgsd163.com/api/v1/task/awardUserFlower`,
-        headers : headers33,
-        body : `{"keycode":"vFvoX1Lan/CdAIGh1s9ReHoyYoiFPwI3tdcL8FqEvhI\u003d","taskId":"4"}`,}
+        url : spurl,
+        headers : JSON.parse($.getdata('sphd')),
+        body : sp3body,
+    }
       $.post(url, async (err, resp, data) => {
         try {
            
@@ -271,8 +256,8 @@ function cgsdxx(timeout = 0) {
   return new Promise((resolve) => {
 let url = {
         url : `http://demo.cgsd163.com/user-service/flower/v1/getUserFlowerAccount`,
-        headers : headers33,
-        body :  `{"uid":"${userid}"}`,}
+        headers : JSON.parse($.getdata('sphd')),
+        body :  cgsdbody,}
       $.post(url, async (err, resp, data) => {
         try {
            
