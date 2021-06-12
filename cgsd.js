@@ -1,22 +1,18 @@
 /*
 20210605 tom
 软件名：草根时代
-下载地址：  读书少找不到邀请连接，自己百度下载！
-
+下载地址： http://h5.cgsd163.com/register?recommendMemberNo=761783
 每天看视频领低保1.2元稳如老狗，一天1200+积分，5000=5元！提现需要完成一次高佣任务或试玩，建议选择微信点赞任务。
 不秒到，审核需要一天
 
+多账号抓登入的数据
 ////////////////////////////////////
 这个是安卓的毛，使用模拟器或者安卓手机  用小黄鸟来抓包
-
 可以看看群里的大佬是怎么用安卓抓包，放到圈x来跑的
 Tg群：https://t.me/tom_210120
 ///////////////////////////////////
-
 把抓到的ck放到boxjs即可！
-
 cron自己改 每天运行一次即可
-
 */
 
 
@@ -25,16 +21,14 @@ let status;
 status = (status = ($.getval("cgsdstatus") || "1") ) > 1 ? `${status}` : ""; // 账号扩展字符
 const cgsdbodyArr = [], cgsdhdArr = [],cgsdurlArr = [],cgsdcount = ''
 let cgsdbody = $.getdata('cgsdbody')
-let cgsdhd = $.getdata('zwbhd')
-let cgsdurl = $.getdata('cgsdurl')
+
 let tz = ($.getval('tz') || '1');//通知
-let ckck = ($.getval('ckck') || '');//ck
-let sp1 = ($.getval('sp1') || '');//视频1
-let sp2 = ($.getval('sp2') || '');//视频2
-let sp3 = ($.getval('sp3') || '');//视频3
+
 let DD = RT(28000, 35000)
 let accessToken = '',token = '',userid = '',headers33 = ''
 $.message = ''
+
+
 
 
 
@@ -43,21 +37,16 @@ $.message = ''
     await cgsdck()
 
   } else {cgsdbodyArr.push($.getdata('cgsdbody'))
-    cgsdhdArr.push($.getdata('cgsdhd'))
-    cgsdurlArr.push($.getdata('cgsdurl'))
+
     let cgsdcount = ($.getval('cgsdcount') || '1');
   for (let i = 2; i <= cgsdcount; i++) {
     cgsdbodyArr.push($.getdata(`cgsdbody${i}`))
-    cgsdurlArr.push($.getdata(`cgsdurl${i}`))
-    cgsdhdArr.push($.getdata(`cgsdhd${i}`))
   }
     console.log(`------------- 共${cgsdhdArr.length}个账号-------------\n`)
       for (let i = 0; i < cgsdhdArr.length; i++) {
         if (cgsdhdArr[i]) {
          
           cgsdbody = cgsdbodyArr[i];
-          cgsdhd = cgsdhdArr[i];
-          cgsdhd = cgsdhdArr[i];
           $.index = i + 1;
           console.log(`\n开始【草根时代看视频${$.index}】`)
 }
@@ -107,7 +96,7 @@ function cgsddr(timeout = 0) {
 let url = {
         url : `http://demo.cgsd163.com/user-service/login/v1/userLoginPassword`,
         headers : headers1,
-        body : `${ckck}`,}
+        body : cgsdbody,}
       $.post(url, async (err, resp, data) => {
         try {
            
@@ -126,6 +115,7 @@ let url = {
     },timeout)
   })
 }
+
 //登入
 function cgsddri(timeout = 0) {
   headers2 = {
@@ -198,7 +188,8 @@ function cgsdsp(timeout = 0) {
 let url = {
         url : `http://demo.cgsd163.com/api/v1/task/awardUserFlower`,
         headers : headers33,
-        body : `${sp1}`,}
+        body : `{"keycode":"dCeT5zhGqM7/nw/U6gCVQXx+JeX8u48XNK7b1lvK5M8\u003d","taskId":"1"}`,
+    }
       $.post(url, async (err, resp, data) => {
         try {
            
@@ -225,7 +216,8 @@ function cgsdsp2(timeout = 0) {
 let url = {
         url : `http://demo.cgsd163.com/api/v1/task/awardUserFlower`,
         headers : headers33,
-        body : `${sp2}`,}
+        body : `{"keycode":"6e9rXs1qKmvOb/ddlJbBYbqKW0K87S385LiS0WSP6yA\u003d","taskId":"2"}`,
+    }
       $.post(url, async (err, resp, data) => {
         try {
            
@@ -253,7 +245,7 @@ function cgsdsp3(timeout = 0) {
 let url = {
         url : `http://demo.cgsd163.com/api/v1/task/awardUserFlower`,
         headers : headers33,
-        body : `${sp3}`,}
+        body : `{"keycode":"vFvoX1Lan/CdAIGh1s9ReHoyYoiFPwI3tdcL8FqEvhI\u003d","taskId":"4"}`,}
       $.post(url, async (err, resp, data) => {
         try {
            
