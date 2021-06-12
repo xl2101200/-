@@ -1,13 +1,13 @@
 /*
 
-202106012  tom
+20210612  tom
 
 软件名：健身猫    
-下载地址：https://v.auto98.com/2020/fitnessCatSdk/index.html?channelCode=fkjsm&from_uid=627253
+下载地址：https://down.xmiles.cn/down/15653/3420007
 
 转盘抽奖  看一次视频获取CK 
+抓到ck后点一下提现  绑定一下微信 脚本运行会自动提现
 
-默认看50次视频，可能会报错，报错在继续运行吧
 
 秒到秒到！！！！！！！！！！！！
 
@@ -30,8 +30,9 @@ CRON自行设置
 
 
 v2p配置如下：
+
 【REWRITE】
-匹配链接（正则表达式） https://tzdefend.auto98.com/prizeWheel
+匹配链接（正则表达式） https://tzdefend.auto98.com/
 
 对应重写目标   https://raw.githubusercontent.com/xl2101200/-/main/jsm.js
 
@@ -40,14 +41,14 @@ tzdefend.auto98.com
 
 /////////////////////////////////////////////////////////////
 
-圈X配置如下：
+圈X配置如下，其他软件自行测试
 cron自己设置 
 [task_local]
 #健身猫
 0 22 * * * https://raw.githubusercontent.com/xl2101200/-/main/jsm.js, tag=健身猫, img-url=https://raw.githubusercontent.com/sngxpro/QuanX/master/icons/tom.png, enabled=true
 [rewrite_local]
 #健身猫
-https://tzdefend.auto98.com/prizeWheel url script-request-body https://raw.githubusercontent.com/xl2101200/-/main/jsm.js
+https://tzdefend.auto98.com/ url script-request-body https://raw.githubusercontent.com/xl2101200/-/main/jsm.js
 [MITM]
 hostname = tzdefend.auto98.com
 
@@ -63,11 +64,10 @@ const jsmurlArr = [],jsmhdArr = [],jsmbodyArr = [],jsmcount = ''
 let jsmurl = $.getdata('jsmurl')
 let jsmhd = $.getdata('jsmhd')
 let jsmbody = $.getdata('jsmbody')
-
-let b = new Date().getTime()
-let DD = RT(28000,35000)
+let b = Math.round(new Date().getTime()/1000).toString();
+let DD = RT(31000,41000)
 let tz = ($.getval('tz') || '1'); //签到通知
-let txidd = '',ibody = ''
+let ibody = ''
 $.message = ''
 
 
@@ -149,11 +149,11 @@ if(jsmbody)     $.setdata(jsmbody,`jsmbody${status}`)
 //转盘
 function jsmzp(timeout = 0) {
   return new Promise((resolve) => {
-    
+    ibody = (jsmbody).replace(/timestamp=\d+&/g,`envelope_id=${b}&`)
 let url = {
       url : jsmurl,
      headers : JSON.parse($.getdata('jsmhd')),
-      body : jsmbody,
+      body : ibody,
 }
       $.post(url, async (err, resp, data) => {
       try {
@@ -162,7 +162,7 @@ let url = {
 
       if(data.code == 0){  
         
-        console.log('\n'+'获得红包券'+data.data.amount)
+        console.log('已抽奖'+data.data.outer_circle+'次\n'+'获得红包券'+data.data.amount)
         $.message +='\n获得红包券'+data.data.amount
 
       } else {
