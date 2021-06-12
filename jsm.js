@@ -6,7 +6,7 @@
 下载地址：https://v.auto98.com/2020/fitnessCatSdk/index.html?channelCode=fkjsm&from_uid=627253
 
 转盘抽奖  看一次视频获取CK 
-抓到ck后点一下提现  绑定一下微信 脚本运行会自动提现
+
 
 
 秒到秒到！！！！！！！！！！！！
