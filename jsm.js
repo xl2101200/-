@@ -162,7 +162,7 @@ let url = {
 
       if(data.code == 0){  
         
-        console.log('已抽奖'+data.data.outer_circle+'次\n'+'获得红包券'+data.data.amount)
+        console.log('\n'+'获得红包券'+data.data.amount)
         $.message +='\n获得红包券'+data.data.amount
 
       } else {
