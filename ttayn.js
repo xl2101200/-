@@ -170,7 +170,7 @@ let url = {
 
       if(data.code == 20000){  
 
-        id = data.data.word_group.user_list[RT(0,20)].id
+        id = data.data.word_group.user_list[RT(0,100)].id
         
 
       } else {
