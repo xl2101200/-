@@ -6,6 +6,33 @@
   "repo": "https://github.com/xl2101200/-",
   "apps": [
     {
+            "id": "ttayn",
+            "name": "天天爱养牛",
+            "keys": ["ttaynurl","ttayn1url","ttaynhd","ttaynurl2","ttayn1url2","ttaynhd2","ttaynurl3","ttayn1url3","ttaynhd3","ttaynurl4","ttayn1url4","ttaynhd4","ttaynurl5","ttayn1url5","ttaynhd5"],
+            "author": "@tom",
+            "settings": [{
+            "id": "ttaynstatus",
+            "name": "当前账号",
+            "val": "1",
+            "type": "number",
+            "desc": "当前抓取ck记录的账号序号，如：1、2、3、4"
+    },{
+            "id": "ttayncount",
+            "name": "账号个数",
+            "val": "1",
+            "type": "number",
+            "desc": "指定任务最多跑几个账号，根据抓取的账号数据个数来设值"
+    },{
+            "id": "tz",
+            "name": "通知",
+            "val": "1",
+            "type": "number",
+            "desc": "0关闭通知，1打开通知"
+    }],
+            "repo": "https://raw.githubusercontent.com/xl2101200/-/main/ttayn.js",
+            "icons": ["https://raw.githubusercontent.com/xl2101200/-/main/tom/tom.jpg","https://raw.githubusercontent.com/xl2101200/-/main/tom/tom.jpg"],
+            "script": "https://raw.githubusercontent.com/xl2101200/-/main/ttayn.js"
+    },{
             "id": "jsm",
             "name": "健身猫",
             "keys": ["jsmurl","jsmhd","jsmbody","jsmurl2","jsmhd2","jsmbody2","jsmurl3","jsmhd3","jsmbody3","jsmurl4","jsmhd4","jsmbody4"],
