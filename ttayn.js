@@ -67,7 +67,7 @@ let ttaynurl = $.getdata('ttaynurl')
 let ttayn1url = $.getdata('ttayn1url')
 let ttaynhd = $.getdata('ttaynhd')
 let b = new Date().getTime()
-let DD = RT(28000,35000)
+let DD = RT(31000,41000)
 let tz = ($.getval('tz') || '1'); //签到通知
 let id = '',nurl = ''
 $.message = ''
