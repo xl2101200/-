@@ -116,7 +116,7 @@
     },{
             "id": "cgsd",
             "name": "草根时代",
-            "keys": ["cgsdurl","cgsdhd","cgsdbody","cgsdurl2","cgsdhd2","cgsdbody2"],
+            "keys": ["cgsdbody","cgsdbody2","cgsdbody3","cgsdbody4","cgsdbody5"],
             "author": "@tom",
             "settings": [{
             "id": "cgsdstatus",
@@ -136,30 +136,6 @@
             "val": "1",
             "type": "number",
             "desc": "0关闭通知，1打开通知"
-    },{
-            "id": "ckck",
-            "name": "你的ck",
-            "val": "",
-            "type": "String",
-            "desc": "把抓到的ck放加来即可运行脚本"
-    },{
-            "id": "sp1",
-            "name": "视频通道1",
-            "val": "",
-            "type": "String",
-            "desc": "视频body"
-    },{
-            "id": "sp2",
-            "name": "视频通道2",
-            "val": "",
-            "type": "String",
-            "desc": "视频body"
-    },{
-            "id": "sp3",
-            "name": "视频通道3",
-            "val": "",
-            "type": "String",
-            "desc": "视频body"
     }],
             "repo": "https://raw.githubusercontent.com/xl2101200/-/main/cgsd.js",
             "icons": ["https://raw.githubusercontent.com/xl2101200/-/main/tom/tom.jpg","https://raw.githubusercontent.com/xl2101200/-/main/tom/tom.jpg"],
