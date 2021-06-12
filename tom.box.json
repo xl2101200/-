@@ -116,7 +116,7 @@
     },{
             "id": "cgsd",
             "name": "草根时代",
-            "keys": ["cgsdbody","cgsdbody2","cgsdbody3","cgsdbody4","cgsdbody5"],
+            "keys": ["cgsdbody","cgsdhd","sphd","sp1body","sp2body","sp3body","cgsdbody2","cgsdhd2","sphd2","sp1body2","sp2body2","sp3body2","cgsdbody3","cgsdhd3","sphd3","sp1body3","sp2body3","sp3body3"],
             "author": "@tom",
             "settings": [{
             "id": "cgsdstatus",
