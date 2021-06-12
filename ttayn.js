@@ -2,7 +2,7 @@
 
 20210612  tom
 
-软件名：天天爱养牛    
+软件名：天天爱养牛 (安卓)
 下载地址：https://m.app.so.com/detail/index?from=pcqrcode&id=4591242
 
 
