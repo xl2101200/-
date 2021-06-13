@@ -1,28 +1,3 @@
-/*
-20210418  tom
-20210526 更新签到及收取气泡能量
-20210606 更新分享及点赞功能
-应用商店下载：左边  搜索结果显示：ZEALER
-邀请码：  
-打开软件即可获取ck
-多账号需要卸载app重新登入新账号，具体自测，退出登入是不行的。
-/////////////////////////////////////////////////
-            
-             本人抽中小米剃须刀已到货
-        可兑换：苹果耳机，充电宝，手机支架等
-          TG频道 https://t.me/tom_ww
-/////////////////////////////////////////////////
-圈X配置如下，其他软件自行测试
-[task_local]
-#左边
-0 0 0/4 * * * https://raw.githubusercontent.com/xl2101200/-/main/zb.js, tag=左边, img-url=https://raw.githubusercontent.com/sngxpro/QuanX/master/icons/tom.png, enabled=true
-[rewrite_local]
-#左边
-https://app.zaaap.cn/points/home url script-request-body https://raw.githubusercontent.com/xl2101200/-/main/zb.js
-[MITM]
-hostname = app.zaaap.cn
-*/
-
 
 const $ = new Env('ZEALER');
 let status;
