@@ -140,25 +140,25 @@
             "id": "ckck",
             "name": "ck",
             "val": "",
-            "type": "number",
+            "type": "",
             "desc": ""
     },{
             "id": "sp1",
             "name": "视频1",
             "val": "",
-            "type": "number",
+            "type": "",
             "desc": ""
     },{
             "id": "sp2",
             "name": "视频2",
             "val": "",
-            "type": "number",
+            "type": "String",
             "desc": ""
     },{
             "id": "sp3",
             "name": "视频3",
             "val": "",
-            "type": "number",
+            "type": "String",
             "desc": ""
     }],
             "repo": "https://raw.githubusercontent.com/xl2101200/-/main/cgsd.js",
