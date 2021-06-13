@@ -140,13 +140,13 @@
             "id": "ckck",
             "name": "ck",
             "val": "",
-            "type": "",
+            "type": "String",
             "desc": ""
     },{
             "id": "sp1",
             "name": "视频1",
             "val": "",
-            "type": "",
+            "type": "String",
             "desc": ""
     },{
             "id": "sp2",
