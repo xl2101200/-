@@ -8,7 +8,7 @@
     {
             "id": "bsj",
             "name": "保时捷",
-            "keys": ["bsjhd","bsjbody","bsjhd2","bsjbody2","bsjhd3","bsjbody3","bsjhd4","bsjbody4","bsjhd5","bsjbody5","bsjhd6","bsjbody6"],
+            "keys": ["bsjhd","bsjhd2","bsjhd3","bsjhd4","bsjhd5","bsjhd6","bsjhd7"],
             "author": "@tom",
             "settings": [{
             "id": "bsjstatus",
