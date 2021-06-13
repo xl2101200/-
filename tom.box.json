@@ -136,6 +136,30 @@
             "val": "1",
             "type": "number",
             "desc": "0关闭通知，1打开通知"
+    },{
+            "id": "ckck",
+            "name": "ck",
+            "val": "",
+            "type": "number",
+            "desc": ""
+    },{
+            "id": "sp1",
+            "name": "视频1",
+            "val": "",
+            "type": "number",
+            "desc": ""
+    },{
+            "id": "sp2",
+            "name": "视频2",
+            "val": "",
+            "type": "number",
+            "desc": ""
+    },{
+            "id": "sp3",
+            "name": "视频3",
+            "val": "",
+            "type": "number",
+            "desc": ""
     }],
             "repo": "https://raw.githubusercontent.com/xl2101200/-/main/cgsd.js",
             "icons": ["https://raw.githubusercontent.com/xl2101200/-/main/tom/tom.jpg","https://raw.githubusercontent.com/xl2101200/-/main/tom/tom.jpg"],
