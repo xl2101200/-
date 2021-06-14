@@ -30,7 +30,7 @@ let bsjurl = $.getdata('bsjurl')
 let bsjhd = $.getdata('bsjhd')
 let bsjbody = $.getdata('bsjbody')
 let tz = ($.getval('tz') || '1');
-$.message
+$.message = ''
 !(async () => {
   if (typeof $request !== "undefined") {
     await bsjck()
