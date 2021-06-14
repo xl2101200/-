@@ -195,13 +195,13 @@ let url = {
       if(data.code == 200){  
         
         console.log('\n已观看'+data.data.usualTasklist[0].num+'次')
-        $.message +='\n已观看'+data.data.usualTasklist[0].num+'次'
+        //$.message +='\n已观看'+data.data.usualTasklist[0].num+'次'
 
         await $.wait(DD)
       } else {
 
       console.log('\n'+data.msg)
-      //$.message +='\n'+data.msg
+     // $.message +='\n'+data.msg
     }
         } catch (e) {
 
