@@ -151,8 +151,8 @@ let url = {
 
       if(data.code == 200){  
         
-        console.log('已抽奖'+data.data.outer_circle+'次\n'+'获得红包券'+data.data.amount)
-        $.message +='\n获得红包券'+data.data.amount
+        //console.log('已抽奖'+data.data.outer_circle+'次\n'+'获得红包券'+data.data.amount)
+        //$.message +='\n'+data.data.amount
 
         await $.wait(1000)
         await myxpxx()
@@ -160,7 +160,7 @@ let url = {
       } else {
 
       console.log('\n'+data.msg)
-      $.message +='\n'+data.msg
+      //$.message +='\n'+data.msg
     }
         } catch (e) {
 
@@ -191,8 +191,8 @@ let url = {
 
       if(data.code == 200){  
         
-        console.log('已观看'+data.data.usualTasklist.num+'次')
-        $.message +='已观看'+data.data.usualTasklist.num+'次'
+        console.log('已观看'+data.data.usualTasklist[0].num+'次')
+        $.message +='已观看'+data.data.usualTasklist[0].num+'次'
 
         await $.wait(DD)
       } else {
