@@ -2,6 +2,8 @@
 
 20210613 tom
 
+20210615 更新分享得碎片
+
 小程序：保时捷在中国大陆20周年
 
 进入小程序 ⇨ 周年庆活动 ⇨ 在线抽奖   抽奖一次获取ck
@@ -30,6 +32,7 @@ let bsjurl = $.getdata('bsjurl')
 let bsjhd = $.getdata('bsjhd')
 let bsjbody = $.getdata('bsjbody')
 let tz = ($.getval('tz') || '1');
+let id = ''
 $.message = ''
 !(async () => {
   if (typeof $request !== "undefined") {
@@ -61,7 +64,10 @@ $.message = ''
           $.index = i + 1;
           console.log(`\n【 保时捷 账号${$.index} 】`)
     await bsjcj();
-
+    await $.wait(1000)
+    await bsjfx()
+    await $.wait(1000)
+    await bsjfx()
   }
 }}
 message()
@@ -97,8 +103,39 @@ let url = {
 
         $.log('\n抽奖'+result.message+'\n获得：'+result.data.member.luckyPrize.name)
 
-       message += '\n抽奖'+result.message+'\n获得：'+result.data.member.luckyPrize.name
+       $.message += '\n抽奖'+result.message+'\n获得：'+result.data.member.luckyPrize.name
         await bsjcj()
+} else {
+       
+       console.log('\n'+result.message)
+}
+   
+        } catch (e) {
+    
+        } finally {
+          resolve()
+        }
+    },timeout)
+  })
+}
+
+function bsjfx(timeout = 0) {
+  return new Promise((resolve) => {
+
+let url = {
+        url : `https://2021celebration.porsche-cloud.com/porsche/services/activity/api/user/user-share-mp?utm_campaign=&utm_source=&utm_term=&utm_medium=&utm_content=`,
+        headers : JSON.parse(bsjhd),
+        body : `{"utm_campaign":"","utm_source":""}`,
+}
+      $.post(url, async (err, resp, data) => {
+        try {
+    const result = JSON.parse(data)
+        if(result.code == 0){
+
+        $.log('\n分享成功')
+
+       $.message += '\n分享成功'
+      
 } else {
        
        console.log('\n'+result.message)
