@@ -4,8 +4,6 @@
 
 祝各位大佬端午安康！
 
-每天2元 秒到！
-
 软件名：美音星品    
 注册地址：http://www.999meiyin.com/meiyin_share/?token=eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxMTcwMiIsImV4cCI6MTY4NDEzMzkyNiwidXNlcklkIjoxMTcwMiwiaWF0IjoxNjIzNjUzOTI2fQ.RHPXVmLuuQ0nIrLi6dDbGzV3P_MC_bOP9VQqXscf30LcHEt63q8XUeoZUR_Yoha41-7IiTk4DvzBkZO-q6fySQ&type=1
 注册后去应用商店下载  
@@ -13,6 +11,8 @@
 获取CK ： 打开软件 → 美币 → 趣味视频   
 
 每天运行一次即可！！！！
+
+多账号低调点！一个微信绑定一个号！
 
 脚本执行时间需要100分钟左右，建议用v2p来挂着
 
