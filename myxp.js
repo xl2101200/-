@@ -114,7 +114,7 @@ message()
   .catch((e) => $.logErr(e))
   .finally(() => $.done())
 function myxpck() {
-   if ($request.url.indexOf("taskid") > -1) {
+   if ($request.url.indexOf("taskId") > -1) {
 const myxpurl = $request.url
    if(myxpurl)     $.setdata(myxpurl,`myxpurl${status}`)
    $.log(myxpurl)
