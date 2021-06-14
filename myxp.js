@@ -78,11 +78,12 @@ $.message = ''
     myxphdArr.push($.getdata(`myxphd${i}`))
     myxpbodyArr.push($.getdata(`myxpbody${i}`))
 }
+    console.log(
 `\n\n=============================================== 脚本执行 - 北京时间(UTC+8)：${new Date(
   new Date().getTime() +
   new Date().getTimezoneOffset() * 60 * 1000 +
   8 * 60 * 60 * 1000
-).toLocaleString()} ===============================================\n`
+).toLocaleString()} ===============================================\n`);
   for (let i = 0; i < myxphdArr.length; i++) {
       if (myxphdArr[i]) {
       
