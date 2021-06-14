@@ -127,7 +127,7 @@ const myxpbody = $request.body
 if(myxpbody)     $.setdata(myxpbody,`myxpbody${status}`)
   $.log(myxpbody)
 
- $.msg($.name,"",`美音星品${status}转盘body获取成功`)
+ $.msg($.name,"",`美音星品${status}视频headers获取成功`)
 
   }
 }
