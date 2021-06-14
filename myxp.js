@@ -2,7 +2,7 @@
 /*
 20210614  tom
 
-祝各位端午安康！
+祝各位大佬端午安康！
 
 软件名：美音星品    
 注册地址：http://www.999meiyin.com/meiyin_share/?token=eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxMTcwMiIsImV4cCI6MTY4NDEzMzkyNiwidXNlcklkIjoxMTcwMiwiaWF0IjoxNjIzNjUzOTI2fQ.RHPXVmLuuQ0nIrLi6dDbGzV3P_MC_bOP9VQqXscf30LcHEt63q8XUeoZUR_Yoha41-7IiTk4DvzBkZO-q6fySQ&type=1
@@ -94,8 +94,8 @@ $.message = ''
       console.log(`\n\n开始【美音星品${$.index}】`)}
 
       console.log(`\n随机延迟${DD/1000}秒`)
-      
-      for (let c = 0; c < 10; c++) {
+      //默认运行200次
+      for (let c = 0; c < 200; c++) {
         $.index = c + 1
         //console.log(`\n第${c+1}次执行任务！`)
 
