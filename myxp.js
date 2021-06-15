@@ -3,11 +3,14 @@
 20210614  tom
 祝各位大佬端午安康！
 
-20210615  额…改了规则不能直接兑现金，可以几分钱买东西！也可以邀请自己的小号或亲朋好友，邀请一人可得30元！
+20210615  额…改了规则不能直接兑现金，可以几分钱买东西！
+也可以邀请自己的小号或亲朋好友，邀请一人可得30元！
+
 亲测邀请收益已到账
 
 软件名：美音星品    
-注册地址：需要邀请注册
+注册地址： 邀请连接我就不放上来了哈，大家可改链接邀请好友赚点小钱吧  也可以接码弄小号跑 
+
 注册后去应用商店下载  
 
 获取CK ： 打开软件 → 美币 → 趣味视频   
@@ -149,7 +152,7 @@ function qd(timeout = 0) {
     
 let url = {
       url : `http://47.108.30.245:4001/signs/price/signIn`,
-     headers : JSON.parse($.getdata('myxphd')),
+      headers : JSON.parse($.getdata('myxphd')),
       
 }
       $.get(url, async (err, resp, data) => {
@@ -186,7 +189,7 @@ function myxpsp(timeout = 0) {
     
 let url = {
       url : myxpurl,
-     headers : JSON.parse($.getdata('myxphd')),
+      headers : JSON.parse($.getdata('myxphd')),
       
 }
       $.get(url, async (err, resp, data) => {
