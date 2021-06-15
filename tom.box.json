@@ -83,9 +83,9 @@
             "type": "number",
             "desc": "0关闭通知，1打开通知"
     }],
-            "repo": "https://raw.githubusercontent.com/xl2101200/-/main/ttayn.js",
+            "repo": "https://raw.githubusercontent.com/xl2101200/-/main/ttyn.js",
             "icons": ["https://raw.githubusercontent.com/xl2101200/-/main/tom/tom.jpg","https://raw.githubusercontent.com/xl2101200/-/main/tom/tom.jpg"],
-            "script": "https://raw.githubusercontent.com/xl2101200/-/main/ttayn.js"
+            "script": "https://raw.githubusercontent.com/xl2101200/-/main/ttyn.js"
     },{
             "id": "jsm",
             "name": "健身猫",
