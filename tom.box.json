@@ -62,7 +62,7 @@
     },{
             "id": "ttayn",
             "name": "天天爱养牛",
-            "keys": ["ttaynurl","ttayn1url","ttaynhd","ttaynurl2","ttayn1url2","ttaynhd2","ttaynurl3","ttayn1url3","ttaynhd3","ttaynurl4","ttayn1url4","ttaynhd4","ttaynurl5","ttayn1url5","ttaynhd5"],
+            "keys": ["ttaynurl","hcurl","mnurl","ttayn1url","ttaynhd","ttaynurl2","ttayn1url2","ttaynhd2","ttaynurl3","ttayn1url3","ttaynhd3","ttaynurl4","ttayn1url4","ttaynhd4","ttaynurl5","ttayn1url5","ttaynhd5"],
             "author": "@tom",
             "settings": [{
             "id": "ttaynstatus",
