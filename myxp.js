@@ -5,7 +5,7 @@
 祝各位大佬端午安康！
 
 软件名：美音星品    
-注册地址：http://www.999meiyin.com/meiyin_share/?token=eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxMTcwMiIsImV4cCI6MTY4NDEzMzkyNiwidXNlcklkIjoxMTcwMiwiaWF0IjoxNjIzNjUzOTI2fQ.RHPXVmLuuQ0nIrLi6dDbGzV3P_MC_bOP9VQqXscf30LcHEt63q8XUeoZUR_Yoha41-7IiTk4DvzBkZO-q6fySQ&type=1
+注册地址：需要邀请注册
 注册后去应用商店下载  
 
 获取CK ： 打开软件 → 美币 → 趣味视频   
@@ -101,6 +101,8 @@ $.message = ''
       $.index = i + 1;
       console.log(`\n\n开始【美音星品${$.index}】`)}
 
+
+       await qd()
       console.log(`\n随机延迟${DD/1000}秒`)
       //默认运行200次
       for (let c = 0; c < 200; c++) {
@@ -140,6 +142,39 @@ if(myxpbody)     $.setdata(myxpbody,`myxpbody${status}`)
   }
 }
 
+function qd(timeout = 0) {
+  return new Promise((resolve) => {
+    
+let url = {
+      url : `http://47.108.30.245:4001/signs/price/signIn`,
+     headers : JSON.parse($.getdata('myxphd')),
+      
+}
+      $.get(url, async (err, resp, data) => {
+      try {
+
+      data = JSON.parse(data)
+
+      if(data.code == 200){  
+        
+        console.log('\n'+data.msg)
+        $.message +='\n'+data.msg
+
+
+      } else {
+
+      console.log('\n'+data.msg)
+      $.message +='\n'+data.msg
+    }
+        } catch (e) {
+
+        } finally {
+
+          resolve()
+        }
+    },timeout)
+  })
+}
 
 
 
