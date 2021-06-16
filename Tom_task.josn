@@ -2,6 +2,7 @@
  "name": "Tom task",
  "description": "tg频道https://t.me/tom_ww",
  "task": [
+    "0 0 1 1 * https://raw.githubusercontent.com/xl2101200/-/main/ppz.js, tag=拼拼猪（ios）, img-url=https://raw.githubusercontent.com/sngxpro/QuanX/master/icons/tom.png, enabled=true",
     "0 0 1 1 * https://raw.githubusercontent.com/xl2101200/-/main/myxp.js, tag=美音新品（ios）, img-url=https://raw.githubusercontent.com/sngxpro/QuanX/master/icons/tom.png, enabled=true",
     "0 12 * * * https://raw.githubusercontent.com/xl2101200/-/main/bsj.js, tag=保时捷(小程序), img-url=https://raw.githubusercontent.com/sngxpro/QuanX/master/icons/tom.png, enabled=true",
     "0 0 1 1 * https://raw.githubusercontent.com/xl2101200/-/main/ttayn.js, tag=天天爱养牛（安卓）, img-url=https://raw.githubusercontent.com/sngxpro/QuanX/master/icons/tom.png, enabled=true",
