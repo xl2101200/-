@@ -139,13 +139,13 @@ let url = {
 
       if(data.data == 1){  
         
-        console.log('\n'+data.contxne)
-        $.message +='\n'+data.contxne
+        console.log('\n'+data.content)
+        $.message +='\n'+data.content
 
       } else {
 
-      console.log('\n'+data.contxne)
-      $.message +='\n'+data.contxne
+      console.log('\n'+data.content)
+      $.message +='\n'+data.content
     }
         } catch (e) {
 
