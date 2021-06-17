@@ -2,6 +2,8 @@
 
 20210606  tom
 
+20210617  官方更换了域名  需要把重写和主机名改一下
+
 软件名：引力生活    
 下载地址： http://shop-h5.yinlishenghuo.com/#/share?code=VRF266
 
@@ -36,10 +38,10 @@ CRON自己改，默认写了22点运行   每天运行一次即可！
 
 [rewrite_local]
 #引力生活
-http://app-api.yinlishenghuo.com/api/jingdian/reward/video url script-request-body https://raw.githubusercontent.com/xl2101200/-/main/ylsh.js
+http://api-app.zgmondaine.com/api/jingdian/reward/video url script-request-body https://raw.githubusercontent.com/xl2101200/-/main/ylsh.js
 
 [MITM]
-hostname = app-api.yinlishenghuo.com
+hostname = api-app.zgmondaine.com
 
 
 */ 
@@ -119,7 +121,7 @@ if(ylshbody)     $.setdata(ylshbody,`ylshbody${status}`)
 function ylshsp(timeout = 0) {
   return new Promise((resolve) => {
 let url = {
-      url : `http://app-api.yinlishenghuo.com/api/jingdian/reward/video/see`,
+      url : `http://api-app.zgmondaine.com/api/jingdian/reward/video/see`,
       headers : JSON.parse(ylshhd),
       body : ylshbody,
 }
@@ -151,7 +153,7 @@ let url = {
 function ylshxx(timeout = 0) {
   return new Promise((resolve) => {
 let url = {
-      url : `http://app-api.yinlishenghuo.com/api/jingdian/center/getUserCenterInfo`,
+      url : `http://api-app.zgmondaine.com/api/jingdian/center/getUserCenterInfo`,
       headers : JSON.parse(ylshhd),
       
 }
