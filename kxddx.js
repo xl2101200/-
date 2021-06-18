@@ -5,7 +5,7 @@
 
 亲测 我提了两个0.3+0.5  目前提现还是秒到的  上车前问一下还能不能玩 
 
-下载地址：链接：https://pan.baidu.com/s/1ef8_zoZHUiWKlOfAVRTiRw 提取码：1234 
+下载地址：https://wwr.lanzoui.com/itpS4qej5va 密码:977p
 
 获取CK ： 打开软件 → 转盘抽奖 → 看一次视频即可   
 
