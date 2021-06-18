@@ -3,7 +3,7 @@
 
 软件名：开心点点消（安卓）      微信授权登入
 
-亲测目前提现还是秒到的  上车前问一下还能不能玩 
+亲测 我提了两个0.3+0.5  目前提现还是秒到的  上车前问一下还能不能玩 
 
 下载地址：https://dev60.baidupan.com/061822bb/2021/06/18/21315664911f4d0a15d18a7143ea5d8c.apk?st=qr9VFaHcOVT7uySKz89IoQ&e=1624027040&b=VuEPs1TUB_bcA6lKHVeIOiAbqDLdU11foCbxb4FzTXgNUNwwiAjNUf1M1USlVZAJ2Umw_c&fi=45986586&pid=120-78-223-240&up=2
 
