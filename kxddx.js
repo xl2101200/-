@@ -1,6 +1,8 @@
 /*
 20210618 
 
+6.19 增加自动提现
+
 软件名：开心点点消（安卓）      微信授权登入
 
 亲测 跑一次脚本提了2元  目前提现还是秒到的  上车前问一下还能不能玩 
@@ -378,7 +380,51 @@ let url = {
         
         console.log('\n获得红包券 '+result.data.reward_coin+'现有余额'+result.data.money)
         $.message +='\n获得红包券 '+result.data.reward_coin+'现有余额'+result.data.money
+        await $wait(DD)
+        await tx()
+      } else {
 
+      console.log('\n'+result.msg)
+      $.message +='\n'+result.msg
+    }
+        } catch (e) {
+
+        } finally {
+
+          resolve()
+        }
+    },timeout)
+  })
+}
+
+
+
+
+
+
+
+
+
+//提现
+function tx(timeout = 0) {
+  return new Promise((resolve) => {
+    hd = (kxddxhd).replace(/"Keep-Alive"/g,`"Keep-Alive","Content-Length": "13"`)
+let url = {
+      url : `https://lft.wetimetech.com/v1/task/dailyTaskReward`,
+     headers : JSON.parse(hd),
+    body : `{"coin":3002}`,
+}
+      $.post(url, async (err, resp, data) => {
+      try {
+
+     const result = JSON.parse(data)
+
+      if(result.code == 0){  
+        
+        console.log('\n自动提现 0.3 元成功 ')
+        $.message +='\n自动提现 0.3 元成功 '
+        await $wait(1000)
+        await tx()
       } else {
 
       console.log('\n'+result.msg)
