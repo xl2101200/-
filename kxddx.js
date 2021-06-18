@@ -74,18 +74,25 @@ $.message = ''
       $.index = i + 1;
       console.log(`\n\n开始【开心点点消${$.index}】`)}
 
-      //console.log(`\n随机延迟${DD/1000}秒`)
-      //默认运行20次
+      console.log(`\n随机延迟${DD/1000}秒`)
+
       for (let c = 0; c < 20; c++) {
         $.index = c + 1
         console.log(`\n第${c+1}次执行任务！`)
 
            await zpsp()
            await $.wait(DD)
+
+      }
+    
+      for (let x = 0; x < 30; c++) {
+        $.index = x + 1
+        console.log(`\n第${x+1}次执行任务！`)
+
            await zyhb()
            await $.wait(DD)
       }
-
+    
       await qd()
 
 message()
