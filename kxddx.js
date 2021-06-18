@@ -74,8 +74,8 @@ $.message = ''
       console.log(`\n\n开始【开心点点消${$.index}】`)}
 
       console.log(`\n随机延迟${DD/1000}秒`)
-      //默认运行20次
-      for (let c = 0; c < 20; c++) {
+      //默认运行30次
+      for (let c = 0; c < 30; c++) {
         $.index = c + 1
         console.log(`\n第${c+1}次执行转盘抽奖！`)
 
