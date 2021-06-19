@@ -298,7 +298,7 @@ let url = {
       if(result.code == 0){  
         
         console.log('\n获得红包券 '+result.data.reward_coin+'现有余额'+result.data.money)
-        await $wait(DD)
+        await $.wait(DD)
         await rw2()
 
       } else {
@@ -340,7 +340,7 @@ let url = {
         
         console.log('\n获得红包券 '+result.data.reward_coin+'现有余额'+result.data.money)
         $.message +='\n获得红包券 '+result.data.reward_coin+'现有余额'+result.data.money
-        await $wait(DD)
+        await $.wait(DD)
         await rw3()
       } else {
 
@@ -380,7 +380,7 @@ let url = {
         
         console.log('\n获得红包券 '+result.data.reward_coin+'现有余额'+result.data.money)
         $.message +='\n获得红包券 '+result.data.reward_coin+'现有余额'+result.data.money
-        await $wait(DD)
+        await $.wait(DD)
         await tx()
       } else {
 
@@ -423,7 +423,7 @@ let url = {
         
         console.log('\n自动提现 0.3 元成功 ')
         $.message +='\n自动提现 0.3 元成功 '
-        await $wait(1000)
+        await $.wait(1000)
         await tx()
       } else {
 
