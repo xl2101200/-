@@ -76,8 +76,8 @@ $.message = ''
       console.log(`\n\n开始【开心点点消${$.index}】`)}
 
       console.log(`\n随机延迟${DD/1000}秒`)
-      //默认运行50次
-      for (let c = 0; c < 50; c++) {
+      //默认运行20次
+      for (let c = 0; c < 20; c++) {
         $.index = c + 1
         console.log(`\n第${c+1}次执行转盘抽奖！`)
 
@@ -86,7 +86,7 @@ $.message = ''
 
       }
       //默认运行30次
-      for (let x = 0; x < 30; x++) {
+      for (let x = 0; x < 50; x++) {
         $.index = x + 1
         console.log(`\n第${x+1}次收取主页红包气泡！`)
 
