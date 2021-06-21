@@ -8,7 +8,7 @@
         {
             "id": "dk",
             "name": "蛋咖(安卓)",
-            "keys": ["dkhd","kxddxbody","kxddxhd2","kxddxbody2","kxddxhd3","kxddxbody3","kxddxhd4","kxddxbody4","kxddxhd5","kxddxbody5"],
+            "keys": ["dkhd","dkbody","dk2body"],
             "author": "@tom",
             "settings": [{
             "id": "dkstatus",
