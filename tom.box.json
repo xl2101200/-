@@ -5,7 +5,34 @@
   "icon": "https://raw.githubusercontent.com/xl2101200/-/main/tom/tom.png",
   "repo": "https://github.com/xl2101200/-",
   "apps": [
-    {
+        {
+            "id": "dk",
+            "name": "蛋咖(安卓)",
+            "keys": ["dkhd","kxddxbody","kxddxhd2","kxddxbody2","kxddxhd3","kxddxbody3","kxddxhd4","kxddxbody4","kxddxhd5","kxddxbody5"],
+            "author": "@tom",
+            "settings": [{
+            "id": "dkstatus",
+            "name": "当前账号",
+            "val": "1",
+            "type": "number",
+            "desc": "当前抓取ck记录的账号序号，如：1、2、3、4"
+    },{
+            "id": "dkcount",
+            "name": "账号个数",
+            "val": "1",
+            "type": "number",
+            "desc": "指定任务最多跑几个账号，根据抓取的账号数据个数来设值"
+    },{
+            "id": "tz",
+            "name": "通知",
+            "val": "1",
+            "type": "number",
+            "desc": "0关闭通知，1打开通知"
+    }],
+            "repo": "https://raw.githubusercontent.com/xl2101200/-/main/dk.js",
+            "icons": ["https://raw.githubusercontent.com/xl2101200/-/main/tom/tom.jpg","https://raw.githubusercontent.com/xl2101200/-/main/tom/tom.jpg"],
+            "script": "https://raw.githubusercontent.com/xl2101200/-/main/dk.js"
+    },{
             "id": "kxddx",
             "name": "开心点点消",
             "keys": ["kxddxhd","kxddxbody","kxddxhd2","kxddxbody2","kxddxhd3","kxddxbody3","kxddxhd4","kxddxbody4","kxddxhd5","kxddxbody5"],
