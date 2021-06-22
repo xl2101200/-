@@ -410,9 +410,9 @@ function tx(timeout = 0) {
   return new Promise((resolve) => {
     hd = (kxddxhd).replace(/"Keep-Alive"/g,`"Keep-Alive","Content-Length": "13"`)
 let url = {
-      url : `https://lft.wetimetech.com/v1/task/dailyTaskReward`,
+      url : `https://lft.wetimetech.com/v1/wallet/withdraw`,
      headers : JSON.parse(hd),
-    body : `{"coin":3002}`,
+    body : `{"coin":3003}`,
 }
       $.post(url, async (err, resp, data) => {
       try {
@@ -424,7 +424,7 @@ let url = {
         console.log('\n自动提现 0.3 元成功 ')
         $.message +='\n自动提现 0.3 元成功 '
         await $.wait(1000)
-        await tx()
+        await tx1()
       } else {
 
       console.log('\n'+result.msg)
@@ -441,7 +441,39 @@ let url = {
 }
 
 
+//提现
+function tx1(timeout = 0) {
+  return new Promise((resolve) => {
+    hd = (kxddxhd).replace(/"Keep-Alive"/g,`"Keep-Alive","Content-Length": "13"`)
+let url = {
+      url : `https://lft.wetimetech.com/v1/wallet/withdraw`,
+     headers : JSON.parse(hd),
+    body : `{"coin":3004}`,
+}
+      $.post(url, async (err, resp, data) => {
+      try {
 
+     const result = JSON.parse(data)
+
+      if(result.code == 0){  
+        
+        console.log('\n自动提现 0.3 元成功 ')
+        $.message +='\n自动提现 0.3 元成功 '
+        
+      } else {
+
+      console.log('\n'+result.msg)
+      $.message +='\n'+result.msg
+    }
+        } catch (e) {
+
+        } finally {
+
+          resolve()
+        }
+    },timeout)
+  })
+}
 
 function message() {
   if(tz == 1){$.msg($.name,"",$.message)}
