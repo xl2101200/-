@@ -460,7 +460,7 @@ let url = {
         
         console.log('\n自动提现 0.3 元成功 ')
         $.message +='\n自动提现 0.3 元成功 '
-        
+        await tx()
       } else {
 
       console.log('\n'+result.msg)
