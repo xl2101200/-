@@ -39,7 +39,7 @@ let kxddxbody = $.getdata('kxddxbody')
 let b = Math.round(new Date().getTime()/1000).toString();
 let DD = RT(31000,41000)
 let tz = ($.getval('tz') || '1'); 
-let id = ''
+let id = '',txid = ''
 $.message = ''
 
 
@@ -408,11 +408,11 @@ let url = {
 //提现
 function tx(timeout = 0) {
   return new Promise((resolve) => {
-    hd = (kxddxhd).replace(/"Keep-Alive"/g,`"Keep-Alive","Content-Length": "13"`)
+    hd = (kxddxhd).replace(/"Keep-Alive"/g,`"Keep-Alive","Content-Length": "2"`)
 let url = {
-      url : `https://lft.wetimetech.com/v1/wallet/withdraw`,
-     headers : JSON.parse(hd),
-    body : `{"coin":3003}`,
+      url : `https://lft.wetimetech.com/v1/wallet/withdrawInfo`,
+      headers : JSON.parse(hd),
+      body : `{}`,
 }
       $.post(url, async (err, resp, data) => {
       try {
@@ -420,9 +420,8 @@ let url = {
      const result = JSON.parse(data)
 
       if(result.code == 0){  
-        
-        console.log('\n自动提现 0.3 元成功 ')
-        $.message +='\n自动提现 0.3 元成功 '
+        txid = result.data.withdraw_info.list[0].need.coin
+       
         await $.wait(1000)
         await tx1()
       } else {
@@ -448,7 +447,7 @@ function tx1(timeout = 0) {
 let url = {
       url : `https://lft.wetimetech.com/v1/wallet/withdraw`,
      headers : JSON.parse(hd),
-    body : `{"coin":3004}`,
+    body : `{"coin":${txid}}`,
 }
       $.post(url, async (err, resp, data) => {
       try {
