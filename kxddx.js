@@ -3,6 +3,8 @@
 
 6.19 增加自动提现
 
+6.25修复自动提现
+
 软件名：开心点点消（安卓）      微信授权登入
 
 亲测 跑一次脚本提了2元  目前提现还是秒到的  上车前问一下还能不能玩 
@@ -420,7 +422,7 @@ let url = {
      const result = JSON.parse(data)
 
       if(result.code == 0){  
-        txid = result.data.withdraw_info.list[0].need.coin
+        txid = result.data.withdraw_info.list[0].need_coin
        
         await $.wait(1000)
         await tx1()
