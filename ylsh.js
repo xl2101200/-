@@ -80,7 +80,7 @@ let tz = ($.getval('tz') || '1'); //签到通知
       $.index = i + 1;
       console.log(`\n开始【引力生活${$.index}】`)}
       
-      for (let c = 0; c < 10; c++) {
+      for (let c = 0; c < 9; c++) {
         $.index = c + 1
         console.log(`\n第${c+1}次执行任务！`)
 
