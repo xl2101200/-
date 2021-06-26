@@ -5,7 +5,34 @@
   "icon": "https://raw.githubusercontent.com/xl2101200/-/main/tom/tom.png",
   "repo": "https://github.com/xl2101200/-",
   "apps": [
-     {
+          {
+            "id": "lxgg",
+            "name": "乐享广告(安卓)",
+            "keys": ["lxgghd","lqhd","lw2body","lwhd2","lwbody2","lw2body2","lwhd3","lwbody3","lw2body3","lwhd4","lwbody4","lw2body4","lwhd5","lwbody5","lw2body5"],
+            "author": "@tom",
+            "settings": [{
+            "id": "lxggstatus",
+            "name": "当前账号",
+            "val": "1",
+            "type": "number",
+            "desc": "当前抓取ck记录的账号序号，如：1、2、3、4"
+    },{
+            "id": "lxggcount",
+            "name": "账号个数",
+            "val": "1",
+            "type": "number",
+            "desc": "指定任务最多跑几个账号，根据抓取的账号数据个数来设值"
+    },{
+            "id": "tz",
+            "name": "通知",
+            "val": "1",
+            "type": "number",
+            "desc": "0关闭通知，1打开通知"
+    }],
+            "repo": "https://raw.githubusercontent.com/xl2101200/-/main/lxgg.js",
+            "icons": ["https://raw.githubusercontent.com/xl2101200/-/main/tom/tom.jpg","https://raw.githubusercontent.com/xl2101200/-/main/tom/tom.jpg"],
+            "script": "https://raw.githubusercontent.com/xl2101200/-/main/lxgg.js"
+    },{
             "id": "lw",
             "name": "乐挖(安卓)",
             "keys": ["lwhd","lwbody","lw2body","lwhd2","lwbody2","lw2body2","lwhd3","lwbody3","lw2body3","lwhd4","lwbody4","lw2body4","lwhd5","lwbody5","lw2body5"],
