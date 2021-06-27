@@ -8,7 +8,7 @@
           {
             "id": "lxgg",
             "name": "乐享广告(安卓)",
-            "keys": ["lxgghd","lqhd","lw2body","lwhd2","lwbody2","lw2body2","lwhd3","lwbody3","lw2body3","lwhd4","lwbody4","lw2body4","lwhd5","lwbody5","lw2body5"],
+            "keys": ["lxgghd","lqhd","lxgghd2","lqhd2","lxgghd3","lqhd3","lxgghd4","lqhd4","lxgghd5","lqhd5"],
             "author": "@tom",
             "settings": [{
             "id": "lxggstatus",
