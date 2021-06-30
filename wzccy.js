@@ -1,7 +1,8 @@
 /* 20210630 tom
 
 软件名：王者猜成语（安卓）
-下载地址：https://wwr.lanzoui.com/iD1bEquxkhg 密码:1eum
+下载地址：https://wwr.lanzoui.com/iEufNqv7r7i
+密码:b6vs
 
 5000金币等于0.5元 自己手动提吧  
 
