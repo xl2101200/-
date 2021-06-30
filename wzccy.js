@@ -81,8 +81,8 @@ $.message = ''
           $.index = i + 1;
           console.log(`\n【 王者猜成语 账号${$.index} 】`)
 
-          //默认允许30次
-for (let c = 0; c < 30; c++) {
+          //默认允许10次
+for (let c = 0; c < 10; c++) {
     $.index = c + 1
     console.log(`\n第${c+1}次收取气泡金币！`)
 
