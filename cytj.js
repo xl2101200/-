@@ -1,7 +1,7 @@
 /* 20210630 tom
 
 软件名：成语淘金（安卓）
-下载地址：https://wwr.lanzoui.com/iD1bEquxkhg 密码:1eum
+下载地址：http://h5.manager.wsljf.com/statics/bfa6d897-2034-431c-82b4-cc3f15b17dfc/57c02504-2d70-44ed-96ca-09c8e4c1763b-90LandPage/index.html
 
 5000金币等于0.5元 自己手动提吧      和（王者猜成语）一样的  秒到  
 
