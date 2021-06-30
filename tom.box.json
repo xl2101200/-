@@ -32,7 +32,7 @@
             "repo": "https://raw.githubusercontent.com/xl2101200/-/main/cytj.js",
             "icons": ["https://raw.githubusercontent.com/xl2101200/-/main/tom/tom.jpg","https://raw.githubusercontent.com/xl2101200/-/main/tom/tom.jpg"],
             "script": "https://raw.githubusercontent.com/xl2101200/-/main/cytj.js"
-    },     {
+    },{
             "id": "wzccy",
             "name": "王者猜成语(安卓)",
             "keys": ["wzccyhd","wzccybody","wzccy2body","wzccyhd2","wzccybody2","wzccy2body2","wzccyhd3","wzccybody3","wzccy2body3","wzccyhd4","wzccybody4","wzccy2body4","wzccyhd5","wzccybody5","wzccy2body5"],
