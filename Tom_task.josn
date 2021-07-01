@@ -3,9 +3,6 @@
  "description": "tg频道https://t.me/tom_ww",
  "task": [
 
-      "0 10 * * * https://raw.githubusercontent.com/xl2101200/-/main/cytj.js, tag=成语淘金（安卓）, img-url=https://raw.githubusercontent.com/sngxpro/QuanX/master/icons/tom.png, enabled=true",
-
-      "0 10 * * * https://raw.githubusercontent.com/xl2101200/-/main/wzccy.js, tag=王者猜成语（安卓）, img-url=https://raw.githubusercontent.com/sngxpro/QuanX/master/icons/tom.png, enabled=true",
 
       "0 10 * * * https://raw.githubusercontent.com/xl2101200/-/main/dk.js, tag=蛋咖（安卓）, img-url=https://raw.githubusercontent.com/sngxpro/QuanX/master/icons/tom.png, enabled=true",
      "0 10 * * * https://raw.githubusercontent.com/xl2101200/-/main/lxgg.js, tag=乐享广告（安卓）, img-url=https://raw.githubusercontent.com/sngxpro/QuanX/master/icons/tom.png, enabled=true",
