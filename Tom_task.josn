@@ -3,6 +3,8 @@
  "description": "tg频道https://t.me/tom_ww",
  "task": [
 
+    "0 8 * * * https://raw.githubusercontent.com/xl2101200/-/main/mlxxl.js, tag=魔力消消乐(安卓), img-url=https://raw.githubusercontent.com/sngxpro/QuanX/master/icons/tom.png, enabled=true",
+   
     "0 8 * * * https://raw.githubusercontent.com/xl2101200/-/main/yt.js, tag=炎兔(ios/安卓), img-url=https://raw.githubusercontent.com/sngxpro/QuanX/master/icons/tom.png, enabled=true",
     "0 10 * * * https://raw.githubusercontent.com/xl2101200/-/main/dk.js, tag=蛋咖（安卓）, img-url=https://raw.githubusercontent.com/sngxpro/QuanX/master/icons/tom.png, enabled=true",
     "0 10 * * * https://raw.githubusercontent.com/xl2101200/-/main/lxgg.js, tag=乐享广告（安卓）, img-url=https://raw.githubusercontent.com/sngxpro/QuanX/master/icons/tom.png, enabled=true",
