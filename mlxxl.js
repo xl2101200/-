@@ -1,6 +1,5 @@
 /*
 20210709 
-7.10  修复自动提现
 和开心点点消一样的毛（每天0.6元秒到）
 软件名：魔力消消乐（安卓）      微信授权登入    
 ps：黑号的话用一键新机获取ck
@@ -77,7 +76,7 @@ $.message = ''
 
             console.log(`\n随机延迟${DD / 1000}秒`)
             //默认运行20次
-            for (let c = 0; c < 10; c++) {
+            for (let c = 0; c < 20; c++) {
                 $.index = c + 1
                 console.log(`\n第${c + 1}次执行转盘抽奖！`)
 
@@ -86,7 +85,7 @@ $.message = ''
 
             }
             //默认运行30次
-            for (let x = 0; x < 20; x++) {
+            for (let x = 0; x < 30; x++) {
                 $.index = x + 1
                 console.log(`\n第${x + 1}次收取主页红包气泡！`)
 
@@ -168,7 +167,7 @@ function mlzyhb(timeout = 0) {
     return new Promise((resolve) => {
 
         let url = {
-            url: `https://lft.wetimetech.com/v1/bubble/lottery`,
+            url: `https://star.aishichen.com/v1/bubble/lottery`,
             headers: JSON.parse($.getdata('mlxxlhd')),
             body: mlxxlbody,
         }
@@ -241,7 +240,6 @@ function tx(timeout = 0) {
 function tx1(timeout = 0) {
     return new Promise((resolve) => {
         hd = (mlxxlhd).replace(/"Keep-Alive"/g,`"Keep-Alive","Content-Length":"13"`)
-console.log(hd)
         let url = {
             url: `https://star.aishichen.com/v1/wallet/withdraw`,
             headers: JSON.parse(hd),
