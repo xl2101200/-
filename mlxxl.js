@@ -172,16 +172,17 @@ function mlzyhb(timeout = 0) {
                 const result = JSON.parse(data)
 
                 if (result.code == 0) {
-          await $.wait(DD)
-          await mlzyhb()
+
                     console.log('\n获得气泡红包券 ' + result.data.reward_coin)
                     // $.message += '\n获得气泡红包券 ' + result.data.reward_coin
-
-                } else {
           await $.wait(DD)
-          await tx()
+          await mlzyhb()
+                } else {
+
                     console.log('\n' + result.msg)
                     // $.message += '\n' + result.msg
+                              await $.wait(DD)
+          await tx()
                 }
             } catch (e) {
 
