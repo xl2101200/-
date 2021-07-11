@@ -77,25 +77,13 @@ $.message = ''
 
             console.log(`\n随机延迟${DD / 1000}秒`)
             //默认运行20次
-            for (let c = 0; c < 20; c++) {
-                $.index = c + 1
-                console.log(`\n第${c + 1}次执行转盘抽奖！`)
-
-                await mlzp()
-                await $.wait(DD)
-
-            }
-            //默认运行30次
-            for (let x = 0; x < 30; x++) {
-                $.index = x + 1
-                console.log(`\n第${x + 1}次收取主页红包气泡！`)
-
-                await mlzyhb()
-                await $.wait(DD)
-
-            }
-
+await mlzp()
+/*
+await $.wait(DD)
+await mlzyhb()
+await $.wait(DD)
             await tx()
+*/
 
             message()
         }
@@ -144,11 +132,17 @@ function mlzp(timeout = 0) {
 
                     console.log('\n获得转盘红包券 ' + result.data.reward_coin)
                     // $.message += '\n获得转盘红包券' + result.data.reward_coin
+await $.wait(DD)
+await mlzp()
+
+
 
                 } else {
 
                     console.log('\n' + result.msg)
                     // $.message += '\n' + result.msg
+         await $.wait(DD)
+          await mlzyhb()
                 }
             } catch (e) {
 
@@ -178,12 +172,14 @@ function mlzyhb(timeout = 0) {
                 const result = JSON.parse(data)
 
                 if (result.code == 0) {
-
+          await $.wait(DD)
+          await mlzyhb()
                     console.log('\n获得气泡红包券 ' + result.data.reward_coin)
                     // $.message += '\n获得气泡红包券 ' + result.data.reward_coin
 
                 } else {
-
+          await $.wait(DD)
+          await tx()
                     console.log('\n' + result.msg)
                     // $.message += '\n' + result.msg
                 }
