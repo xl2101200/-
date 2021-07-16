@@ -55,6 +55,12 @@
                         "val": "1",
                         "type": "number",
                         "desc": "0关闭通知，1打开通知"
+                    }, {
+                        "id": "tx",
+                        "name": "提现",
+                        "val": "1",
+                        "type": "number",
+                        "desc": "0关闭，1打开"
                     }],
                         "repo": "https://raw.githubusercontent.com/xl2101200/-/main/ycb.js",
                             "icons": ["https://raw.githubusercontent.com/xl2101200/-/main/tom/tom.jpg", "https://raw.githubusercontent.com/xl2101200/-/main/tom/tom.jpg"],
