@@ -8,7 +8,7 @@
        {
     "id": "jztt",
         "name": "九章头条",
-            "keys": ["hbsphd","hbsphd2","hbsphd3","hbsphd4","hbsphd5"],
+            "keys": ["jztthd","jztthd2","jztthd3","jztthd4","jztthd5"],
                 "author": "@tom",
                     "settings": [{
                         "id": "jzttstatus",
