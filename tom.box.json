@@ -7,7 +7,7 @@
   "apps": [
        {
     "id": "jztt",
-        "name": "九章头条",
+        "name": "九章",
             "keys": ["jztthd","jztthd2","jztthd3","jztthd4","jztthd5"],
                 "author": "@tom",
                     "settings": [{
