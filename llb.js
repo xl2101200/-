@@ -3,7 +3,7 @@
 
 懒立帮   每小时运行一次，两小时1元   提现时间：9：00-22：00
 
-微信打开注册 http://invite.zechengnet.cn/?invite=4QLRA8&token=70b593b2abbe25480b67174ad2ef32d4&type=2
+微信打开注册 http://zs.zechengnet.cn/#/?mid=112135
 
 获取ck：阅读任务--阅读美文--（阅读两篇文章提示获取成功即可）
 
