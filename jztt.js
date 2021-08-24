@@ -1,6 +1,6 @@
 /*
 微信打开  或者 appstore 搜索九章头条   
-http://st712.com/?invite_code=1oBEE4a9
+http://st712.com/?invite_code=830JJBx9
 
 
 1W金币=1元
