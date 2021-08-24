@@ -491,7 +491,7 @@ if($.rw.data.daily_task[2].id == 6 && $.rw.data.daily_task[2].is_finish != 1){
                 }
             }
             
-            for (let c = 0; c < RT(1,2); c++) {
+            for (let c = 0; c < RT(3,10); c++) {
                 $.index = c + 1
 
             K = `视频id🚩`;
@@ -531,7 +531,7 @@ if($.rw.data.daily_task[2].id == 6 && $.rw.data.daily_task[2].is_finish != 1){
             }
         }
 
-        for (let x = 0; x < [RT(1,3)]; x++) {
+        for (let x = 0; x < [RT(10,30)]; x++) {
             $.index = x + 1
 
             K = `文章id🚩`;
