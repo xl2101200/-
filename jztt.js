@@ -1,6 +1,5 @@
 /*
-微信打开  或者 appstore 搜索九章头条   
-http://st712.com/?invite_code=830JJBx9
+appstore 搜索九章头条   
 
 
 1W金币=1元
@@ -494,7 +493,7 @@ if($.rw.data.daily_task[2].id == 6 && $.rw.data.daily_task[2].is_finish != 1){
             for (let c = 0; c < RT(3,10); c++) {
                 $.index = c + 1
 
-            K = `视频id🚩`;
+            K = `1视频id🚩`;
             if (K == `视频id🚩`) {
 
                 taskurl = `https://api.st615.com/v1/article/list?type=2&cid=0&page=1&terminal=Apple&version=1.2.3&token=${jztturlVal}`,
@@ -512,7 +511,7 @@ if($.rw.data.daily_task[2].id == 6 && $.rw.data.daily_task[2].is_finish != 1){
                 }
             }
 
-            K = `看视频15次🚩`;
+            K = `1看视频15次🚩`;
             if (K == `看视频15次🚩`) {
 
                 taskurl = `https://api.st615.com/v1/article/finish`,
