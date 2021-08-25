@@ -414,7 +414,7 @@ async function all() {
 
 if($.rw.data.daily_task[2].id == 6 && $.rw.data.daily_task[2].is_finish != 1){
 
-                        K = `打卡🚩`;
+                        K = `1打卡🚩`;
                         if (K == `打卡🚩` ) {
             
                             taskurl = `https://api.st615.com/v1/task/clock`,
@@ -430,7 +430,7 @@ if($.rw.data.daily_task[2].id == 6 && $.rw.data.daily_task[2].is_finish != 1){
                             }
                         }
             
-                        K = `打卡翻倍🚩`;
+                        K = `1打卡翻倍🚩`;
                         if (K == `打卡翻倍🚩`) {
             
             
@@ -449,7 +449,7 @@ if($.rw.data.daily_task[2].id == 6 && $.rw.data.daily_task[2].is_finish != 1){
                             }
                         }
             
-                        K = `签到🚩`;
+                        K = `1签到🚩`;
                         if (K == `签到🚩`) {
             
                             taskurl = `https://api.st615.com/v1/sign/sign`,
@@ -466,7 +466,7 @@ if($.rw.data.daily_task[2].id == 6 && $.rw.data.daily_task[2].is_finish != 1){
                             }
                         }
             
-                        K = `签到翻倍🚩`;
+                        K = `1签到翻倍🚩`;
                         if (K == `签到翻倍🚩`) {
             
             
