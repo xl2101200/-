@@ -442,7 +442,7 @@ async function all() {
                
                 $.rw = DATA
                 if ($.rw.code == 0) {
-
+                    await $.wait(3000)
                  
 
 if($.rw.data.daily_task[2].id == 6 && $.rw.data.daily_task[2].is_finish != 1){
@@ -460,6 +460,8 @@ if($.rw.data.daily_task[2].id == 6 && $.rw.data.daily_task[2].is_finish != 1){
                                 console.log(`打卡：${$.dk.msg}，获得金币：${$.dk.data.coin}个\n`);
                             
                                 sy += $.dk.data.coin
+                                await $.wait(3000)
+
                             }
                         }
             
