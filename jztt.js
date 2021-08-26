@@ -379,7 +379,7 @@ async function all() {
                 if ($.x.code == 0) {
 
                     console.log(`${$.x.msg}\n`);
-                  
+                  await $.wait(3000)
                 }
             }
 
@@ -395,7 +395,7 @@ async function all() {
                 if ($.dl.code == 0) {
 
                     console.log(`【登录】：${$.dl.msg}\n`);
-                  
+                    await $.wait(3000)
                 }
             }
 
@@ -458,29 +458,12 @@ if($.rw.data.daily_task[2].id == 6 && $.rw.data.daily_task[2].is_finish != 1){
                             if ($.dk.code == 0) {
             
                                 console.log(`打卡：${$.dk.msg}，获得金币：${$.dk.data.coin}个\n`);
-                               // $.message +=`【打卡】：${$.dk.msg}，【获得金币】：${$.dk.data.coin}个\n`;
+                            
                                 sy += $.dk.data.coin
                             }
                         }
             
-                        K = `打卡翻倍🚩`;
-                        if (K == `打卡翻倍🚩`) {
-            
-            
-                            taskurl = `https://api.st615.com/v1/task/continue`,
-                            taskbody = `token=${jztturlVal}`,
-                            await taskpost();
-                           
-                            $.dkfb = DATA
-                            if ($.dkfb.code == 0) {
-            
-                                console.log(`打卡翻倍：${$.dkfb.msg}，获得金币：${$.dkfb.data.coin}个\n`);
-                               // $.message +=`【打卡翻倍】：${$.dkfb.msg}，【获得金币】：${$.dkfb.data.coin}个\n`;
-                                sy += $.dkfb.data.coin
-                               await $.wait(DD)
-                                
-                            }
-                        }
+
             
                         K = `签到🚩`;
                         if (K == `签到🚩`) {
@@ -493,75 +476,82 @@ if($.rw.data.daily_task[2].id == 6 && $.rw.data.daily_task[2].is_finish != 1){
                             if ($.sign.code == 0) {
             
                                 console.log(`签到：${$.sign.msg}，获得金币：${$.sign.data.integral}个\n`);
-                                //$.message +=`【打卡翻倍】：${$.sign.msg}，【获得金币】：${$.sign.data.coin}个\n`;
-                                sy += $.sign.data.coin
+                           
+                                sy += $.sign.data.integral
                                 await $.wait(3000)
                             }
                         }
-            
-                        K = `签到翻倍🚩`;
-                        if (K == `签到翻倍🚩`) {
-            
-            
-                            taskurl = `https://api.st615.com/v1/task/ads`,
-                            taskbody = `id=94&token=${jztturlVal}`,
-                            await taskpost();
-                           
-                            $.signfb = DATA
-                            if ($.signfb.code == 0) {
-            
-                                console.log(`签到翻倍：${$.signfb.msg}，获得金币：${$.signfb.data.coin}个\n`);
-                               // $.message +=`【打卡翻倍】：${$.signfb.msg}，【获得金币】：${$.signfb.data.coin}个\n`;
-                                sy += $.signfb.data.coin
-                               await $.wait(DD)
-                                
-                            }
-                        }
-
                     }
-                    
                 }
             }
             
-            for (let c = 0; c < RT(3,10); c++) {
-                $.index = c + 1
+           
+            K = `看视频1🚩`;
+            if (K == `看视频1🚩`) {
 
-            K = `视频id🚩`;
-            if (K == `视频id🚩`) {
-
-                taskurl = `https://api.st615.com/v1/article/list?type=2&cid=0&page=1&terminal=Apple&version=1.2.3&token=${jztturlVal}`,
-               
-                await taskget();
-             
-                $.spid = DATA
-                if ($.spid.code == 0 && $.spid.data.list[dd].id) {
-
-                    console.log(`【观看视频】：${$.spid.data.list[dd].title} `);
-                    
-                    spids = $.spid.data.list[dd].id
-
-                    await $.wait(3000)
-                }
-            }
-
-            K = `看视频15次🚩`;
-            if (K == `看视频15次🚩`) {
-
-                taskurl = `https://api.st615.com/v1/article/finish`,
-                taskbody = `id=${spids}&token=${jztturlVal}`
-
+                taskurl = `https://api.st615.com/v1/task/ads`,
+                taskbody = `token=${jztturlVal}&id=8`,
                 await taskpost();
-                await $.wait(DD)
+               
+                $.sp1 = DATA
+                if ($.sp1.code == 0) {
 
-                $.ksp15c = DATA
-                if ($.ksp15c.code == 0) {
-
-                    console.log(`【获得金币】：${$.ksp15c.data.coin}个\n`);
-                    
-                    sy += $.ksp15c.data.coin
+                    console.log(`【获得金币】：${$.sp1.data.coin}个\n`);
+                 
+                    sy += $.sp1.data.coin
+                    await $.wait(DD)
                 }
             }
-        }
+
+            K = `看视频2🚩`;
+            if (K == `看视频2🚩`) {
+
+                taskurl = `https://api.st615.com/v1/task/ads`,
+                taskbody = `token=${jztturlVal}&id=9`,
+                await taskpost();
+               
+                $.sp2 = DATA
+                if ($.sp2.code == 0) {
+
+                    console.log(`【获得金币】：${$.sp2.data.coin}个\n`);
+                 
+                    sy += $.sp2.data.coin
+                    await $.wait(DD)
+                }
+            }
+
+            K = `看视频3🚩`;
+            if (K == `看视频3🚩`) {
+
+                taskurl = `https://api.st615.com/v1/task/ads`,
+                taskbody = `token=${jztturlVal}&id=10`,
+                await taskpost();
+               
+                $.sp3 = DATA
+                if ($.sp3.code == 0) {
+
+                    console.log(`【获得金币】：${$.sp3.data.coin}个\n`);
+                 
+                    sy += $.sp3.data.coin
+                    await $.wait(DD)
+                }
+            }
+            K = `看视频4🚩`;
+            if (K == `看视频4🚩`) {
+
+                taskurl = `https://api.st615.com/v1/task/ads`,
+                taskbody = `token=${jztturlVal}&id=11`,
+                await taskpost();
+               
+                $.sp4 = DATA
+                if ($.sp4.code == 0) {
+
+                    console.log(`【获得金币】：${$.sp4.data.coin}个\n`);
+                 
+                    sy += $.sp4.data.coin
+                    await $.wait(DD)
+                }
+            }
 
         for (let x = 0; x < [RT(10,30)]; x++) {
             $.index = x + 1
@@ -632,7 +622,7 @@ if($.rw.data.daily_task[2].id == 6 && $.rw.data.daily_task[2].is_finish != 1){
             }
         }
         
-            K = `1转发文章🚩`;//转发5次
+            K = `转发文章🚩`;//转发5次
             if (K == `转发文章🚩` && $.rw.data.daily_task[4].id == 14 && $.rw.data.daily_task[4].is_finish != 1) {
         
                 taskurl = `https://api.st615.com/v1/article/share`,
