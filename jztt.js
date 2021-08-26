@@ -1,4 +1,6 @@
 /*
+
+
 appstore 搜索九章头条   
 
 1W金币=1元
@@ -15,7 +17,7 @@ https://api.st615.com/v1/user/info? url script-request-header https://raw.github
 api.st615.com
 */
 
-GXRZ = 'Tom'
+GXRZ = 'Tom  8.26修复版'
 const $ = Env("九章头条");
 $.idx = ($.idx = ($.getval('jzttSuffix') || '1') - 1) > 0 ? ($.idx + 1 + '') : ''; // 账号扩展字符
 const notify = $.isNode() ? require("./sendNotify") : ``;
