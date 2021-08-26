@@ -1,7 +1,6 @@
 /*
 appstore 搜索九章头条   
 
-
 1W金币=1元
 
 cron 建议2小时运行一次  8~23点之间运行即可  
@@ -10,7 +9,7 @@ cron 建议2小时运行一次  8~23点之间运行即可
 
 圈x  其他自己编写
 [rewrite_local]
-https://api.st615.com/v1/article/list? url script-request-header https://raw.githubusercontent.com/xl2101200/-/main/jztt.js
+https://api.st615.com/v1/user/info? url script-request-header https://raw.githubusercontent.com/xl2101200/-/main/jztt.js
 
 [mitm]
 api.st615.com
@@ -368,6 +367,40 @@ async function all() {
 
             taskheader = {};
             console.log(`-----------🔔开始运行【${$.name + $.index}】🔔-----------`)
+
+            K = `x🚩`;
+            if (K == `x🚩` ) {
+
+                taskurl = `https://api.st615.com/v1/index/benefit?token=${jztturlVal}`,
+                
+                await taskget();
+               
+                $.x = DATA
+                if ($.x.code == 0) {
+
+                    console.log(`${$.x.msg}\n`);
+                  
+                }
+            }
+
+
+            K = `登录🚩`;
+            if (K == `登录🚩` ) {
+
+                taskurl = `https://api.st615.com/v1/user/info?token=${jztturlVal}`,
+                
+                await taskget();
+               
+                $.dl = DATA
+                if ($.dl.code == 0) {
+
+                    console.log(`【登录】：${$.dl.msg}\n`);
+                  
+                }
+            }
+
+
+
             K = `用户信息🚩`;
             if (K == `用户信息🚩`) {
                 taskurl = `https://api.st615.com/v1/user/info?token=${jztturlVal}`
@@ -414,7 +447,7 @@ async function all() {
 
 if($.rw.data.daily_task[2].id == 6 && $.rw.data.daily_task[2].is_finish != 1){
 
-                        K = `1打卡🚩`;
+                        K = `打卡🚩`;
                         if (K == `打卡🚩` ) {
             
                             taskurl = `https://api.st615.com/v1/task/clock`,
@@ -430,7 +463,7 @@ if($.rw.data.daily_task[2].id == 6 && $.rw.data.daily_task[2].is_finish != 1){
                             }
                         }
             
-                        K = `1打卡翻倍🚩`;
+                        K = `打卡翻倍🚩`;
                         if (K == `打卡翻倍🚩`) {
             
             
@@ -449,7 +482,7 @@ if($.rw.data.daily_task[2].id == 6 && $.rw.data.daily_task[2].is_finish != 1){
                             }
                         }
             
-                        K = `1签到🚩`;
+                        K = `签到🚩`;
                         if (K == `签到🚩`) {
             
                             taskurl = `https://api.st615.com/v1/sign/sign`,
@@ -466,7 +499,7 @@ if($.rw.data.daily_task[2].id == 6 && $.rw.data.daily_task[2].is_finish != 1){
                             }
                         }
             
-                        K = `1签到翻倍🚩`;
+                        K = `签到翻倍🚩`;
                         if (K == `签到翻倍🚩`) {
             
             
@@ -493,7 +526,7 @@ if($.rw.data.daily_task[2].id == 6 && $.rw.data.daily_task[2].is_finish != 1){
             for (let c = 0; c < RT(3,10); c++) {
                 $.index = c + 1
 
-            K = `1视频id🚩`;
+            K = `视频id🚩`;
             if (K == `视频id🚩`) {
 
                 taskurl = `https://api.st615.com/v1/article/list?type=2&cid=0&page=1&terminal=Apple&version=1.2.3&token=${jztturlVal}`,
@@ -511,7 +544,7 @@ if($.rw.data.daily_task[2].id == 6 && $.rw.data.daily_task[2].is_finish != 1){
                 }
             }
 
-            K = `1看视频15次🚩`;
+            K = `看视频15次🚩`;
             if (K == `看视频15次🚩`) {
 
                 taskurl = `https://api.st615.com/v1/article/finish`,
