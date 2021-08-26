@@ -1,11 +1,11 @@
 /*
 appstore 搜索九章头条   
 
-1W金币=1元   每天2~5元 
+1W金币=1元
 
 cron 建议2小时运行一次  8~23点之间运行即可  
 
-测试一天，跑了太勤快可能会黑号，新账号间隔两小时还在稳定中，不确定多久会黑 
+手机验证码登录后即可获取ck   JS运行中  不要打开app  免得异地登录导致黑号！！！
 
 圈x  其他自己编写
 [rewrite_local]
@@ -13,9 +13,11 @@ https://api.st615.com/v1/user/info? url script-request-header https://raw.github
 
 [mitm]
 api.st615.com
+
+
 */
 
-GXRZ = 'Tom  8.26修复版'
+GXRZ = 'Tom 8.26修复版'
 const $ = Env("九章头条");
 $.idx = ($.idx = ($.getval('jzttSuffix') || '1') - 1) > 0 ? ($.idx + 1 + '') : ''; // 账号扩展字符
 const notify = $.isNode() ? require("./sendNotify") : ``;
@@ -153,7 +155,7 @@ function GetCookie() {
 
 
     //获取用户
-    if ($request.url.indexOf("list?") > -1) {
+    if ($request.url.indexOf("info?") > -1) {
 
    
     jztturlVal =$request.url.split('token=')[1]
@@ -578,6 +580,7 @@ if($.rw.data.daily_task[2].id == 6 && $.rw.data.daily_task[2].is_finish != 1){
             if (K == `看文章1🚩`) {
                 
                 taskurl = `https://api.st615.com/v1/article/detail?id=${wzids}&uid=&token=${jztturlVal}&os=14.7.1&device=iPhone%2011`,
+                `https://api.st615.com/v1/article/detail?id=${wzids}&uid=&token=${jztturlVal}&os=14.7.1&device=iPhone%2011`
                 
                 await taskget();
                
