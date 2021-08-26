@@ -1,9 +1,7 @@
 /*
-
-
 appstore 搜索九章头条   
 
-1W金币=1元
+1W金币=1元   每天2~5元 
 
 cron 建议2小时运行一次  8~23点之间运行即可  
 
@@ -586,7 +584,7 @@ if($.rw.data.daily_task[2].id == 6 && $.rw.data.daily_task[2].is_finish != 1){
                 $.kwz1 = DATA
                 if ($.kwz1.code == 0) {
 
-                    console.log(`【阅读文章】：${$.kwz1.data.title}`);
+                    //console.log(`【阅读文章】：${$.kwz1.data.title}`);
                    
                     await $.wait(3000)
                 }
