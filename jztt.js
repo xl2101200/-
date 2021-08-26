@@ -1,6 +1,4 @@
 /*
-8.26修复直接跑就黑号
-
 appstore 搜索九章头条   
 
 1W金币=1元
@@ -563,7 +561,7 @@ if($.rw.data.daily_task[2].id == 6 && $.rw.data.daily_task[2].is_finish != 1){
             K = `文章id🚩`;
             if (K == `文章id🚩`) {
 
-                taskurl = `https://api.st615.com/v1/article/list?cid=0&page=1&limit=20&type=0&terminal=Apple&version=1.2.3&token=${jztturlVal}`,
+                taskurl = `https://api.st615.com/v1/article/list?cid=1&page=1&limit=20&type=0&terminal=Apple&version=1.2.3&token=${jztturlVal}`,
                
                 await taskget();
                
