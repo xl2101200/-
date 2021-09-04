@@ -8,7 +8,7 @@
        {
       "id": "jztt",
   "name": "九章头条",
-  "keys": ["jztturl", "jztturl2", "jztturl3", "jztturl4", "jztturl5"],
+  "keys": ["jztturl", "jztturl2", "jztturl3", "jztturl4", "jztturl5", "jztturl6", "jztturl7", "jztturl8", "jztturl9", "jztturl10", "jztturl11", "jztturl12", "jztturl13", "jztturl14", "jztturl15", "jztturl16", "jztturl17", "jztturl18", "jztturl19", "jztturl20"],
   "author": "@tom",
   "settings": [{
     "id": "jzttSuffix",
