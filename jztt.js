@@ -3,9 +3,14 @@ appstore 搜索九章头条
 
 1W金币=1元
 
-cron 建议2小时运行一次  8~23点之间运行即可  
+由于最近沉迷游戏！钓鱼！都没空整！
+@ZIYE大佬更新并增加自动提现！感谢大佬！
 
-手机验证码登录后即可获取ck   JS运行中  不要打开app  免得异地登录导致黑号！！！
+点提现没反应的：退出登录，使用微信登录，绑定原账号的手机号即可
+
+自动提现：自动提0.3元
+
+cron 每天上线50篇文章，超过就是1金币
 
 圈x  其他自己编写
 [rewrite_local]
@@ -17,7 +22,7 @@ api.st615.com
 
 */
 
-GXRZ = 'Tom 8.26修复版'
+GXRZ = 'Tom 9.4增加提现0.3'
 const $ = Env("九章头条");
 $.idx = ($.idx = ($.getval('jzttSuffix') || '1') - 1) > 0 ? ($.idx + 1 + '') : ''; // 账号扩展字符
 const notify = $.isNode() ? require("./sendNotify") : ``;
@@ -26,18 +31,18 @@ const logs = 0; // 0关闭日志，1原始日志，2格式化，3格式化且解
 notifyttt = 1; // 0为关闭外部推送，1为12 23 点外部推送
 notifyInterval = 2; // 0为关闭通知，1为所有通知，2为12 23 点通知  ， 3为 6 12 18 23 点通知 
 Minutes = 10; // 通知 默认控制在0-10分内
-let DD = RT(30000,40000)//随机延迟
-let dd = RT(0,20)
-K = '', $.message = '', DATA = '', XH = '0', COOKIES_SPLIT = '',ddtime = '',wzids = '',spids = '',id = '',sy = 0;
+let DD = RT(25000, 30000) //随机延迟
+let dd = RT(0, 20)
+K = '', $.message = '', DATA = '', XH = '0', COOKIES_SPLIT = '', ddtime = '', wzids = '', spids = '', id = '';
 
-let jztturlArr = [];    
-let jztturlVal = ``;    
+let jztturlArr = [];
+let jztturlVal = ``;
 let middlejzttURL = [];
 
 console.log(`${GXRZ}\n`);
 $.message += `${GXRZ}\n`
 if ($.isNode() && process.env.jztt_jzttURL) {
-    XH = process.env.jztt_XH || "0"; 
+    XH = process.env.jztt_XH || "0";
     TXTX = process.env.jztt_TXTX || "0";
     SC = process.env.jztt_SC || "0";
     notifyttt = process.env.jztt_notifyttt || "1";
@@ -64,7 +69,7 @@ if ($.isNode() && process.env.jztt_jzttURL) {
         }
     });
 
-   
+
 
 } else if ($.isNode() && COOKIE.datas && COOKIE.datas[0].val) {
     console.log(
@@ -77,20 +82,20 @@ if ($.isNode() && process.env.jztt_jzttURL) {
     notifyInterval = (COOKIE.settings.find(item => item.id === `jzttnotifyInterval`)).val || '2';
     Minutes = (COOKIE.settings.find(item => item.id === `jzttMinutes`)).val || '10';
     jzttCount = COOKIE.settings.find(item => item.id === `jzttCount`).val || '1';
-    
-   
-    
+
+
+
     for (let i = 1; i <= jzttCount; i++) {
         if (i == 1) {
             op = ``
         } else {
             op = i
         }
-       
+
         if (COOKIE.datas.find(item => item.key === `jztturl${op}`).val) {
             jztturlArr.push(COOKIE.datas.find(item => item.key === `jztturl${op}`).val);
-          
-            
+
+
         }
     }
 } else {
@@ -121,7 +126,7 @@ if ($.isNode() && process.env.jztt_jzttURL) {
         }
         if ($.getdata(`jztturl${op}`)) {
             jztturlArr.push($.getdata(`jztturl${op}`));
-          
+
 
         }
     }
@@ -155,10 +160,10 @@ function GetCookie() {
 
 
     //获取用户
-    if ($request.url.indexOf("info?") > -1) {
+    if ($request.url.indexOf("info?") > -1 && $request.url.indexOf("user") > -1) {
 
-   
-    jztturlVal =$request.url.split('token=')[1]
+
+        jztturlVal = $request.url.split('token=')[1]
 
         if (jztturlVal) {
             if (XH == 1) {
@@ -244,17 +249,12 @@ function ts(inputTime) {
 };
 //今天0点时间戳时间戳
 function daytime(inputTime) {
-    if ($.isNode()) {
-        DAYTIME =
-            new Date(new Date().toLocaleDateString()).getTime() - 8 * 60 * 60 * 1000;
-    } else DAYTIME = new Date(new Date().toLocaleDateString()).getTime();
+    DAYTIME = new Date(new Date().toLocaleDateString()).getTime();
     return DAYTIME;
 };
 //时间戳格式化日期
 function time(inputTime) {
-    if ($.isNode()) {
-        var date = new Date(inputTime + 8 * 60 * 60 * 1000);
-    } else var date = new Date(inputTime);
+    var date = new Date(inputTime);
     Y = date.getFullYear() + '-';
     M = (date.getMonth() + 1 < 10 ? '0' + (date.getMonth() + 1) : date.getMonth() + 1) + '-';
     D = date.getDate() + ' ';
@@ -264,10 +264,12 @@ function time(inputTime) {
     return Y + M + D + h + m + s;
 };
 //日期格式化时间戳
-function timecs() {
-    if ($.isNode()) {
-        var date = new Date(newtime).getTime() - 8 * 60 * 60 * 1000
-    } else var date = new Date(newtime).getTime()
+function timecs(newtime) {
+
+    if (newtime.indexOf(" ") >= 0) {
+        newtime = newtime.replace(' ', 'T')
+    }
+    var date = new Date(newtime).getTime()
     return date;
 };
 //随机udid 大写
@@ -334,7 +336,7 @@ if (isGetCookie) {
     $.done();
 } else {
     !(async () => {
-    
+
         if (jztturlArr.length == 0) {
 
             $.msg(
@@ -348,7 +350,7 @@ if (isGetCookie) {
         } else {
             await all();
             await msgShow();
-            
+
         }
     })()
     .catch((e) => {
@@ -359,40 +361,41 @@ if (isGetCookie) {
         })
 }
 async function all() {
-    
+
     for (let i = 0; i < jztturlArr.length; i++) {
+        sy = 0
         jztturlVal = jztturlArr[i];
         $.index = i + 1;
         O = (`${$.name + $.index}🔔`);
         $.isLogin = true;
-        if (jztturlVal ) {
+        if (jztturlVal) {
 
             taskheader = {};
             console.log(`-----------🔔开始运行【${$.name + $.index}】🔔-----------`)
 
-            K = `x🚩`;
-            if (K == `x🚩` ) {
+            K = `x2🚩`;
+            if (K == `x🚩`) {
 
                 taskurl = `https://api.st615.com/v1/index/benefit?token=${jztturlVal}`,
-                
-                await taskget();
-               
+
+                    await taskget();
+
                 $.x = DATA
                 if ($.x.code == 0) {
 
                     console.log(`${$.x.msg}\n`);
-                  await $.wait(3000)
+                    await $.wait(3000)
                 }
             }
 
 
-            K = `登录🚩`;
-            if (K == `登录🚩` ) {
+            K = `登录2🚩`;
+            if (K == `登录🚩`) {
 
                 taskurl = `https://api.st615.com/v1/user/info?token=${jztturlVal}`,
-                
-                await taskget();
-               
+
+                    await taskget();
+
                 $.dl = DATA
                 if ($.dl.code == 0) {
 
@@ -418,8 +421,14 @@ async function all() {
                     $.message += `\n${O}\n========== 【${nickname}】 ==========\n【现金余额】：${$.user.data.money}元\n【金币余额】：${$.user.data.integral}个\n`;
                 } else {
                     $.isLogin = false; //cookie过期
-                   
+
                 }
+
+
+
+
+
+
                 if (!$.isLogin) {
                     $.msg(
                         O, time(Number(Date.now())) +
@@ -433,221 +442,334 @@ async function all() {
                     }
                     continue
                 }
+
+if ($.user.data.name&&$.user.data.name.indexOf("用户") > -1) {
+
+console.log(`此号异常：请使用微信登录\n`);
+                    $.message += `【此号异常】：请使用微信登录\n`
+
+continue
+}
+
+
             }
 
             K = `任务🚩`;
-            if (K == `任务🚩` ) {
+            if (K == `任务🚩`) {
 
                 taskurl = `https://api.st615.com/v1/user/task?token=${jztturlVal}`,
-               
-                await taskget();
-               
+
+                    await taskget();
+
                 $.rw = DATA
                 if ($.rw.code == 0) {
-                    await $.wait(3000)
-                 
-
-if($.rw.data.daily_task[2].id == 6 && $.rw.data.daily_task[2].is_finish != 1){
+                    if ($.rw.data.daily_task[2].id == 6 && $.rw.data.daily_task[2].is_finish != 1) {
 
                         K = `打卡🚩`;
-                        if (K == `打卡🚩` ) {
-            
+                        if (K == `打卡🚩`) {
+                            await $.wait(1000)
                             taskurl = `https://api.st615.com/v1/task/clock`,
-                            taskbody = `is_double=0&token=${jztturlVal}`,
-                            await taskpost();
-                           
+                                taskbody = `is_double=0&token=${jztturlVal}`,
+                                await taskpost();
+
                             $.dk = DATA
                             if ($.dk.code == 0) {
-            
+
                                 console.log(`打卡：${$.dk.msg}，获得金币：${$.dk.data.coin}个\n`);
-                            
+
                                 sy += $.dk.data.coin
-                                await $.wait(3000)
+
 
                             }
                         }
-            
 
-            
+
+
                         K = `签到🚩`;
                         if (K == `签到🚩`) {
-            
+                            await $.wait(1000)
                             taskurl = `https://api.st615.com/v1/sign/sign`,
-                            taskbody = `token=${jztturlVal}`,
-                            await taskpost();
-                           
+                                taskbody = `token=${jztturlVal}`,
+                                await taskpost();
+
                             $.sign = DATA
-                            if ($.sign.code == 0) {
-            
+                            if ($.sign.code == 0 && $.sign.data && $.sign.data.integral) {
+
                                 console.log(`签到：${$.sign.msg}，获得金币：${$.sign.data.integral}个\n`);
-                           
+
                                 sy += $.sign.data.integral
-                                await $.wait(3000)
+
                             }
                         }
                     }
                 }
             }
-            
-           
+
+
+
+            K = `提现任务🚩`;
+            if (K == `提现任务🚩`) {
+
+                taskurl = `https://api.st615.com/v1/cash/qualify?token=${jztturlVal}&money=0.3`,
+                    //taskbody = `token=${jztturlVal}`,
+                    await taskget();
+                $.txlb = DATA
+                if ($.txlb.code == 0) {
+
+                    console.log(`提现任务：${$.txlb.data.list[0].title}-${$.txlb.data.list[0].has}/${$.txlb.data.list[0].target},${$.txlb.data.list[1].title}-${$.txlb.data.list[1].has}/${$.txlb.data.list[1].target}\n`);
+                    $.message += `【提现任务】：${$.txlb.data.list[0].title}-${$.txlb.data.list[0].has}/${$.txlb.data.list[0].target},${$.txlb.data.list[1].title}-${$.txlb.data.list[1].has}/${$.txlb.data.list[1].target}\n`
+                    // sy += $.txlb.data.integral
+                    // await $.wait(3000)
+                }
+            }
+
+            K = `历史提现🚩`;
+            if (K == `历史提现🚩`) {
+                await $.wait(300)
+                taskurl = `https://api.st615.com/v1/cash/page-list?token=${jztturlVal}&page=1&limit=10`,
+                    // taskbody = `token=${jztturlVal}&type=1&money=0.3`,
+                    await taskget();
+                $.lstx = DATA
+                if ($.lstx.code == 0 && $.lstx.data.list && $.lstx.data.list.length > 0) {
+
+                    console.log(`上次提现：${$.lstx.data.list[0].add_time}\n`);
+                    $.message += `【上次提现】：${$.lstx.data.list[0].add_time}\n`
+
+                } else if ($.lstx.code == 0 && $.lstx.data.list && $.lstx.data.list.length == 0) {
+
+                    console.log(`上次提现：未提现过\n`);
+                    $.message += `【上次提现】：未提现过\n`
+
+                }
+
+            }
+
+
+
+
+
+
+
+
+
+
+
+            K = `提现视频🚩`;
+            if (K == `提现视频🚩`) {
+                await $.wait(300)
+                if ($.txlb.data && $.txlb.data.list[1].has != $.txlb.data.list[1].target) {
+                    taskurl = `https://api.st615.com/v1/cash/ads?token=${jztturlVal}&source=cash`,
+                        //taskbody = `token=${jztturlVal}`,
+                        await taskget();
+                    $.txsp = DATA
+                    if ($.txsp.code == 0) {
+
+                        console.log(`提现视频：${$.txsp.msg}\n`);
+                        $.message += `【提现视频】：${$.txsp.msg}\n`
+                        // sy += $.txlb.data.integral
+                        // await $.wait(3000)
+                    }
+                }
+            }
+
+
+            K = `提现🚩`;
+            if (K == `提现🚩`) {
+                await $.wait(300)
+                if ($.txlb.data && $.lstx.data && ($.lstx.data.list.length == 0 || timecs($.lstx.data.list[0].add_time) < daytime()) && $.user.data.money >= 0.3 && $.txlb.data.list[0].has == $.txlb.data.list[0].target && $.txlb.data.list[1].has == $.txlb.data.list[1].target) {
+                    taskurl = `https://api.st615.com/v1/cash/withdraw-new`,
+                        taskbody = `token=${jztturlVal}&type=1&money=0.3`,
+                        await taskpost();
+                    $.tx = DATA
+                    if ($.tx.code == 0) {
+
+                        console.log(`提现0.3：${$.tx.msg}\n`);
+                        $.message += `【提现0.3】：${$.tx.msg}\n`
+                        // sy += $.txlb.data.integral
+                        // await $.wait(3000)
+                    }
+                } else if ($.lstx.data && $.lstx.data.list.length > 0 && timecs($.lstx.data.list[0].add_time) >= daytime()) {
+
+                    console.log(`提现0.3：今日已提\n`);
+                    $.message += `【提现0.3】：今日已提\n`
+
+                }
+            }
+
+
+
+
+
+
+
+
+
+
+
+
             K = `看视频1🚩`;
             if (K == `看视频1🚩`) {
+                console.log(`随机延迟：${DD/1000}秒\n`);
+                await $.wait(DD)
 
                 taskurl = `https://api.st615.com/v1/task/ads`,
-                taskbody = `token=${jztturlVal}&id=8`,
-                await taskpost();
-               
-                $.sp1 = DATA
-                if ($.sp1.code == 0) {
+                    taskbody = `token=${jztturlVal}&id=8`,
+                    await taskpost();
 
-                    console.log(`【获得金币】：${$.sp1.data.coin}个\n`);
-                 
+                $.sp1 = DATA
+                if ($.sp1.code == 0 && $.sp1.data.coin) {
+
+                    console.log(`看视频1获得金币：${$.sp1.data.coin}个\n`);
+
                     sy += $.sp1.data.coin
-                    await $.wait(DD)
+
                 }
             }
 
             K = `看视频2🚩`;
             if (K == `看视频2🚩`) {
+                console.log(`随机延迟：${DD/1000}秒\n`);
+                await $.wait(DD)
 
                 taskurl = `https://api.st615.com/v1/task/ads`,
-                taskbody = `token=${jztturlVal}&id=9`,
-                await taskpost();
-               
-                $.sp2 = DATA
-                if ($.sp2.code == 0) {
+                    taskbody = `token=${jztturlVal}&id=9`,
+                    await taskpost();
 
-                    console.log(`【获得金币】：${$.sp2.data.coin}个\n`);
-                 
+                $.sp2 = DATA
+                if ($.sp2.code == 0 && $.sp2.data.coin) {
+
+                    console.log(`看视频2获得金币：${$.sp2.data.coin}个\n`);
+
                     sy += $.sp2.data.coin
-                    await $.wait(DD)
+
                 }
             }
 
             K = `看视频3🚩`;
             if (K == `看视频3🚩`) {
+                console.log(`随机延迟：${DD/1000}秒\n`);
+                await $.wait(DD)
 
                 taskurl = `https://api.st615.com/v1/task/ads`,
-                taskbody = `token=${jztturlVal}&id=10`,
-                await taskpost();
-               
-                $.sp3 = DATA
-                if ($.sp3.code == 0) {
+                    taskbody = `token=${jztturlVal}&id=10`,
+                    await taskpost();
 
-                    console.log(`【获得金币】：${$.sp3.data.coin}个\n`);
-                 
+                $.sp3 = DATA
+                if ($.sp3.code == 0 && $.sp3.data.coin) {
+
+                    console.log(`看视频3获得金币：${$.sp3.data.coin}个\n`);
+
                     sy += $.sp3.data.coin
-                    await $.wait(DD)
+
                 }
             }
             K = `看视频4🚩`;
             if (K == `看视频4🚩`) {
-
+                console.log(`随机延迟：${DD/1000}秒\n`);
+                await $.wait(DD)
                 taskurl = `https://api.st615.com/v1/task/ads`,
-                taskbody = `token=${jztturlVal}&id=11`,
-                await taskpost();
-               
-                $.sp4 = DATA
-                if ($.sp4.code == 0) {
+                    taskbody = `token=${jztturlVal}&id=11`,
+                    await taskpost();
 
-                    console.log(`【获得金币】：${$.sp4.data.coin}个\n`);
-                 
+                $.sp4 = DATA
+                if ($.sp4.code == 0 && $.sp4.data.coin) {
+
+                    console.log(`看视频4获得金币：${$.sp4.data.coin}个\n`);
+
                     sy += $.sp4.data.coin
-                    await $.wait(DD)
+
                 }
             }
 
-        for (let x = 0; x < [RT(10,30)]; x++) {
-            $.index = x + 1
+
 
             K = `文章id🚩`;
             if (K == `文章id🚩`) {
 
                 taskurl = `https://api.st615.com/v1/article/list?cid=1&page=1&limit=20&type=0&terminal=Apple&version=1.2.3&token=${jztturlVal}`,
-               
-                await taskget();
-               
+
+                    await taskget();
+
                 $.wzid = DATA
                 if ($.wzid.code == 0 && $.wzid.data.list[dd].id) {
 
-                 
+
                     wzids = $.wzid.data.list[dd].id
-                    await $.wait(3000)
+                    //await $.wait(3000)
                 }
             }
 
             K = `看文章1🚩`;
             if (K == `看文章1🚩`) {
-                
+                await $.wait(3000)
                 taskurl = `https://api.st615.com/v1/article/detail?id=${wzids}&uid=&token=${jztturlVal}&os=14.7.1&device=iPhone%2011`,
-                `https://api.st615.com/v1/article/detail?id=${wzids}&uid=&token=${jztturlVal}&os=14.7.1&device=iPhone%2011`
-                
+                    `https://api.st615.com/v1/article/detail?id=${wzids}&uid=&token=${jztturlVal}&os=14.7.1&device=iPhone%2011`
+
                 await taskget();
-               
+
                 $.kwz1 = DATA
                 if ($.kwz1.code == 0) {
 
                     //console.log(`【阅读文章】：${$.kwz1.data.title}`);
-                   
-                    await $.wait(3000)
+
+
                 }
             }
-            
+
             K = `看文章2🚩`;
             if (K == `看文章2🚩`) {
-
+                await $.wait(DD)
                 taskurl = `https://api.st615.com/v1/comment/list?&article_id=${wzids}&page=1&limit=10&token=${jztturlVal}`,
-                
-                await taskget();
-               
-               $.kwz2 = DATA
+
+                    await taskget();
+
+                $.kwz2 = DATA
                 if ($.kwz2.code == 0) {
 
                     //console.log()
-                    await $.wait(DD)
-                   
-               }
+
+
+                }
             }
-            
+
             K = `看文章3🚩`;
             if (K == `看文章3🚩`) {
-
+                await $.wait(3000)
                 taskurl = `https://api.st615.com/v1/article/finish`,
-                taskbody = `id=${wzids}&token=${jztturlVal}`,
-                await taskpost();
-               
-                $.kwz3 = DATA
-                if ($.kwz3.code == 0) {
+                    taskbody = `id=${wzids}&token=${jztturlVal}`,
+                    await taskpost();
 
-                    console.log(`【获得金币】：${$.kwz3.data.coin}个\n`);
-                 
+                $.kwz3 = DATA
+                if ($.kwz3.code == 0 && $.kwz3.data.coin) {
+
+                    console.log(`看文章3获得金币：${$.kwz3.data.coin}个\n`);
+
                     sy += $.kwz3.data.coin
-                    await $.wait(3000)
+
                 }
             }
-        }
-        
-            K = `转发文章🚩`;//转发5次
+
+
+            K = `转发文章🚩`; //转发5次
             if (K == `转发文章🚩` && $.rw.data.daily_task[4].id == 14 && $.rw.data.daily_task[4].is_finish != 1) {
-        
+                await $.wait(3000)
                 taskurl = `https://api.st615.com/v1/article/share`,
-                taskbody = `device=iPhone%2011&id=${wzids}&os=14.7.1&source=article&token=${jztturlVal}`,
-                await taskpost();
-               
+                    taskbody = `device=iPhone%2011&id=${wzids}&os=14.7.1&source=article&token=${jztturlVal}`,
+                    await taskpost();
+
                 $.zfwz = DATA
                 if ($.zfwz.code == 0) {
-        
+
                     console.log(`转发文章：${$.zfwz.msg}\n`);
-                  
-                    await $.wait(3000)
                 }
             }
-         console.log(`本次运行获得金：${sy}个\n`)
-         $.message += `【本次运行获得金币】：${sy}个\n`
-      }  
-   }
+
+        }
+        console.log(`本次运行获得金：${sy}个\n`)
+        $.message += `【本次运行获得金币】：${sy}个\n`
+    }
 }
-             
+
 
 
 
