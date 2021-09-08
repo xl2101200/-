@@ -5,8 +5,8 @@
   "icon": "https://raw.githubusercontent.com/xl2101200/-/main/tom/tom.png",
   "repo": "https://github.com/xl2101200/-",
   "apps": [
-    {
-      "id": "tqyb",
+    {  
+    "id": "tqyb",
     "name": "天气预报",
     "keys": ["tqybheader", "tqybbody","tqybheader2", "tqybbody2","tqybheader3", "tqybbody3","tqybheader4", "tqybbody4","tqybheader5", "tqybbody5"],
     "author": "@tom",
@@ -62,7 +62,8 @@
     "repo": "https://raw.githubusercontent.com/xl2101200/-/main/tqyb.js",
     "icons": ["https://raw.githubusercontent.com/xl2101200/-/main/tom/tom.jpg", "https://raw.githubusercontent.com/xl2101200/-/main/tom/tom.jpg"],
     "script": "https://raw.githubusercontent.com/xl2101200/-/main/tqyb.js"
-    },{  
+      },
+{  
   "id": "gqsl",
   "name": "广汽三菱",
   "keys": ["gqslheader", "gqslbody","gqslheader2", "gqslbody2","gqslheader3", "gqslbody3","gqslheader4", "gqslbody4","gqslheader5", "gqslbody5"],
