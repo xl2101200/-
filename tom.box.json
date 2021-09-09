@@ -523,7 +523,7 @@
     {
         "id": "hmd",
     "name": "和睦",
-    "keys": ["hmdbodyl", "hmdbodyl2", "hmdbodyl3", "hmdbodyl4", "hmdbodyl5", "hmdbodyl6", "hmdbodyl7", "hmdbodyl8", "hmdbodyl9", "hmdbodyl10", "hmdbodyl11", "hmdbodyl12", "hmdbodyl13", "hmdbodyl14", "hmdbodyl15", "hmdbodyl16", "hmdbodyl17", "hmdbodyl18", "hmdbodyl19", "hmdbodyl20"],
+    "keys": ["hmdbody", "hmdbody2", "hmdbody3", "hmdbody4", "hmdbody5", "hmdbody6", "hmdbody7", "hmdbody8"],
     "author": "@tom",
     "settings": [{
       "id": "hmdSuffix",
