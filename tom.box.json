@@ -9,7 +9,7 @@
 {  
   "id": "qhs",
   "name": "轻换算",
-  "keys": ["qhsheader","qhsheader2","qhsheader3","qhsheader4","qhsheader5"],
+  "keys": ["qhsheader","qhsqdbody","qhsjlspbody","qhsgkspbody","qhshyfxbody","qhsheader2","qhsqdbody2","qhsjlspbody2","qhsgkspbody2","qhshyfxbody2","qhsheader3","qhsqdbody3","qhsjlspbody3","qhsgkspbody3","qhshyfxbody3"],
   "author": "@tom",
   "settings": [{
     "id": "qhsSuffix",
