@@ -9,7 +9,7 @@
 
 圈x  其他自己编写
 [rewrite_local]
-http://api1.ktvcggl.com/lemon url script-request-body https://raw.githubusercontent.com/xl2101200/-/main/qhs.js
+http://api1.ktvcggl.com/lemon url script-request-body https://raw.githubusercontent.com/xl2101200/-/main/qhs.js
 [mitm]
 api1.ktvcggl.com
 */
