@@ -1,7 +1,7 @@
 /*
 Tom
 
-扫码下载：https://raw.githubusercontent.com/xl2101200/-/main/tom/yyd.jpg
+扫码下载：https://raw.githubusercontent.com/xl2101200/-/main/tom/3B5E41DC-B865-4989-89DE-366746AF2997.jpeg
 建议保存二维码
 
 跟66阅读一样
