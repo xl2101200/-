@@ -18,11 +18,22 @@ Tom
 
 cron 建议一小时一次  满2元自动提现
 
+
+9.14更改新的重写及主机名即可获取ck
+9.14更改新的重写及主机名即可获取ck
+9.14更改新的重写及主机名即可获取ck
+9.14更改新的重写及主机名即可获取ck
+9.14更改新的重写及主机名即可获取ck
+9.14更改新的重写及主机名即可获取ck
+9.14更改新的重写及主机名即可获取ck
+9.14更改新的重写及主机名即可获取ck
+
+
 圈x  其他自己编写
 [rewrite_local]
-http://xassm106.cn/? url script-request-header https://raw.githubusercontent.com/xl2101200/-/main/yyd.js
+http://xianggebao.cn/? url script-request-header https://raw.githubusercontent.com/xl2101200/-/main/yyd.js
 [mitm]
-xassm106.cn
+xianggebao.cn
 */
 
 
