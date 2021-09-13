@@ -1,5 +1,4 @@
-
-    {
+module.exports = {
     "id": "ddgy",
     "name": "弟弟果园",
     "keys": ["ddgyurl","ddgyheader","ddgyurl2","ddgyheader2","ddgyurl3","ddgyheader3","ddgyurl4","ddgyheader4","ddgyurl5","ddgyheader5","ddgyurl6","ddgyheader6","ddgyurl7","ddgyheader7","ddgyurl8","ddgyheader8","ddgyurl9","ddgyheader9","ddgyurl10","ddgyheader10","ddgyurl11","ddgyheader11","ddgyurl12","ddgyheader12","ddgyurl13","ddgyheader13","ddgyurl14","ddgyheader14","ddgyurl15","ddgyheader15"],
