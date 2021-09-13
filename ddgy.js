@@ -7,6 +7,8 @@ ck需要手动抓两个数据，太晚了懒得找问题了。  需要抓链接�
 
 放到boxjs里  https://raw.githubusercontent.com/xl2101200/-/main/tom.box.json
 
+
+青龙COOKIE  https://raw.githubusercontent.com/xl2101200/-/main/ddgyCOOKIE.js
 */
 
 
