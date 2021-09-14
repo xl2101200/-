@@ -67,7 +67,7 @@
     {
     "id": "yyd",
     "name": "云阅读",
-    "keys": ["yydurl","yydheader","yydurl2","yydheader2","yydurl3","yydheader3","yydurl4","yydheader4","yydurl5","yydheader5","yydurl6","yydheader6","yydurl7","yydheader7","yydurl8","yydheader8","yydurl9","yydheader9","yydurl10","yydheader10","yydurl11","yydheader11","yydurl12","yydheader12","yydurl13","yydheader13","yydurl14","yydheader14","yydurl15","yydheader15"],
+    "keys": ["yydheader","yydheader2","yydheader3","yydheader4","yydheader5","yydheader6","yydheader7","yydheader8","yydheader9","yydheader10","yydheader11","yydheader12","yydheader13","yydheader14","yydheader15"],
     "author": "@tom",
     "settings": [{
       "id": "yydSuffix",
