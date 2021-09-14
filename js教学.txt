@@ -3,6 +3,8 @@
 
 视频可能比较啰嗦，望各位大佬不要吐槽  感谢   
 
+
+
 日期：2021-09-14 15:51:43
 录制文件：https://meeting.tencent.com/v2/cloud-record/share?id=13ddbf0a-c531-4578-accd-3b57591d79ba&from=3
 
@@ -21,7 +23,7 @@
 圈x脚本订阅：https://raw.githubusercontent.com/xl2101200/-/main/Tom_task.josn
 
 
-
+之前也有单独录制过教程  https://www.aliyundrive.com/s/9riqSDVHphx  大家将就看一下吧
 
 
 以下是模板，大家可以写了之后对比一下，希望各位大佬学成归来后带我撸毛
