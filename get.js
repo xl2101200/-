@@ -118,7 +118,7 @@ function bankuai(timeout = 0) {
             headers: JSON.parse(jiaochenghd),
         }
 
-        $.gett(url, async (err, resp, data) => {
+        $.get(url, async (err, resp, data) => {
             try {
 
                 data = JSON.parse(data)
