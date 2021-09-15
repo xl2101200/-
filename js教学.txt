@@ -28,6 +28,6 @@
 以下是模板地址，可以对比一下两个模板的区别，也就是get和post的区别    方法就是百度：文本比对工具 
 
 
-get  模板地址：
+get  模板地址：https://raw.githubusercontent.com/xl2101200/-/main/get.js
 
-post 模板地址：
+post 模板地址：https://raw.githubusercontent.com/xl2101200/-/main/post.js
