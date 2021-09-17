@@ -2,6 +2,8 @@
  "name": "Tom task",
  "description": "tg频道https://t.me/tom_ww",
  "task": [
+ 
+    "0 5 */3 * * * https://raw.githubusercontent.com/xl2101200/-/main/ddgy.js, tag=弟弟果园, img-url=https://raw.githubusercontent.com/sngxpro/QuanX/master/icons/tom.png, enabled=true",
     "0 5 */1 * * * https://raw.githubusercontent.com/xl2101200/-/main/yyd.js, tag=云阅读, img-url=https://raw.githubusercontent.com/sngxpro/QuanX/master/icons/tom.png, enabled=true",
     "0 9 * * * https://raw.githubusercontent.com/xl2101200/-/main/qhs.js, tag=轻换算, img-url=https://raw.githubusercontent.com/sngxpro/QuanX/master/icons/tom.png, enabled=true",
     "0 8 * * * https://raw.githubusercontent.com/xl2101200/-/main/gqsl.js, tag=广汽三菱, img-url=https://raw.githubusercontent.com/sngxpro/QuanX/master/icons/tom.png, enabled=true",
