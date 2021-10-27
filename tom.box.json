@@ -8,7 +8,7 @@
     {
     "id": "qkhq",
     "name": "趣看行情",
-    "keys": ["qkhqheader","qkhqheader2","qkhqheader3","qkhqheader4","qkhqheader5"],
+    "keys": ["qkhqheader","qkhqheader2","qkhqheader3","qkhqheader4","qkhqheader5","qkhqheader6","qkhqheader7","qkhqheader8","qkhqheader9","qkhqheader10","qkhqheader11","qkhqheader12","qkhqheader13","qkhqheader14","qkhqheader15","qkhqheader16","qkhqheader17","qkhqheader18","qkhqheader19","qkhqheader20"],
     "author": "@tom",
     "settings": [{
       "id": "qkhqSuffix",
@@ -180,7 +180,7 @@
     },{
     "id": "jscfz",
     "name": "嘉实宠粉站",
-    "keys": ["jscfzheader","jscfzheader2","jscfzheader3","jscfzheader4","jscfzheader5","jscfzheader6","jscfzheader7","jscfzheader8","jscfzheader9","jscfzheader10","jscfzheader11","jscfzheader12","jscfzheader13","jscfzheader14","jscfzheader15"],
+    "keys": ["jscfzheader","jscfzheader2","jscfzheader3","jscfzheader4","jscfzheader5","jscfzheader6","jscfzheader7","jscfzheader8","jscfzheader9","jscfzheader10","jscfzheader11","jscfzheader12","jscfzheader13","jscfzheader14","jscfzheader15","jscfzheader16","jscfzheader17","jscfzheader18","jscfzheader19","jscfzheader20"],
     "author": "@tom",
     "settings": [{
       "id": "jscfzSuffix",
