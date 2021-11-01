@@ -1,43 +1,7 @@
 /*
 20210703 tom
 
-软件名：炎兔
-下载地址：https://github.com/xl2101200/-/blob/main/tom/yt.png   需要邀请码：1085099
-
-填写身份证及上传微信（支付宝）收款码即可
-
-需要复投一次600钻才可以卖出 ！
-
-每天签到得到20兔钻，1兔钻=0.3元   兔钻可直接卖！兔钻石越多分红越多，提现秒到
-
-食用方法：注册好后使用微信登入  签到一次获取ck   
-
-v2p好像不能直接获取ck  解决方法：使用锤子抓一下签到的包，然后挂v2p的代理，重放一次获取ck即可！
-
-
-/////////////////////////////////////////////////////////////////////////////
-撸了不一定有，不撸肯定没有！
-TG频道 https://t.me/tom_ww     
-Task地址：https://raw.githubusercontent.com/xl2101200/-/main/Tom_task.josn
-boxjs地址 ： https://raw.githubusercontent.com/xl2101200/-/main/tom.box.json  
-/////////////////////////////////////////////////////////////////////////////
-CRON自行设置
-v2p配置如下：
-【REWRITE】
-匹配链接（正则表达式） https://www.tupinh.com/index.php/api/user
-对应重写目标   https://raw.githubusercontent.com/xl2101200/-/main/yt.js
-【MITM】  
-www.tupinh.com
-/////////////////////////////////////////////////////////////////////////////
-圈x
-
-[rewrite_local]
-#炎兔
-https://www.tupinh.com/index.php/api/user url script-request-body https://raw.githubusercontent.com/xl2101200/-/main/yt.js
-
-[MITM]
-www.tupinh.com
-
+已经不能玩了   
 */ 
 
 
