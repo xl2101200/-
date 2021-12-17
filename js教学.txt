@@ -1,3 +1,5 @@
+频道：https://t.me/tom_ww
+
 视频可能比较啰嗦，望各位大佬不要吐槽  感谢   
 
 教程1
@@ -16,17 +18,9 @@
 录制文件：https://meeting.tencent.com/v2/cloud-record/share?id=65ced96e-525c-4631-a0a2-4386e83a3746&from=3
 访问密码：NjSZo87N
 
-
-频道：https://t.me/tom_ww
-
-圈x脚本订阅：https://raw.githubusercontent.com/xl2101200/-/main/Tom_task.josn
-
-
 之前也有单独录制过教程  https://www.aliyundrive.com/s/jZ8EGgz4T7y  大家将就看一下吧
 
-
 以下是模板地址，可以对比一下两个模板的区别，也就是get和post的区别    方法就是百度：文本比对工具 
-
 
 get  模板地址：https://raw.githubusercontent.com/xl2101200/-/main/get.js
 
