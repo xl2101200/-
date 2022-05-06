@@ -12,7 +12,7 @@
 Quantumult X
 
 [rewrite_local]
-https://mspace.gmmc.com.cn/user-soa/user/account/sign-in url script-request-body sxpt.js
+https://mspace.gmmc.com.cn/user-soa/user/account/sign-in url script-request-header https://raw.githubusercontent.com/xl2101200/-/main/gqsl.js
 
 [mitm]
 hostname = mspace.gmmc.com.cn
