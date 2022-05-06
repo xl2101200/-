@@ -14,7 +14,7 @@ https://s76.yyyyy.run/api/user/index url script-request-headers https://raw.gith
 [mitm]
 hostname = s76.yyyyy.run
 
-0 12 * * * https://raw.githubusercontent.com/xl2101200/-/main/xyfs.js, tag=咸鱼翻身(小程序), img-url=https://raw.githubusercontent.com/sngxpro/QuanX/master/icons/tom.png, enabled=false
+0 12 * * * https://raw.githubusercontent.com/xl2101200/-/main/xyfs.js, tag=咸鱼翻身(小程序), img-url=https://raw.githubusercontent.com/xl2101200/-/main/tom.png, enabled=false
 
  */
 
