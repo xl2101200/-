@@ -1,12 +1,14 @@
-/*tom
+/*tom 2022.5.13
 
-途虎养车 没玩过的点一下链接下载吧https://l.tuhu.cn/3ziaP7
+途虎养车 没玩过的点一下链接注册吧  https://l.tuhu.cn/3ziaP7
+
+务必把ck写在配置文件里！！！！！！！！！！！！！！！
 
 以前有大佬写过，前些天去保养车子的时候发现没有继续签到，趁着今天有空写一下，保养可以积分抵扣50元，积分商城也有点东西
 
 手动抓header里的Authorization和blackBox
 
-青龙变量格式: export THYCtoken='Authorization & blackBox'  多个账号用 换行分割
+青龙变量格式: export THYCtoken='Authorization&blackBox'  多个账号用 换行分割
 
 Quantumult X    点击我的即可获取ck
 
