@@ -4,9 +4,9 @@
 
 以前有大佬写过，前些天去保养车子的时候发现没有继续签到，趁着今天有空写一下，保养可以积分抵扣50元，积分商城也有点东西
 
-手动抓header里的Authorization和black_box
+手动抓header里的Authorization和blackBox
 
-青龙变量格式: export THYCtoken='Authorization & black_box'  多个账号用 换行分割
+青龙变量格式: export THYCtoken='Authorization & blackBox'  多个账号用 换行分割
 
 Quantumult X    点击我的即可获取ck
 
