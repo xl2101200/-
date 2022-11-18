@@ -7,6 +7,10 @@ const admin_id = '1564672525';
 const botName = 'Tom_sccookie_bot';
 
 
+const MongoClient = require('mongodb').MongoClient
+const url = 'mongodb://admin:tom123456@mb.tomtenyears.cf:450'
+
+
 module.exports = async (request, response) => {
     try {
 
