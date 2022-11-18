@@ -225,6 +225,7 @@ class DoTask {
 //查询用户id
     async inquire() {
         uname = await this.getName()
+        console.log(uname)
         let msg = `尊敬的 ${uname} 您的ID：${this.chatId} `
         console.log(this.chatId, msg);
         await this.bot.sendMessage(this.chatId, msg);
