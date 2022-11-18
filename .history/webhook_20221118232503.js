@@ -7,6 +7,7 @@ const admin_id = '1564672525';
 const botName = 'Tom_sccookie_bot';
 
 
+const MongoClient = require('mongodb').MongoClient
 const url = 'mongodb://admin:tom123456@mb.tomtenyears.cf:450'
 
 
@@ -27,16 +28,6 @@ module.exports = async (request, response) => {
 
     response.send('OK, runing...');
 };
-
-
-class MongoClient {
-    constructor() {
-        this.mburl = url
-        this.MongoClient = require('mongodb').MongoClient
-    }
-}
-
-
 
 
 
@@ -386,7 +377,7 @@ async function task(body) { // 接受消息初步处理
 
 
 async function tjid(names, nameid) {
-    this.MongoClient.connect(this.mburl, (err, db) => {
+    MongoClient.connect(url, (err, db) => {
         if (err) throw err
         const dbo = db.db('tl_list')
         const info = {

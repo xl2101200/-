@@ -386,7 +386,7 @@ async function task(body) { // 接受消息初步处理
 
 
 async function tjid(names, nameid) {
-    this.MongoClient.connect(this.mburl, (err, db) => {
+    this.MongoClient.connect(url, (err, db) => {
         if (err) throw err
         const dbo = db.db('tl_list')
         const info = {
