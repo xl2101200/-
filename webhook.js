@@ -9,8 +9,6 @@ const botName = 'Tom_sccookie_bot';
 
 const url = 'mongodb://admin:tom123456@mb.tomtenyears.cf:450'
 
-
-
 module.exports = async (request, response) => {
     try {
 
