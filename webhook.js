@@ -7,6 +7,7 @@ const admin_id = '1564672525';
 const botName = 'Tom_sccookie_bot';
 
 
+
 const url = 'mongodb://admin:tom123456@mb.tomtenyears.cf:450'
 
 
