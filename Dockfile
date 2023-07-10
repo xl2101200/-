@@ -1,0 +1,11 @@
+FROM python
+WORKDIR /flask_demo
+
+#把requirements.txt文件放到和Dockerfile相同的目录。
+#在Dockerfile中使用COPY命令，把requirements.txt文件复制到容器内部
+#安装requirements.txt
+COPY requirements.txt requirements.txt
+RUN pip3 install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple/
+COPY . /flask_demo
+
+CMD ["python3","orc.py"]
